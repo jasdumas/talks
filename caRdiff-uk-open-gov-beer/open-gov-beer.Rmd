@@ -1,0 +1,36 @@
+---
+title: "Open Government Data and Beer Analytics"
+img: ![](img/beer-emoji.png)
+subtitle: "*IPA & data frames*"
+author: "Jasmine Dumas"
+date: "August 2, 2016"
+output:
+  slidy_presentation: default
+  beamer_presentation: default
+footer: "Copyright (c) 2016, JD"
+keep_md: true
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+## Intro
+
+- I'm Jasmine a Data Scientist and useR living in Connecticut, USA
+- Slides and Materials available at: []()
+
+## The search for datasets
+
+## The search for analysis-ready datasets
+
+## The US open government data portal
+
+## The reality and struggle
+
+## ttbbeer
+
+## Questions & Cheers!
+
+:beer:
+

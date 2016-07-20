@@ -31,3 +31,6 @@ vignettes/*.pdf
 # Temporary files created by R markdown
 *.utf8.md
 *.knit.md
+.Rproj.user
+
+caRdiff-uk-open-gov-beer/open-gov-beer-figure/unnamed-chunk-2-1.png
