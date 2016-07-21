@@ -1,36 +1,59 @@
 ---
-title: "Open Government Data and Beer Analytics"
-img: ![](img/beer-emoji.png)
-subtitle: "*IPA & data frames*"
-author: "Jasmine Dumas"
+title: "<p>IPA & data frames: </p> <p>Open Government Data and Beer Analytics</p> <p>🏛 + 🍺</p>"
+author: "Jasmine Dumas | <a href='https://twitter.com/jasdumas'>@jasdumas</a> | <a href='http://jasdumas.github.io/'>jasdumas.github.io</a>"
 date: "August 2, 2016"
 output:
   slidy_presentation: default
   beamer_presentation: default
 footer: "Copyright (c) 2016, JD"
 keep_md: true
+duration: 5
 ---
 
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = FALSE)
-```
+## Hi Cardiff!
 
-## Intro
+- I'm Jasmine Dumas
+    - Insurance *Data Scientist* and *useR* living in Connecticut, USA
+- Slides and Materials available at: [jasdumas/talks/caRdiff-uk-open-gov-beer](https://github.com/jasdumas/talks/tree/master/caRdiff-uk-open-gov-beer)
 
-- I'm Jasmine a Data Scientist and useR living in Connecticut, USA
-- Slides and Materials available at: []()
 
 ## The search for datasets
 
+- finding *interesting* and *available* datasets is a concern for all those involved in data science.
+- Where to look?
+    - google
+    - github
+    - kaggle
+    - open government data portals
+    - ?
+
+![](http://i.giphy.com/26tnnpcYVRNJGlHy0.gif)
+    
+
 ## The search for analysis-ready datasets
+
+- if cleaning data is 70% of the data science process than the desire for analysis-ready data (even at the basic csv format) is priority #1 after addressing the business questions.
+- analysis-ready data also needs to include *some* type of documentation
 
 ## The US open government data portal
 
+- examples of PDF reports
+- examples of the bad and the good
+
 ## The reality and struggle
 
-## ttbbeer
+- ... are real
+
+## `ttbbeer`
+
+- An R data package of beer statistics from U.S. Department of the Treasury, Alcohol and Tobacco Tax and Trade Bureau (TTB)
+    - The plan: liberate more beer statistics datasets from *open U.S. government data portals* to analysis-ready data frames for R and beyond
+    - The method: **web-scraping** with `rvest` (the first dataset was copy/pasted to excel due to the limited R ecosystem of PDF parsing pacakges)
+    - The dream: increase awareness of beer analytics and promote analysis-ready datasets from [data.gov](https://www.data.gov/)
+    
+- available on [CRAN](https://cran.r-project.org/web/packages/ttbbeer/index.html) and [Github](https://github.com/jasdumas/ttbbeer)
 
 ## Questions & Cheers!
 
-:beer:
 
+<p> <img src="img/classical-building.png"></img> + <img src="img/beer-emoji.png"></img> </p>
