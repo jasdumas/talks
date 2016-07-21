@@ -16,6 +16,8 @@ duration: 5
     - Insurance *Data Scientist* and *useR* living in Connecticut, USA
 - Slides and Materials available at: [jasdumas/talks/caRdiff-uk-open-gov-beer](https://github.com/jasdumas/talks/tree/master/caRdiff-uk-open-gov-beer)
 
+<img src="https://pbs.twimg.com/profile_images/748588667053084673/7eiLikey.jpg" style="position: absolute; right: 0; top: 0"></img>
+
 
 ## The search for datasets
 
@@ -27,7 +29,9 @@ duration: 5
     - open government data portals
     - ?
 
-![](http://i.giphy.com/26tnnpcYVRNJGlHy0.gif)
+
+<img src="http://i.giphy.com/26tnnpcYVRNJGlHy0.gif" style="position: absolute; right: 0; left: 2; top: 1"></img>
+
     
 
 ## The search for analysis-ready datasets
