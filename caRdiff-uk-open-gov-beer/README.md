@@ -14,4 +14,3 @@ _____
 
 * Slides: [HTML format](https://htmlpreview.github.io/?https://github.com/jasdumas/talks/blob/master/caRdiff-uk-open-gov-beer/open-gov-beer.html), [rpubs](), [other]()
 
-* 

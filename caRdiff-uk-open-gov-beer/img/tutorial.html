@@ -1,0 +1,981 @@
+<!DOCTYPE html>
+<!-- saved from url=(0095)http://trendct.org/2016/03/18/tutorial-web-scraping-and-mapping-breweries-with-import-io-and-r/ -->
+<html lang="en-US" class=" js flexbox no-touch rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent"><!--<![endif]--><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"><script async="" src="./tutorial_files/saved_resource"></script><script type="text/javascript" src="./tutorial_files/40195a0833"></script><script src="./tutorial_files/nr-963.min.js"></script><script id="twitter-wjs" src="./tutorial_files/widgets.js"></script><script id="facebook-jssdk" src="./tutorial_files/all.js"></script><script type="text/javascript" async="" src="./tutorial_files/ga.js"></script><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var o=e[n]={exports:{}};t[n][0].call(o.exports,function(e){var o=t[n][1][e];return r(o||e)},o,o.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(t,e,n){function r(){}function o(t,e,n){return function(){return i(t,[(new Date).getTime()].concat(u(arguments)),e?null:this,n),e?void 0:this}}var i=t("handle"),a=t(2),u=t(3),c=t("ee").get("tracer"),f=NREUM;"undefined"==typeof window.newrelic&&(newrelic=f);var s=["setPageViewName","setCustomAttribute","finished","addToTrace","inlineHit"],p="api-",l=p+"ixn-";a(s,function(t,e){f[e]=o(p+e,!0,"api")}),f.addPageAction=o(p+"addPageAction",!0),e.exports=newrelic,f.interaction=function(){return(new r).get()};var d=r.prototype={createTracer:function(t,e){var n={},r=this,o="function"==typeof e;return i(l+"tracer",[Date.now(),t,n],r),function(){if(c.emit((o?"":"no-")+"fn-start",[Date.now(),r,o],n),o)try{return e.apply(this,arguments)}finally{c.emit("fn-end",[Date.now()],n)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(t,e){d[e]=o(l+e)}),newrelic.noticeError=function(t){"string"==typeof t&&(t=new Error(t)),i("err",[t,(new Date).getTime()])}},{}],2:[function(t,e,n){function r(t,e){var n=[],r="",i=0;for(r in t)o.call(t,r)&&(n[i]=e(r,t[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;e.exports=r},{}],3:[function(t,e,n){function r(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,o=n-e||0,i=Array(o<0?0:o);++r<o;)i[r]=t[e+r];return i}e.exports=r},{}],ee:[function(t,e,n){function r(){}function o(t){function e(t){return t&&t instanceof r?t:t?u(t,a,i):i()}function n(n,r,o){t&&t(n,r,o);for(var i=e(o),a=l(n),u=a.length,c=0;c<u;c++)a[c].apply(i,r);var s=f[m[n]];return s&&s.push([w,n,r,i]),i}function p(t,e){g[t]=l(t).concat(e)}function l(t){return g[t]||[]}function d(t){return s[t]=s[t]||o(n)}function v(t,e){c(t,function(t,n){e=e||"feature",m[n]=e,e in f||(f[e]=[])})}var g={},m={},w={on:p,emit:n,get:d,listeners:l,context:e,buffer:v};return w}function i(){return new r}var a="nr@context",u=t("gos"),c=t(2),f={},s={},p=e.exports=o();p.backlog=f},{}],gos:[function(t,e,n){function r(t,e,n){if(o.call(t,e))return t[e];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return t[e]=r,r}var o=Object.prototype.hasOwnProperty;e.exports=r},{}],handle:[function(t,e,n){function r(t,e,n,r){o.buffer([t],r),o.emit(t,e,n)}var o=t("ee").get("handle");e.exports=r,r.ee=o},{}],id:[function(t,e,n){function r(t){var e=typeof t;return!t||"object"!==e&&"function"!==e?-1:t===window?0:a(t,i,function(){return o++})}var o=1,i="nr@id",a=t("gos");e.exports=r},{}],loader:[function(t,e,n){function r(){if(!h++){var t=y.info=NREUM.info,e=s.getElementsByTagName("script")[0];if(t&&t.licenseKey&&t.applicationID&&e){c(m,function(e,n){t[e]||(t[e]=n)});var n="https"===g.split(":")[0]||t.sslForHttp;y.proto=n?"https://":"http://",u("mark",["onload",a()],null,"api");var r=s.createElement("script");r.src=y.proto+t.agent,e.parentNode.insertBefore(r,e)}}}function o(){"complete"===s.readyState&&i()}function i(){u("mark",["domContent",a()],null,"api")}function a(){return(new Date).getTime()}var u=t("handle"),c=t(2),f=window,s=f.document,p="addEventListener",l="attachEvent",d=f.XMLHttpRequest,v=d&&d.prototype;NREUM.o={ST:setTimeout,CT:clearTimeout,XHR:d,REQ:f.Request,EV:f.Event,PR:f.Promise,MO:f.MutationObserver},t(1);var g=""+location,m={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-963.min.js"},w=d&&v&&v[p]&&!/CriOS/.test(navigator.userAgent),y=e.exports={offset:a(),origin:g,features:{},xhrWrappable:w};s[p]?(s[p]("DOMContentLoaded",i,!1),f[p]("load",r,!1)):(s[l]("onreadystatechange",o),f[l]("onload",r)),u("mark",["firstbyte",a()],null,"api");var h=0},{}]},{},["loader"]);</script>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+	<title>
+		Tutorial: Web scraping and mapping breweries with import.io and R | TrendCT	</title>
+	<link rel="profile" href="http://gmpg.org/xfn/11">
+	<link rel="pingback" href="http://trendct.org/xmlrpc.php">
+<title>Tutorial: Web scraping and mapping breweries with import.io and R – TrendCT</title>
+		<script>
+			function whichHeader() {
+				var screenWidth = document.documentElement.clientWidth,
+				header_img;
+				if (screenWidth <= 767) {
+					header_img = 'http://trendct.org/files/2015/01/trend_masthead.png';
+				} else if (screenWidth > 767 && screenWidth <= 979) {
+					header_img = 'http://trendct.org/files/2015/01/trend_masthead.png';
+				} else {
+					header_img = 'http://trendct.org/files/2015/01/trend_masthead.png';
+				}
+				return header_img;
+			}
+			var banner_img_src = whichHeader();
+		</script>
+	<link rel="alternate" type="application/rss+xml" title="TrendCT » Feed" href="http://trendct.org/feed/">
+<link rel="alternate" type="application/rss+xml" title="TrendCT » Comments Feed" href="http://trendct.org/comments/feed/">
+<link rel="alternate" type="application/rss+xml" title="TrendCT » Tutorial: Web scraping and mapping breweries with import.io and R Comments Feed" href="http://trendct.org/2016/03/18/tutorial-web-scraping-and-mapping-breweries-with-import-io-and-r/feed/">
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/72x72\/","ext":".png","source":{"concatemoji":"http:\/\/trendct.org\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.5.3"}};
+			!function(a,b,c){function d(a){var c,d,e,f=b.createElement("canvas"),g=f.getContext&&f.getContext("2d"),h=String.fromCharCode;if(!g||!g.fillText)return!1;switch(g.textBaseline="top",g.font="600 32px Arial",a){case"flag":return g.fillText(h(55356,56806,55356,56826),0,0),f.toDataURL().length>3e3;case"diversity":return g.fillText(h(55356,57221),0,0),c=g.getImageData(16,16,1,1).data,d=c[0]+","+c[1]+","+c[2]+","+c[3],g.fillText(h(55356,57221,55356,57343),0,0),c=g.getImageData(16,16,1,1).data,e=c[0]+","+c[1]+","+c[2]+","+c[3],d!==e;case"simple":return g.fillText(h(55357,56835),0,0),0!==g.getImageData(16,16,1,1).data[0];case"unicode8":return g.fillText(h(55356,57135),0,0),0!==g.getImageData(16,16,1,1).data[0]}return!1}function e(a){var c=b.createElement("script");c.src=a,c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var f,g,h,i;for(i=Array("simple","flag","unicode8","diversity"),c.supports={everything:!0,everythingExceptFlag:!0},h=0;h<i.length;h++)c.supports[i[h]]=d(i[h]),c.supports.everything=c.supports.everything&&c.supports[i[h]],"flag"!==i[h]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[i[h]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(g=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",g,!1),a.addEventListener("load",g,!1)):(a.attachEvent("onload",g),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),f=c.source||{},f.concatemoji?e(f.concatemoji):f.wpemoji&&f.twemoji&&(e(f.twemoji),e(f.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel="stylesheet" id="navis-slides-css" href="./tutorial_files/slides.css" type="text/css" media="all">
+<link rel="stylesheet" id="navis-slick-css" href="./tutorial_files/slick.css" type="text/css" media="all">
+<link rel="stylesheet" id="largo-stylesheet-css" href="./tutorial_files/style.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="largo-child-styles-css" href="./tutorial_files/style.css" type="text/css" media="all">
+<link rel="stylesheet" id="ctmirror-stylesheet-css" href="./tutorial_files/core-trend.css" type="text/css" media="all">
+<script type="text/javascript" src="./tutorial_files/jquery.js"></script>
+<script type="text/javascript" src="./tutorial_files/jquery-migrate.min.js"></script>
+<script type="text/javascript" src="./tutorial_files/load-more-posts.min.js"></script>
+<script type="text/javascript" src="./tutorial_files/modernizr.custom.js"></script>
+<link rel="https://api.w.org/" href="http://trendct.org/wp-json/">
+<link rel="prev" title="What coal’s decline looks like in Connecticut and across the nation" href="http://trendct.org/2016/03/17/what-coals-decline-looks-like-in-connecticut/">
+<link rel="next" title="A look at Medicaid enrollment by town" href="http://trendct.org/2016/03/21/a-look-at-medicaid-enrollment-by-town/">
+<link rel="canonical" href="http://trendct.org/2016/03/18/tutorial-web-scraping-and-mapping-breweries-with-import-io-and-r/">
+<link rel="shortlink" href="http://trendct.org/?p=10611">
+<link rel="alternate" type="application/json+oembed" href="http://trendct.org/wp-json/oembed/1.0/embed?url=http%3A%2F%2Ftrendct.org%2F2016%2F03%2F18%2Ftutorial-web-scraping-and-mapping-breweries-with-import-io-and-r%2F">
+<link rel="alternate" type="text/xml+oembed" href="http://trendct.org/wp-json/oembed/1.0/embed?url=http%3A%2F%2Ftrendct.org%2F2016%2F03%2F18%2Ftutorial-web-scraping-and-mapping-breweries-with-import-io-and-r%2F&amp;format=xml">
+<style>
+.tweetable a { background: ; color: ; position:relative; padding: 5px; text-decoration: none; }
+.tweetable a:hover { color: ; text-decoration: none; }
+.tweetable a:hover .share { display: block; }
+.tweetable .icon-twitter { color: ; }
+.tweetable .share { background: ; font-family: "helvetica neue", helvetica, sans-serif; font-size: 15px;
+  line-height: 1; border-radius: 4px; -webkit-border-radius: 4px;
+  -moz-border-radius: 4px; color: #fff; display: none; position:absolute; padding: 5px; left: 0; top: -25px; }
+</style>
+		<meta name="twitter:card" content="summary">
+
+		<meta name="twitter:site" content="@trendct">
+							<meta property="og:title" content="Tutorial: Web scraping and mapping breweries with import.io and R">
+					<meta property="og:type" content="article">
+					<meta property="og:url" content="http://trendct.org/2016/03/18/tutorial-web-scraping-and-mapping-breweries-with-import-io-and-r/">
+					<meta property="og:description" content="Learn how to scrape, geolocate, and visualize beer brewery data.">
+					<meta name="description" content="Learn how to scrape, geolocate, and visualize beer brewery data.">
+			<meta property="og:site_name" content="TrendCT"><meta property="og:image" content="http://trendct.org/files/2016/03/Screen-Shot-2016-03-16-at-9.09.44-AM-1170x840.png"><link rel="apple-touch-icon" href="http://3m0s6l2ief6j3hrzgs3m55qv.wpengine.netdna-cdn.com/files/2015/01/trend_masthead_square.png"><link rel="shortcut icon" href="http://3xa3sn2xtr6117bb6o2m6zwf8ea.wpengine.netdna-cdn.com/files/2014/01/favicon.ico"><meta name="news_keywords" content="Walkthrough, beer, import.io, r, scraping"><meta name="original-source" content="http://trendct.org/2016/03/18/tutorial-web-scraping-and-mapping-breweries-with-import-io-and-r/"><meta name="syndication-source" content="http://trendct.org/2016/03/18/tutorial-web-scraping-and-mapping-breweries-with-import-io-and-r/">			<script>
+			    var _gaq = _gaq || [];
+							_gaq.push(['_setAccount', 'UA-58918752-1']);
+				_gaq.push(['_trackPageview']);
+											_gaq.push(
+					["inn._setAccount", "UA-17578670-2"],
+					["inn._setCustomVar", 1, "MemberName", "TrendCT"],
+					["inn._trackPageview"]
+				);
+							    _gaq.push(
+					["largo._setAccount", "UA-17578670-4"],
+					["largo._setCustomVar", 1, "SiteName", "TrendCT"],
+					["largo._setDomainName", "trendct.org"],
+					["largo._setAllowLinker", true],
+					["largo._trackPageview"]
+				);
+
+			    (function() {
+				    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+				    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+				    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+				})();
+			</script>
+	<link rel="icon" href="http://3m0s6l2ief6j3hrzgs3m55qv.wpengine.netdna-cdn.com/files/2015/01/cropped-trend_masthead_square-32x32.png" sizes="32x32">
+<link rel="icon" href="http://3m0s6l2ief6j3hrzgs3m55qv.wpengine.netdna-cdn.com/files/2015/01/cropped-trend_masthead_square-192x192.png" sizes="192x192">
+<link rel="apple-touch-icon-precomposed" href="http://3m0s6l2ief6j3hrzgs3m55qv.wpengine.netdna-cdn.com/files/2015/01/cropped-trend_masthead_square-180x180.png">
+<meta name="msapplication-TileImage" content="http://trendct.org/files/2015/01/cropped-trend_masthead_square-270x270.png">
+<script type="text/javascript" async="" src="./tutorial_files/embed.js"></script><script async="" type="text/javascript" src="./tutorial_files/count.js"></script><style type="text/css">.fb_hidden{position:absolute;top:-10000px;z-index:10001}.fb_reposition{overflow:hidden;position:relative}.fb_invisible{display:none}.fb_reset{background:none;border:0;border-spacing:0;color:#000;cursor:auto;direction:ltr;font-family:"lucida grande", tahoma, verdana, arial, sans-serif;font-size:11px;font-style:normal;font-variant:normal;font-weight:normal;letter-spacing:normal;line-height:1;margin:0;overflow:visible;padding:0;text-align:left;text-decoration:none;text-indent:0;text-shadow:none;text-transform:none;visibility:visible;white-space:normal;word-spacing:normal}.fb_reset>div{overflow:hidden}.fb_link img{border:none}@keyframes fb_transform{from{opacity:0;transform:scale(.95)}to{opacity:1;transform:scale(1)}}.fb_animate{animation:fb_transform .3s forwards}
+.fb_dialog{background:rgba(82, 82, 82, .7);position:absolute;top:-10000px;z-index:10001}.fb_reset .fb_dialog_legacy{overflow:visible}.fb_dialog_advanced{padding:10px;-moz-border-radius:8px;-webkit-border-radius:8px;border-radius:8px}.fb_dialog_content{background:#fff;color:#333}.fb_dialog_close_icon{background:url(https://static.xx.fbcdn.net/rsrc.php/v2/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 0 transparent;_background-image:url(https://static.xx.fbcdn.net/rsrc.php/v2/yL/r/s816eWC-2sl.gif);cursor:pointer;display:block;height:15px;position:absolute;right:18px;top:17px;width:15px}.fb_dialog_mobile .fb_dialog_close_icon{top:5px;left:5px;right:auto}.fb_dialog_padding{background-color:transparent;position:absolute;width:1px;z-index:-1}.fb_dialog_close_icon:hover{background:url(https://static.xx.fbcdn.net/rsrc.php/v2/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 -15px transparent;_background-image:url(https://static.xx.fbcdn.net/rsrc.php/v2/yL/r/s816eWC-2sl.gif)}.fb_dialog_close_icon:active{background:url(https://static.xx.fbcdn.net/rsrc.php/v2/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 -30px transparent;_background-image:url(https://static.xx.fbcdn.net/rsrc.php/v2/yL/r/s816eWC-2sl.gif)}.fb_dialog_loader{background-color:#f6f7f9;border:1px solid #606060;font-size:24px;padding:20px}.fb_dialog_top_left,.fb_dialog_top_right,.fb_dialog_bottom_left,.fb_dialog_bottom_right{height:10px;width:10px;overflow:hidden;position:absolute}.fb_dialog_top_left{background:url(https://static.xx.fbcdn.net/rsrc.php/v2/ye/r/8YeTNIlTZjm.png) no-repeat 0 0;left:-10px;top:-10px}.fb_dialog_top_right{background:url(https://static.xx.fbcdn.net/rsrc.php/v2/ye/r/8YeTNIlTZjm.png) no-repeat 0 -10px;right:-10px;top:-10px}.fb_dialog_bottom_left{background:url(https://static.xx.fbcdn.net/rsrc.php/v2/ye/r/8YeTNIlTZjm.png) no-repeat 0 -20px;bottom:-10px;left:-10px}.fb_dialog_bottom_right{background:url(https://static.xx.fbcdn.net/rsrc.php/v2/ye/r/8YeTNIlTZjm.png) no-repeat 0 -30px;right:-10px;bottom:-10px}.fb_dialog_vert_left,.fb_dialog_vert_right,.fb_dialog_horiz_top,.fb_dialog_horiz_bottom{position:absolute;background:#525252;filter:alpha(opacity=70);opacity:.7}.fb_dialog_vert_left,.fb_dialog_vert_right{width:10px;height:100%}.fb_dialog_vert_left{margin-left:-10px}.fb_dialog_vert_right{right:0;margin-right:-10px}.fb_dialog_horiz_top,.fb_dialog_horiz_bottom{width:100%;height:10px}.fb_dialog_horiz_top{margin-top:-10px}.fb_dialog_horiz_bottom{bottom:0;margin-bottom:-10px}.fb_dialog_iframe{line-height:0}.fb_dialog_content .dialog_title{background:#6d84b4;border:1px solid #365899;color:#fff;font-size:14px;font-weight:bold;margin:0}.fb_dialog_content .dialog_title>span{background:url(https://static.xx.fbcdn.net/rsrc.php/v2/yd/r/Cou7n-nqK52.gif) no-repeat 5px 50%;float:left;padding:5px 0 7px 26px}body.fb_hidden{-webkit-transform:none;height:100%;margin:0;overflow:visible;position:absolute;top:-10000px;left:0;width:100%}.fb_dialog.fb_dialog_mobile.loading{background:url(https://static.xx.fbcdn.net/rsrc.php/v2/ya/r/3rhSv5V8j3o.gif) white no-repeat 50% 50%;min-height:100%;min-width:100%;overflow:hidden;position:absolute;top:0;z-index:10001}.fb_dialog.fb_dialog_mobile.loading.centered{width:auto;height:auto;min-height:initial;min-width:initial;background:none}.fb_dialog.fb_dialog_mobile.loading.centered #fb_dialog_loader_spinner{width:100%}.fb_dialog.fb_dialog_mobile.loading.centered .fb_dialog_content{background:none}.loading.centered #fb_dialog_loader_close{color:#fff;display:block;padding-top:20px;clear:both;font-size:18px}#fb-root #fb_dialog_ipad_overlay{background:rgba(0, 0, 0, .45);position:absolute;bottom:0;left:0;right:0;top:0;width:100%;min-height:100%;z-index:10000}#fb-root #fb_dialog_ipad_overlay.hidden{display:none}.fb_dialog.fb_dialog_mobile.loading iframe{visibility:hidden}.fb_dialog_content .dialog_header{-webkit-box-shadow:white 0 1px 1px -1px inset;background:-webkit-gradient(linear, 0% 0%, 0% 100%, from(#738ABA), to(#2C4987));border-bottom:1px solid;border-color:#1d4088;color:#fff;font:14px Helvetica, sans-serif;font-weight:bold;text-overflow:ellipsis;text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0;vertical-align:middle;white-space:nowrap}.fb_dialog_content .dialog_header table{-webkit-font-smoothing:subpixel-antialiased;height:43px;width:100%}.fb_dialog_content .dialog_header td.header_left{font-size:12px;padding-left:5px;vertical-align:middle;width:60px}.fb_dialog_content .dialog_header td.header_right{font-size:12px;padding-right:5px;vertical-align:middle;width:60px}.fb_dialog_content .touchable_button{background:-webkit-gradient(linear, 0% 0%, 0% 100%, from(#4966A6), color-stop(.5, #355492), to(#2A4887));border:1px solid #29487d;-webkit-background-clip:padding-box;-webkit-border-radius:3px;-webkit-box-shadow:rgba(0, 0, 0, .117188) 0 1px 1px inset, rgba(255, 255, 255, .167969) 0 1px 0;display:inline-block;margin-top:3px;max-width:85px;line-height:18px;padding:4px 12px;position:relative}.fb_dialog_content .dialog_header .touchable_button input{border:none;background:none;color:#fff;font:12px Helvetica, sans-serif;font-weight:bold;margin:2px -12px;padding:2px 6px 3px 6px;text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0}.fb_dialog_content .dialog_header .header_center{color:#fff;font-size:16px;font-weight:bold;line-height:18px;text-align:center;vertical-align:middle}.fb_dialog_content .dialog_content{background:url(https://static.xx.fbcdn.net/rsrc.php/v2/y9/r/jKEcVPZFk-2.gif) no-repeat 50% 50%;border:1px solid #555;border-bottom:0;border-top:0;height:150px}.fb_dialog_content .dialog_footer{background:#f6f7f9;border:1px solid #555;border-top-color:#ccc;height:40px}#fb_dialog_loader_close{float:left}.fb_dialog.fb_dialog_mobile .fb_dialog_close_button{text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0}.fb_dialog.fb_dialog_mobile .fb_dialog_close_icon{visibility:hidden}#fb_dialog_loader_spinner{animation:rotateSpinner 1.2s linear infinite;background-color:transparent;background-image:url(https://static.xx.fbcdn.net/rsrc.php/v2/yD/r/t-wz8gw1xG1.png);background-repeat:no-repeat;background-position:50% 50%;height:24px;width:24px}@keyframes rotateSpinner{0%{transform:rotate(0deg)}100%{transform:rotate(360deg)}}
+.fb_iframe_widget{display:inline-block;position:relative}.fb_iframe_widget span{display:inline-block;position:relative;text-align:justify}.fb_iframe_widget iframe{position:absolute}.fb_iframe_widget_fluid_desktop,.fb_iframe_widget_fluid_desktop span,.fb_iframe_widget_fluid_desktop iframe{max-width:100%}.fb_iframe_widget_fluid_desktop iframe{min-width:220px;position:relative}.fb_iframe_widget_lift{z-index:1}.fb_hide_iframes iframe{position:relative;left:-10000px}.fb_iframe_widget_loader{position:relative;display:inline-block}.fb_iframe_widget_fluid{display:inline}.fb_iframe_widget_fluid span{width:100%}.fb_iframe_widget_loader iframe{min-height:32px;z-index:2;zoom:1}.fb_iframe_widget_loader .FB_Loader{background:url(https://static.xx.fbcdn.net/rsrc.php/v2/y9/r/jKEcVPZFk-2.gif) no-repeat;height:32px;width:32px;margin-left:-16px;position:absolute;left:50%;z-index:4}</style><script src="./tutorial_files/alfie.f51946af45e0b561c60f768335c9eb79.js" async="" charset="UTF-8"></script></head>
+
+<body class="single single-post postid-10611 single-format-standard classic" data-pinterest-extension-installed="cr1.39.2">
+
+	<div id="top"></div>
+
+	
+		<div class="global-nav-bg">
+		<div class="global-nav">
+			<nav id="top-nav" class="span12">
+				<span class="visuallyhidden">
+					<a href="http://trendct.org/2016/03/18/tutorial-web-scraping-and-mapping-breweries-with-import-io-and-r/#main" title="Skip to content">Skip to content</a>
+				</span>
+								<div class="nav-right">
+											<ul id="header-social" class="social-icons visible-desktop">
+							<li><a href="http://trendct.org/?feed=rss2" title="Link to RSS Feed"><i class="icon-rss"></i></a></li><li><a href="https://www.facebook.com/pages/Trend-CT/384773325018041" title="Link to Facebook Profile"><i class="icon-facebook"></i></a></li><li><a href="https://twitter.com/trendct" title="Link to Twitter Page"><i class="icon-twitter"></i></a></li>						</ul>
+										<!-- BEGIN Header Search -->
+					<div id="header-search">
+						<form class="form-search" role="search" method="get" action="http://trendct.org/">
+							<div class="input-append">
+								<input type="text" placeholder="Search" class="input-medium appendedInputButton search-query" value="" name="s"><button type="submit" class="search-submit btn">GO</button>
+							</div>
+						</form>
+					</div>
+				<!-- END Header Search -->
+				</div>
+			</nav>
+		</div> <!-- /.global-nav -->
+	</div> <!-- /.global-nav-bg -->
+
+	<div id="page" class="hfeed clearfix">
+
+		 <div class="sticky-nav-wrapper nocontent">
+	<div class="sticky-nav-holder sticky_nav_display_article nav_overflow_label show">
+
+	
+		<div class="sticky-nav-container">
+			<nav id="sticky-nav" class="sticky-navbar navbar clearfix">
+				<div class="container">
+					<div class="nav-right">
+											<ul id="header-social" class="social-icons visible-desktop">
+							<li><a href="http://trendct.org/?feed=rss2" title="Link to RSS Feed"><i class="icon-rss"></i></a></li><li><a href="https://www.facebook.com/pages/Trend-CT/384773325018041" title="Link to Facebook Profile"><i class="icon-facebook"></i></a></li><li><a href="https://twitter.com/trendct" title="Link to Twitter Page"><i class="icon-twitter"></i></a></li>						</ul>
+					
+						<ul id="header-extras">
+														<li id="sticky-nav-search">
+								<a href="http://trendct.org/2016/03/18/tutorial-web-scraping-and-mapping-breweries-with-import-io-and-r/#" class="toggle">
+									<i class="icon-search" title="Search" role="button"></i>
+								</a>
+								<form class="form-search" role="search" method="get" action="http://trendct.org/">
+									<div class="input-append">
+										<span class="text-input-wrapper">
+											<input type="text" placeholder="Search" class="input-medium appendedInputButton search-query" value="" name="s">
+										</span>
+										<button type="submit" class="search-submit btn">Go</button>
+									</div>
+								</form>
+							</li>
+							<li>
+								<!-- "hamburger" button (3 bars) to trigger off-canvas navigation -->
+								<a class="btn btn-navbar toggle-nav-bar" title="More">
+									<div class="bars">
+										<span class="icon-bar"></span>
+										<span class="icon-bar"></span>
+										<span class="icon-bar"></span>
+									</div>
+								</a>
+							</li>
+						</ul>
+
+					</div>
+
+					<!-- BEGIN MOBILE MENU (hidden on desktop) -->
+					<div class="nav-left">
+													<ul>
+								<li class="home-icon"><a href="http://trendct.org/"><img src="./tutorial_files/trend_masthead.png" class="attachment-home-logo" alt="logo"></a></li>
+							</ul>
+											</div>
+					<!-- END MOBILE MENU -->
+
+					<!-- BEGIN DESKTOP MENU -->
+					<div class="nav-shelf">
+					<ul class="nav">
+													<li class="home-icon">
+								<a href="http://trendct.org/">
+									<img src="./tutorial_files/trend_masthead.png" class="attachment-home-logo" alt="logo">								</a>
+							</li>
+						<li id="menu-item-30" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-30"><a href="http://trendct.org/about/">About</a></li>
+<li id="menu-item-29" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-29"><a href="http://trendct.org/contact/">Contact</a></li>
+<li id="menu-item-32" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-32"><a href="http://ctmirror.org/">CT Mirror</a></li>
+<li id="menu-item-31" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-31"><a href="http://ctviewpoints.org/">CTViewpoints</a></li>
+<li id="menu-item-8123" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-8123"><a href="https://github.com/trendct">Github repo</a></li>
+													</ul>
+					</div>
+				</div>
+			</nav>
+		</div>
+	</div>
+</div>
+
+		
+		<header id="site-header" class="clearfix nocontent" itemscope="" itemtype="http://schema.org/Organization">
+	
+				<h2 class="branding">
+					<a itemprop="url" href="http://trendct.org/">
+						<span class="sitename" itemprop="name">TrendCT</span>
+						<span class="tagline" itemprop="description">The story in numbers</span>
+					</a>
+				</h2>
+			<meta itemprop="logo" content="http://trendct.org/files/2015/01/trend_masthead_square.png"></header>
+<header class="print-header nocontent">
+	<p>
+		<strong>TrendCT</strong>
+		(http://trendct.org/2016/03/18/tutorial-web-scraping-and-mapping-breweries-with-import-io-and-r/)
+	</p>
+</header>
+
+		<nav id="main-nav" class="navbar clearfix">
+	<div class="navbar-inner">
+		<div class="container">
+			<!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+			<a class="btn btn-navbar toggle-nav-bar" title="More">
+				<!-- BEGIN Mobile off-canvas menu button -->
+				<div class="bars">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</div>
+				<!-- END Mobile off-canvas menu button -->
+			</a>
+
+			<div class="nav-shelf">
+				<ul class="nav">
+					<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-30"><a href="http://trendct.org/about/">About</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-29"><a href="http://trendct.org/contact/">Contact</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-32"><a href="http://ctmirror.org/">CT Mirror</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-31"><a href="http://ctviewpoints.org/">CTViewpoints</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-8123"><a href="https://github.com/trendct">Github repo</a></li>
+				</ul>
+
+				<!-- BEGIN Mobile-Only Menu -->
+				<ul class="nav visible-phone">
+									<li class="menu-item-has-childen dropdown">
+						<a href="javascript:void(0);" class="dropdown-toggle">
+						Global Navigation							<b class="caret"></b>
+						</a>
+											</li>
+								</ul>
+				<!-- END Mobile-Only Menu -->
+			</div>
+		</div>
+	</div>
+</nav>
+
+		
+		
+		<div id="main" class="row-fluid clearfix">
+
+		
+<div id="content" class="span8" role="main">
+
+	
+<article id="post-10611" class="hnews item post-10611 post type-post status-publish format-standard has-post-thumbnail hentry category-walkthrough tag-beer tag-import-io tag-r tag-scraping featured-media featured-media-image" itemscope="" itemtype="http://schema.org/Article">
+
+	
+	<header>
+
+		<h5 class="top-tag"><span class="post-category-link"><a href="http://trendct.org/tag/beer/" title="Read Stories in the beer category">beer</a></span></h5>
+
+ 		<h1 class="entry-title" itemprop="headline">Tutorial: Web scraping and mapping breweries with import.io and R</h1>
+ 		<h5 class="byline"><span class="by-author"><span class="by">By</span> <span class="author vcard" itemprop="author"><a class="url fn n" href="http://jasdumas.github.io/" title="More from Jasmine Dumas" rel="author">Jasmine Dumas</a></span></span><span class="sep"> | </span><time class="entry-date updated dtstamp pubdate" datetime="2016-03-18T05:00:12+00:00">March 18, 2016</time></h5>
+
+ 		<div class="largo-follow post-social clearfix"><span class="facebook"><a target="_blank" href="http://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Ftrendct.org%2F2016%2F03%2F18%2Ftutorial-web-scraping-and-mapping-breweries-with-import-io-and-r%2F"><i class="icon-facebook"></i><span class="hidden-phone">Like</span></a></span><span class="twitter"><a target="_blank" href="https://twitter.com/intent/tweet?text=Tutorial%3A%20Web%20scraping%20and%20mapping%20breweries%20with%20import.io%20and%20R&amp;url=http%3A%2F%2Ftrendct.org%2F2016%2F03%2F18%2Ftutorial-web-scraping-and-mapping-breweries-with-import-io-and-r%2F&amp;via=trendct"><i class="icon-twitter"></i><span class="hidden-phone">Tweet</span></a></span><span data-service="email" class="email custom-share-button share-button"><a><i class="icon-mail"></i> <span class="hidden-phone">Email</span></a></span><span class="print"><a href="http://trendct.org/2016/03/18/tutorial-web-scraping-and-mapping-breweries-with-import-io-and-r/#" onclick="window.print()" title="Print this article" rel="nofollow"><i class="icon-print"></i><span class="hidden-phone">Print</span></a></span><span class="more-social-links">
+	<a class="popover-toggle" href="http://trendct.org/2016/03/18/tutorial-web-scraping-and-mapping-breweries-with-import-io-and-r/#"><i class="icon-plus"></i><span class="hidden-phone">More</span></a>
+	<span class="popover">
+	<ul>
+		<li><a href="http://trendct.org/tag/beer/"><i class="icon-link"></i> <span>More on beer</span></a></li>
+<li><a href="http://trendct.org/tag/beer/feed/"><i class="icon-rss"></i> <span>Subscribe to beer</span></a></li>
+	</ul>
+	</span>
+</span></div>
+ 		<meta itemprop="description" content="Learn how to scrape, geolocate, and visualize beer brewery data.
+">
+<meta itemprop="datePublished" content="2016-03-18T05:00:12+00:00">
+<meta itemprop="dateModified" content="2016-03-17T20:15:28+00:00">
+<meta itemprop="image" content="http://trendct.org/files/2016/03/Screen-Shot-2016-03-16-at-9.09.44-AM-140x140.png">
+	</header><!-- / entry header -->
+
+	<div class="hero is-image span12">
+	<img width="1170" height="840" src="./tutorial_files/Screen-Shot-2016-03-16-at-9.09.44-AM-1170x840.png" class="attachment-full size-full wp-post-image" alt="Screen Shot 2016-03-16 at 9.09.44 AM">	</div>
+	<div class="byline-block">
+		<div class="author"><figure class="photo"><img alt="Jasmine Dumas" src="./tutorial_files/6685750" width="96" height="96" class="avatar avatar-96 photo"></figure><h1 class="byline"><a class="url fn n" href="http://jasdumas.github.io/" title="More from Jasmine Dumas" rel="author">Jasmine Dumas</a></h1><h2 class="byline-org">Graduate Student in Predictive Analytics at DePaul University</h2><h3 class="byline-title">Contributor</h3></div>	</div>
+
+	<div class="entry-content clearfix" itemprop="articleBody">
+		<p>Getting information on craft breweries can be a difficult process, with data dispersed over multiple websites or in formats unusable for analysis.</p>
+<p><a href="https://www.import.io/">Import.io</a> instantly turns webpages into data ready for analysis with minimal or no setup. This&nbsp;<a href="http://trendct.org/2016/01/08/how-to-scrape-airbnb-data-without-programming-using-import-io/">previous tutorial</a> highlights the process in detail.</p>
+<p>This method works well&nbsp;for extracting metadata on craft breweries, and overall beer ratings from the popular site <a href="http://www.beeradvocate.com/">Beer Advocate</a> which is an online community which supports beer education, events and a forum to rate beers.</p>
+<h5 id="chapterTOC0">Getting started</h5>
+<p>Difficulty level: Intermediate.</p>
+<p>This tutorial will make sense if you already know how to use R or have gone through these previous walkthroughs:</p>
+<div style="float: left; padding-right: 15px;"><script class="chapterScript" src="./tutorial_files/init.js" type="text/javascript"></script><div class="chapters"><div class="chapterHeader">Table of contents</div><a class="chapterItem" href="http://trendct.org/2016/03/18/tutorial-web-scraping-and-mapping-breweries-with-import-io-and-r/#chapterTOC0">Getting started</a><a class="chapterItem" href="http://trendct.org/2016/03/18/tutorial-web-scraping-and-mapping-breweries-with-import-io-and-r/#chapterTOC1">Getting the data from the website</a><a class="chapterItem" href="http://trendct.org/2016/03/18/tutorial-web-scraping-and-mapping-breweries-with-import-io-and-r/#chapterTOC2">Data pre-processing</a><a class="chapterItem" href="http://trendct.org/2016/03/18/tutorial-web-scraping-and-mapping-breweries-with-import-io-and-r/#chapterTOC3">Geolocation of addresses for plotting on a map</a><a class="chapterItem" href="http://trendct.org/2016/03/18/tutorial-web-scraping-and-mapping-breweries-with-import-io-and-r/#chapterTOC4">Data visualization using Leaflet</a></div></div>
+<ul>
+<li><a href="http://trendct.org/2015/06/12/r-for-beginners-how-to-transition-from-excel-to-r/">R for beginners: How to transition from Excel to R</a></li>
+<li><a href="http://trendct.org/2015/06/26/tutorial-how-to-put-dots-on-a-leaflet-map-with-r/">How to put dots on a Leaflet map with R</a></li>
+<li><a href="http://trendct.org/2016/01/08/how-to-scrape-airbnb-data-without-programming-using-import-io/">How to scrape website data without programming using Import.io</a></li>
+</ul>
+<p>You'll need the <a href="http://import.io/">import.io</a> app and <a href="https://cran.cnr.berkeley.edu/">R</a> installed.</p>
+<h5 id="chapterTOC1">Getting the data from the website</h5>
+<p><b>1.</b> Go to <a href="http://www.beeradvocate.com/">BeerAdvocate.com</a> and navigate to the search for a place (Connecticut) <a href="http://www.beeradvocate.com/place/directory/9/US/CT/">state</a>, then onto the <a href="http://www.beeradvocate.com/place/list/?c_id=US&amp;s_id=CT&amp;brewery=Y">breweries link</a>.</p>
+<div style="max-width: 650px;"><img class="alignright size-full wp-image-10612" src="./tutorial_files/BA-1-1170x948.jpeg" alt="BA-1" width="771" height="625"></div>
+<div style="max-width: 650px;"><img class="alignright size-large wp-image-10613" src="./tutorial_files/BA-2-771x447.jpeg" alt="BA-2" width="771" height="447" srcset="http://trendct.org/files/2016/03/BA-2-771x447.jpeg 771w, http://trendct.org/files/2016/03/BA-2-336x195.jpeg 336w, http://trendct.org/files/2016/03/BA-2-768x445.jpeg 768w, http://trendct.org/files/2016/03/BA-2.jpeg 1422w, http://trendct.org/files/2016/03/BA-2-910x527.jpeg 910w, http://trendct.org/files/2016/03/BA-2-450x261.jpeg 450w, http://trendct.org/files/2016/03/BA-2-190x110.jpeg 190w" sizes="(max-width: 771px) 100vw, 771px"></div>
+<div style="max-width: 650px;"><img class="alignright size-large wp-image-10614" src="./tutorial_files/BA-3-771x626.jpeg" alt="BA-3" width="771" height="626" srcset="http://trendct.org/files/2016/03/BA-3-771x626.jpeg 771w, http://trendct.org/files/2016/03/BA-3-336x273.jpeg 336w, http://trendct.org/files/2016/03/BA-3-768x624.jpeg 768w, http://trendct.org/files/2016/03/BA-3.jpeg 1426w, http://trendct.org/files/2016/03/BA-3-910x739.jpeg 910w, http://trendct.org/files/2016/03/BA-3-450x365.jpeg 450w, http://trendct.org/files/2016/03/BA-3-190x154.jpeg 190w" sizes="(max-width: 771px) 100vw, 771px"></div>
+<p><b>2.</b> We need to determine the URL structure because of&nbsp;the pagination on Beer advocate so we can be sure we're scraping more than one page of the results.</p>
+<div style="max-width: 650px;"><img class="alignright size-large wp-image-10615" src="./tutorial_files/BA-4-771x54.jpeg" alt="BA-4" width="771" height="54" srcset="http://trendct.org/files/2016/03/BA-4-771x54.jpeg 771w, http://trendct.org/files/2016/03/BA-4-336x24.jpeg 336w, http://trendct.org/files/2016/03/BA-4-768x54.jpeg 768w, http://trendct.org/files/2016/03/BA-4.jpeg 1344w, http://trendct.org/files/2016/03/BA-4-910x64.jpeg 910w, http://trendct.org/files/2016/03/BA-4-450x31.jpeg 450w, http://trendct.org/files/2016/03/BA-4-190x13.jpeg 190w" sizes="(max-width: 771px) 100vw, 771px"></div>
+<p>Luckily enough this is fairly simple to do by clicking on each of the results links (ie. 1-20, 21-40, 41-60).</p>
+<div style="max-width: 650px;"><img class="alignright size-large wp-image-10616" src="./tutorial_files/BA-5-771x39.jpeg" alt="BA-5" width="771" height="39" srcset="http://trendct.org/files/2016/03/BA-5-771x39.jpeg 771w, http://trendct.org/files/2016/03/BA-5-336x17.jpeg 336w, http://trendct.org/files/2016/03/BA-5-768x39.jpeg 768w, http://trendct.org/files/2016/03/BA-5.jpeg 1212w, http://trendct.org/files/2016/03/BA-5-910x47.jpeg 910w, http://trendct.org/files/2016/03/BA-5-450x23.jpeg 450w, http://trendct.org/files/2016/03/BA-5-190x10.jpeg 190w" sizes="(max-width: 771px) 100vw, 771px"></div>
+<p>Here are the necessary links:</p>
+<ul>
+<li><a href="http://www.beeradvocate.com/place/list/?start=0&amp;c_id=US&amp;s_id=CT&amp;brewery=Y&amp;sort=name">http://www.beeradvocate.com/place/list/?start=0&amp;c_id=US&amp;s_id=CT&amp;brewery=Y&amp;sort=name</a></li>
+<li><a href="http://www.beeradvocate.com/place/list/?start=20&amp;c_id=US&amp;s_id=CT&amp;brewery=Y&amp;sort=name">http://www.beeradvocate.com/place/list/?start=20&amp;c_id=US&amp;s_id=CT&amp;brewery=Y&amp;sort=name</a></li>
+<li><a href="http://www.beeradvocate.com/place/list/?start=40&amp;c_id=US&amp;s_id=CT&amp;brewery=Y&amp;sort=name">http://www.beeradvocate.com/place/list/?start=40&amp;c_id=US&amp;s_id=CT&amp;brewery=Y&amp;sort=name</a></li>
+</ul>
+<p><b>3.</b> After initially setting up an account on import.io, which can be done through linking your Github account, you can navigate to your <a href="https://import.io/data/mine/">my data</a> page and input the previous links into the bulk extractor located in the “How would you like to use this API?” dropdown for your Magic API and press the button to run the queries.</p>
+<div style="max-width: 650px;"><img class="alignright size-large wp-image-10617" src="./tutorial_files/BA-6-771x508.jpeg" alt="BA-6" width="771" height="508" srcset="http://trendct.org/files/2016/03/BA-6-771x508.jpeg 771w, http://trendct.org/files/2016/03/BA-6-336x222.jpeg 336w, http://trendct.org/files/2016/03/BA-6-768x506.jpeg 768w, http://trendct.org/files/2016/03/BA-6-910x600.jpeg 910w, http://trendct.org/files/2016/03/BA-6-450x297.jpeg 450w, http://trendct.org/files/2016/03/BA-6-190x125.jpeg 190w" sizes="(max-width: 771px) 100vw, 771px"></div>
+<p><b>4.</b> The new output page will be a tabular view of all of the extracted link data ready for export in multiple formats such as Spreadsheet (for CSV), HTML, and JSON. We will download the Spreadsheet format for this tutorial.</p>
+<div style="max-width: 650px;"><img class="alignright size-large wp-image-10621" src="./tutorial_files/BA-7-771x433.jpeg" alt="BA-7" width="771" height="433" srcset="http://trendct.org/files/2016/03/BA-7-771x433.jpeg 771w, http://trendct.org/files/2016/03/BA-7-336x189.jpeg 336w, http://trendct.org/files/2016/03/BA-7-768x431.jpeg 768w, http://trendct.org/files/2016/03/BA-7-910x511.jpeg 910w, http://trendct.org/files/2016/03/BA-7-450x253.jpeg 450w, http://trendct.org/files/2016/03/BA-7-190x107.jpeg 190w" sizes="(max-width: 771px) 100vw, 771px"></div>
+<p>Now that we have the data we can take it into R to process and visualize it.</p>
+<h5 id="chapterTOC2">Data pre-processing</h5>
+<p><b>5.</b> Read the data into R:</p>
+<p><script src="./tutorial_files/505c1f5fcfba376d79d0.js"></script><link rel="stylesheet" href="./tutorial_files/gist-embed-ff99cd9ef334f32a3abd8cb08a3fe7caaae2a9a365b37fb0b498799afc3a8867.css"></p><div id="gist32814598" class="gist">
+    <div class="gist-file">
+      <div class="gist-data">
+        <div class="js-gist-file-update-container js-task-list-container file-box">
+  <div id="file-gistfile1-txt" class="file">
+    
+
+  <div itemprop="text" class="blob-wrapper data type-text">
+      <table class="highlight tab-size js-file-line-container" data-tab-size="8">
+      <tbody><tr>
+        <td id="file-gistfile1-txt-L1" class="blob-num js-line-number" data-line-number="1"></td>
+        <td id="file-gistfile1-txt-LC1" class="blob-code blob-code-inner js-file-line">beer_advocate &lt;- read.csv("beeradvocate.com API 14th Dec 10-37.csv")</td>
+      </tr>
+      <tr>
+        <td id="file-gistfile1-txt-L2" class="blob-num js-line-number" data-line-number="2"></td>
+        <td id="file-gistfile1-txt-LC2" class="blob-code blob-code-inner js-file-line">beer_head &lt;- head(beer_advocate)</td>
+      </tr>
+</tbody></table>
+
+  </div>
+
+  </div>
+  
+</div>
+
+      </div>
+      <div class="gist-meta">
+        <a href="https://gist.github.com/andrewbtran/505c1f5fcfba376d79d0/raw/12347f10d30eec1d2488456869460dee325dbfa7/gistfile1.txt" style="float:right">view raw</a>
+        <a href="https://gist.github.com/andrewbtran/505c1f5fcfba376d79d0#file-gistfile1-txt">gistfile1.txt</a>
+        hosted with ❤ by <a href="https://github.com/">GitHub</a>
+      </div>
+    </div>
+</div>
+<p></p>
+<p><b>6.</b> So we have some links and columns filled with more than one piece of information, but that's easy to fix by removing duplicate columns, creating coherent column headers, specifying and unifying missing data and extracting the necessary information from other columns.</p>
+<p><script src="./tutorial_files/a8f589b82a1e0544e2c0.js"></script><link rel="stylesheet" href="./tutorial_files/gist-embed-ff99cd9ef334f32a3abd8cb08a3fe7caaae2a9a365b37fb0b498799afc3a8867.css"></p><div id="gist32814654" class="gist">
+    <div class="gist-file">
+      <div class="gist-data">
+        <div class="js-gist-file-update-container js-task-list-container file-box">
+  <div id="file-gistfile1-txt" class="file">
+    
+
+  <div itemprop="text" class="blob-wrapper data type-text">
+      <table class="highlight tab-size js-file-line-container" data-tab-size="8">
+      <tbody><tr>
+        <td id="file-gistfile1-txt-L1" class="blob-num js-line-number" data-line-number="1"></td>
+        <td id="file-gistfile1-txt-LC1" class="blob-code blob-code-inner js-file-line"># remove duplicate columns with unimportant info</td>
+      </tr>
+      <tr>
+        <td id="file-gistfile1-txt-L2" class="blob-num js-line-number" data-line-number="2"></td>
+        <td id="file-gistfile1-txt-LC2" class="blob-code blob-code-inner js-file-line">beer_advocate$bottomdark_links._text &lt;- NULL</td>
+      </tr>
+      <tr>
+        <td id="file-gistfile1-txt-L3" class="blob-num js-line-number" data-line-number="3"></td>
+        <td id="file-gistfile1-txt-LC3" class="blob-code blob-code-inner js-file-line">beer_advocate$bottomdark_links._source &lt;- NULL</td>
+      </tr>
+      <tr>
+        <td id="file-gistfile1-txt-L4" class="blob-num js-line-number" data-line-number="4"></td>
+        <td id="file-gistfile1-txt-LC4" class="blob-code blob-code-inner js-file-line">beer_advocate$pageUrl &lt;- NULL</td>
+      </tr>
+      <tr>
+        <td id="file-gistfile1-txt-L5" class="blob-num js-line-number" data-line-number="5"></td>
+        <td id="file-gistfile1-txt-LC5" class="blob-code blob-code-inner js-file-line">beer_advocate$image &lt;- NULL</td>
+      </tr>
+      <tr>
+        <td id="file-gistfile1-txt-L6" class="blob-num js-line-number" data-line-number="6"></td>
+        <td id="file-gistfile1-txt-LC6" class="blob-code blob-code-inner js-file-line">beer_advocate$bottomdark_content_numbers._source &lt;- NULL</td>
+      </tr>
+      <tr>
+        <td id="file-gistfile1-txt-L7" class="blob-num js-line-number" data-line-number="7"></td>
+        <td id="file-gistfile1-txt-LC7" class="blob-code blob-code-inner js-file-line">beer_advocate$bottomlight_number &lt;- NULL</td>
+      </tr>
+      <tr>
+        <td id="file-gistfile1-txt-L8" class="blob-num js-line-number" data-line-number="8"></td>
+        <td id="file-gistfile1-txt-LC8" class="blob-code blob-code-inner js-file-line">beer_advocate$link._source &lt;- NULL</td>
+      </tr>
+      <tr>
+        <td id="file-gistfile1-txt-L9" class="blob-num js-line-number" data-line-number="9"></td>
+        <td id="file-gistfile1-txt-LC9" class="blob-code blob-code-inner js-file-line">
+</td>
+      </tr>
+      <tr>
+        <td id="file-gistfile1-txt-L10" class="blob-num js-line-number" data-line-number="10"></td>
+        <td id="file-gistfile1-txt-LC10" class="blob-code blob-code-inner js-file-line"># change the column names</td>
+      </tr>
+      <tr>
+        <td id="file-gistfile1-txt-L11" class="blob-num js-line-number" data-line-number="11"></td>
+        <td id="file-gistfile1-txt-LC11" class="blob-code blob-code-inner js-file-line">colnames(beer_advocate) &lt;- c("address", "brewery_website", "beer_advocate_website", "number_of_reviews","beer_avg", "number_of_beers", "place_type", "brewery_rating", "brewery_name", "phone_number")</td>
+      </tr>
+      <tr>
+        <td id="file-gistfile1-txt-L12" class="blob-num js-line-number" data-line-number="12"></td>
+        <td id="file-gistfile1-txt-LC12" class="blob-code blob-code-inner js-file-line">
+</td>
+      </tr>
+      <tr>
+        <td id="file-gistfile1-txt-L13" class="blob-num js-line-number" data-line-number="13"></td>
+        <td id="file-gistfile1-txt-LC13" class="blob-code blob-code-inner js-file-line"># get our missing values as NA</td>
+      </tr>
+      <tr>
+        <td id="file-gistfile1-txt-L14" class="blob-num js-line-number" data-line-number="14"></td>
+        <td id="file-gistfile1-txt-LC14" class="blob-code blob-code-inner js-file-line">beer_advocate[beer_advocate == "-"] = NA</td>
+      </tr>
+      <tr>
+        <td id="file-gistfile1-txt-L15" class="blob-num js-line-number" data-line-number="15"></td>
+        <td id="file-gistfile1-txt-LC15" class="blob-code blob-code-inner js-file-line">
+</td>
+      </tr>
+      <tr>
+        <td id="file-gistfile1-txt-L16" class="blob-num js-line-number" data-line-number="16"></td>
+        <td id="file-gistfile1-txt-LC16" class="blob-code blob-code-inner js-file-line"># clean up some of the columns and remove extra data</td>
+      </tr>
+      <tr>
+        <td id="file-gistfile1-txt-L17" class="blob-num js-line-number" data-line-number="17"></td>
+        <td id="file-gistfile1-txt-LC17" class="blob-code blob-code-inner js-file-line">beer_advocate$address &lt;- as.character(beer_advocate$address) # change into character data type</td>
+      </tr>
+      <tr>
+        <td id="file-gistfile1-txt-L18" class="blob-num js-line-number" data-line-number="18"></td>
+        <td id="file-gistfile1-txt-LC18" class="blob-code blob-code-inner js-file-line">beer_advocate$address &lt;- gsub(" official website", "", beer_advocate$address)</td>
+      </tr>
+      <tr>
+        <td id="file-gistfile1-txt-L19" class="blob-num js-line-number" data-line-number="19"></td>
+        <td id="file-gistfile1-txt-LC19" class="blob-code blob-code-inner js-file-line">
+</td>
+      </tr>
+      <tr>
+        <td id="file-gistfile1-txt-L20" class="blob-num js-line-number" data-line-number="20"></td>
+        <td id="file-gistfile1-txt-LC20" class="blob-code blob-code-inner js-file-line"># extract the phone number from the address column</td>
+      </tr>
+      <tr>
+        <td id="file-gistfile1-txt-L21" class="blob-num js-line-number" data-line-number="21"></td>
+        <td id="file-gistfile1-txt-LC21" class="blob-code blob-code-inner js-file-line"># http://stackoverflow.com/questions/21007607/extract-phone-number-regex</td>
+      </tr>
+      <tr>
+        <td id="file-gistfile1-txt-L22" class="blob-num js-line-number" data-line-number="22"></td>
+        <td id="file-gistfile1-txt-LC22" class="blob-code blob-code-inner js-file-line">library(stringr)</td>
+      </tr>
+      <tr>
+        <td id="file-gistfile1-txt-L23" class="blob-num js-line-number" data-line-number="23"></td>
+        <td id="file-gistfile1-txt-LC23" class="blob-code blob-code-inner js-file-line">beer_advocate$phone_number &lt;- str_extract_all(beer_advocate$address, "\\(?\\d{3}\\)?[.-]? *\\d{3}[.-]? *[.-]?\\d{4}")</td>
+      </tr>
+      <tr>
+        <td id="file-gistfile1-txt-L24" class="blob-num js-line-number" data-line-number="24"></td>
+        <td id="file-gistfile1-txt-LC24" class="blob-code blob-code-inner js-file-line">beer_advocate$phone_number[beer_advocate$phone_number == "character(0)"] = NA</td>
+      </tr>
+      <tr>
+        <td id="file-gistfile1-txt-L25" class="blob-num js-line-number" data-line-number="25"></td>
+        <td id="file-gistfile1-txt-LC25" class="blob-code blob-code-inner js-file-line">
+</td>
+      </tr>
+      <tr>
+        <td id="file-gistfile1-txt-L26" class="blob-num js-line-number" data-line-number="26"></td>
+        <td id="file-gistfile1-txt-LC26" class="blob-code blob-code-inner js-file-line"># remove the phone number tag from the address field for geocoding</td>
+      </tr>
+      <tr>
+        <td id="file-gistfile1-txt-L27" class="blob-num js-line-number" data-line-number="27"></td>
+        <td id="file-gistfile1-txt-LC27" class="blob-code blob-code-inner js-file-line">beer_advocate$address &lt;- gsub(" phone: \\(?\\d{3}\\)?[.-]? *\\d{3}[.-]? *[.-]?\\d{4}", "", beer_advocate$address)</td>
+      </tr>
+      <tr>
+        <td id="file-gistfile1-txt-L28" class="blob-num js-line-number" data-line-number="28"></td>
+        <td id="file-gistfile1-txt-LC28" class="blob-code blob-code-inner js-file-line">
+</td>
+      </tr>
+      <tr>
+        <td id="file-gistfile1-txt-L29" class="blob-num js-line-number" data-line-number="29"></td>
+        <td id="file-gistfile1-txt-LC29" class="blob-code blob-code-inner js-file-line"># change the factor for average beer rating into a numeric</td>
+      </tr>
+      <tr>
+        <td id="file-gistfile1-txt-L30" class="blob-num js-line-number" data-line-number="30"></td>
+        <td id="file-gistfile1-txt-LC30" class="blob-code blob-code-inner js-file-line"># http://stackoverflow.com/questions/3418128/how-to-convert-a-factor-to-an-integer-numeric-without-a-loss-of-information</td>
+      </tr>
+      <tr>
+        <td id="file-gistfile1-txt-L31" class="blob-num js-line-number" data-line-number="31"></td>
+        <td id="file-gistfile1-txt-LC31" class="blob-code blob-code-inner js-file-line">beer_advocate$beer_avg &lt;- as.numeric(levels(beer_advocate$beer_avg))[beer_advocate$beer_avg]</td>
+      </tr>
+</tbody></table>
+
+  </div>
+
+  </div>
+  
+</div>
+
+      </div>
+      <div class="gist-meta">
+        <a href="https://gist.github.com/andrewbtran/a8f589b82a1e0544e2c0/raw/fd629afedce8a46d20be7cde348e4f7ed86dbfca/gistfile1.txt" style="float:right">view raw</a>
+        <a href="https://gist.github.com/andrewbtran/a8f589b82a1e0544e2c0#file-gistfile1-txt">gistfile1.txt</a>
+        hosted with ❤ by <a href="https://github.com/">GitHub</a>
+      </div>
+    </div>
+</div>
+<p></p>
+<h5 id="chapterTOC3">Geolocation of addresses for plotting on a map</h5>
+<p><b>7.</b> Grab some latitudes and longitudes for those craft brewery addresses.</p>
+<p><script src="./tutorial_files/26636f70c4bfb4ed3dcd.js"></script><link rel="stylesheet" href="./tutorial_files/gist-embed-ff99cd9ef334f32a3abd8cb08a3fe7caaae2a9a365b37fb0b498799afc3a8867.css"></p><div id="gist32814728" class="gist">
+    <div class="gist-file">
+      <div class="gist-data">
+        <div class="js-gist-file-update-container js-task-list-container file-box">
+  <div id="file-gistfile1-txt" class="file">
+    
+
+  <div itemprop="text" class="blob-wrapper data type-text">
+      <table class="highlight tab-size js-file-line-container" data-tab-size="8">
+      <tbody><tr>
+        <td id="file-gistfile1-txt-L1" class="blob-num js-line-number" data-line-number="1"></td>
+        <td id="file-gistfile1-txt-LC1" class="blob-code blob-code-inner js-file-line">library(htmlwidgets)</td>
+      </tr>
+      <tr>
+        <td id="file-gistfile1-txt-L2" class="blob-num js-line-number" data-line-number="2"></td>
+        <td id="file-gistfile1-txt-LC2" class="blob-code blob-code-inner js-file-line">library(leaflet)</td>
+      </tr>
+      <tr>
+        <td id="file-gistfile1-txt-L3" class="blob-num js-line-number" data-line-number="3"></td>
+        <td id="file-gistfile1-txt-LC3" class="blob-code blob-code-inner js-file-line">library(ggmap)</td>
+      </tr>
+      <tr>
+        <td id="file-gistfile1-txt-L4" class="blob-num js-line-number" data-line-number="4"></td>
+        <td id="file-gistfile1-txt-LC4" class="blob-code blob-code-inner js-file-line">
+</td>
+      </tr>
+      <tr>
+        <td id="file-gistfile1-txt-L5" class="blob-num js-line-number" data-line-number="5"></td>
+        <td id="file-gistfile1-txt-LC5" class="blob-code blob-code-inner js-file-line"># This function geocodes a location (find latitude and longitude) using the Google Maps API</td>
+      </tr>
+      <tr>
+        <td id="file-gistfile1-txt-L6" class="blob-num js-line-number" data-line-number="6"></td>
+        <td id="file-gistfile1-txt-LC6" class="blob-code blob-code-inner js-file-line">geo &lt;- geocode(location = beer_advocate$address, output="latlon", source="google")</td>
+      </tr>
+      <tr>
+        <td id="file-gistfile1-txt-L7" class="blob-num js-line-number" data-line-number="7"></td>
+        <td id="file-gistfile1-txt-LC7" class="blob-code blob-code-inner js-file-line">
+</td>
+      </tr>
+      <tr>
+        <td id="file-gistfile1-txt-L8" class="blob-num js-line-number" data-line-number="8"></td>
+        <td id="file-gistfile1-txt-LC8" class="blob-code blob-code-inner js-file-line"># add those coordinates to our dataset</td>
+      </tr>
+      <tr>
+        <td id="file-gistfile1-txt-L9" class="blob-num js-line-number" data-line-number="9"></td>
+        <td id="file-gistfile1-txt-LC9" class="blob-code blob-code-inner js-file-line">beer_advocate$lon &lt;- geo$lon</td>
+      </tr>
+      <tr>
+        <td id="file-gistfile1-txt-L10" class="blob-num js-line-number" data-line-number="10"></td>
+        <td id="file-gistfile1-txt-LC10" class="blob-code blob-code-inner js-file-line">beer_advocate$lat &lt;- geo$lat</td>
+      </tr>
+</tbody></table>
+
+  </div>
+
+  </div>
+  
+</div>
+
+      </div>
+      <div class="gist-meta">
+        <a href="https://gist.github.com/andrewbtran/26636f70c4bfb4ed3dcd/raw/3eb7d53cc75eb33da800398f2f07b46bc8d49603/gistfile1.txt" style="float:right">view raw</a>
+        <a href="https://gist.github.com/andrewbtran/26636f70c4bfb4ed3dcd#file-gistfile1-txt">gistfile1.txt</a>
+        hosted with ❤ by <a href="https://github.com/">GitHub</a>
+      </div>
+    </div>
+</div>
+<p></p>
+<h5 id="chapterTOC4">Data visualization using Leaflet</h5>
+<p><b>8. </b> Plot the coordinates of&nbsp;the craft brewery onto a javascript-based map, Leaflet.</p>
+<p><script src="./tutorial_files/a22a7b89ec6ad130df39.js"></script><link rel="stylesheet" href="./tutorial_files/gist-embed-ff99cd9ef334f32a3abd8cb08a3fe7caaae2a9a365b37fb0b498799afc3a8867.css"></p><div id="gist32814819" class="gist">
+    <div class="gist-file">
+      <div class="gist-data">
+        <div class="js-gist-file-update-container js-task-list-container file-box">
+  <div id="file-gistfile1-txt" class="file">
+    
+
+  <div itemprop="text" class="blob-wrapper data type-text">
+      <table class="highlight tab-size js-file-line-container" data-tab-size="8">
+      <tbody><tr>
+        <td id="file-gistfile1-txt-L1" class="blob-num js-line-number" data-line-number="1"></td>
+        <td id="file-gistfile1-txt-LC1" class="blob-code blob-code-inner js-file-line"># create the pop-up info</td>
+      </tr>
+      <tr>
+        <td id="file-gistfile1-txt-L2" class="blob-num js-line-number" data-line-number="2"></td>
+        <td id="file-gistfile1-txt-LC2" class="blob-code blob-code-inner js-file-line">beer_advocate$pop_up_content &lt;- paste(sep = "&lt;br/&gt;", </td>
+      </tr>
+      <tr>
+        <td id="file-gistfile1-txt-L3" class="blob-num js-line-number" data-line-number="3"></td>
+        <td id="file-gistfile1-txt-LC3" class="blob-code blob-code-inner js-file-line">                 "&lt;b&gt;&lt;a href='", beer_advocate$beer_advocate_website, "'&gt;", beer_advocate$brewery_name, "&lt;/a&gt;&lt;/b&gt;",    beer_advocate$address,</td>
+      </tr>
+      <tr>
+        <td id="file-gistfile1-txt-L4" class="blob-num js-line-number" data-line-number="4"></td>
+        <td id="file-gistfile1-txt-LC4" class="blob-code blob-code-inner js-file-line">                 beer_advocate$phone_number, paste("Average beer rating: ", beer_advocate$beer_avg,"/5.0"))</td>
+      </tr>
+      <tr>
+        <td id="file-gistfile1-txt-L5" class="blob-num js-line-number" data-line-number="5"></td>
+        <td id="file-gistfile1-txt-LC5" class="blob-code blob-code-inner js-file-line">
+</td>
+      </tr>
+      <tr>
+        <td id="file-gistfile1-txt-L6" class="blob-num js-line-number" data-line-number="6"></td>
+        <td id="file-gistfile1-txt-LC6" class="blob-code blob-code-inner js-file-line"># add colors corresponding to the average beer ratings  </td>
+      </tr>
+      <tr>
+        <td id="file-gistfile1-txt-L7" class="blob-num js-line-number" data-line-number="7"></td>
+        <td id="file-gistfile1-txt-LC7" class="blob-code blob-code-inner js-file-line">pal &lt;- colorNumeric("YlOrRd", beer_advocate$beer_avg, n = 6) </td>
+      </tr>
+      <tr>
+        <td id="file-gistfile1-txt-L8" class="blob-num js-line-number" data-line-number="8"></td>
+        <td id="file-gistfile1-txt-LC8" class="blob-code blob-code-inner js-file-line">
+</td>
+      </tr>
+      <tr>
+        <td id="file-gistfile1-txt-L9" class="blob-num js-line-number" data-line-number="9"></td>
+        <td id="file-gistfile1-txt-LC9" class="blob-code blob-code-inner js-file-line">m &lt;- leaflet(data = beer_advocate) %&gt;% </td>
+      </tr>
+      <tr>
+        <td id="file-gistfile1-txt-L10" class="blob-num js-line-number" data-line-number="10"></td>
+        <td id="file-gistfile1-txt-LC10" class="blob-code blob-code-inner js-file-line">  addTiles() %&gt;%</td>
+      </tr>
+      <tr>
+        <td id="file-gistfile1-txt-L11" class="blob-num js-line-number" data-line-number="11"></td>
+        <td id="file-gistfile1-txt-LC11" class="blob-code blob-code-inner js-file-line">  setView(lng =-72.70190, lat=41.75798, zoom = 8) %&gt;% </td>
+      </tr>
+      <tr>
+        <td id="file-gistfile1-txt-L12" class="blob-num js-line-number" data-line-number="12"></td>
+        <td id="file-gistfile1-txt-LC12" class="blob-code blob-code-inner js-file-line">  addCircleMarkers(~lon, ~lat, popup = ~as.character(pop_up_content), color = ~pal(beer_avg)) %&gt;%</td>
+      </tr>
+      <tr>
+        <td id="file-gistfile1-txt-L13" class="blob-num js-line-number" data-line-number="13"></td>
+        <td id="file-gistfile1-txt-LC13" class="blob-code blob-code-inner js-file-line">  addLegend("topright", pal = pal, values = ~beer_avg,</td>
+      </tr>
+      <tr>
+        <td id="file-gistfile1-txt-L14" class="blob-num js-line-number" data-line-number="14"></td>
+        <td id="file-gistfile1-txt-LC14" class="blob-code blob-code-inner js-file-line">    title = "Average Beer Ratings at Brewery",</td>
+      </tr>
+      <tr>
+        <td id="file-gistfile1-txt-L15" class="blob-num js-line-number" data-line-number="15"></td>
+        <td id="file-gistfile1-txt-LC15" class="blob-code blob-code-inner js-file-line">    opacity = 1</td>
+      </tr>
+      <tr>
+        <td id="file-gistfile1-txt-L16" class="blob-num js-line-number" data-line-number="16"></td>
+        <td id="file-gistfile1-txt-LC16" class="blob-code blob-code-inner js-file-line">  )</td>
+      </tr>
+      <tr>
+        <td id="file-gistfile1-txt-L17" class="blob-num js-line-number" data-line-number="17"></td>
+        <td id="file-gistfile1-txt-LC17" class="blob-code blob-code-inner js-file-line">m</td>
+      </tr>
+</tbody></table>
+
+  </div>
+
+  </div>
+  
+</div>
+
+      </div>
+      <div class="gist-meta">
+        <a href="https://gist.github.com/andrewbtran/a22a7b89ec6ad130df39/raw/9b3789a14299a04ffbc0797ba6d7a6d504eddaca/gistfile1.txt" style="float:right">view raw</a>
+        <a href="https://gist.github.com/andrewbtran/a22a7b89ec6ad130df39#file-gistfile1-txt">gistfile1.txt</a>
+        hosted with ❤ by <a href="https://github.com/">GitHub</a>
+      </div>
+    </div>
+</div>
+<p></p>
+<p><iframe id="graphic" style="width: 100%; height: 600px; overflow: hidden;" src="./tutorial_files/beer.html" width="300" height="150" frameborder="0" scrolling="no"></iframe></p>
+	</div><!-- .entry-content -->
+
+	
+	<footer class="post-meta bottom-meta">
+
+    
+	</footer><!-- /.post-meta -->
+
+	
+</article><!-- #post-10611 -->
+<div class="article-bottom nocontent"></div><h2 class="commentHeader">What do you think?</h2>
+<div id="disqus_thread"><iframe id="dsq-app2" name="dsq-app2" allowtransparency="true" frameborder="0" scrolling="no" tabindex="0" title="Disqus" width="100%" src="./tutorial_files/saved_resource.html" style="width: 1px !important; min-width: 100% !important; border: none !important; overflow: hidden !important; height: 627px !important;" horizontalscrolling="no" verticalscrolling="no"></iframe></div>
+
+</div>
+
+
+<aside id="sidebar" class="span4 nocontent">
+		<div class="widget-area" role="complementary">
+		<aside id="text-3" class="widget widget-1 odd default widget_text clearfix"><h3 class="widgettitle">Sponsored by</h3>			<div class="textwidget"><a href="http://www.hfpg.org/" target="new"><img class="sponsorLogo" src="./tutorial_files/hartfordf.png"></a>
+<link rel="stylesheet" href="./tutorial_files/trend_sidebar.css">
+</div>
+		</aside><aside id="largo-recent-posts-widget-3" class="widget widget-2 even default largo-recent-posts clearfix"><h3 class="widgettitle">Trending</h3><ul><li><h5>
+	<a href="http://trendct.org/2016/01/27/children-screened-for-lead-poisoning-in-connecticut/">Where children suffer from lead poisoning in Connecticut		</a>
+</h5>
+
+</li><li><h5>
+	<a href="http://trendct.org/2016/01/07/what-your-neighbors-are-charging-strangers-on-airbnb-to-stay-in-their-homes/">What your neighbors are charging strangers on Airbnb to stay in their homes		</a>
+</h5>
+
+</li><li><h5>
+	<a href="http://trendct.org/2015/11/18/a-look-at-the-syrian-refugees-and-immigrants-in-connecticut/">Where Syrian refugees and immigrants live in Connecticut		</a>
+</h5>
+
+</li></ul></aside><aside id="text-2" class="widget widget-3 odd default widget_text clearfix"><h3 class="widgettitle"><a href="http://trendct.org/about">Who we are</a></h3>			<div class="textwidget"><div class="widget-links">
+   <a href="http://trendct.org/2015/03/30/welcome-to-trendct/"><img class="whatis" src="./tutorial_files/whatis-1.png"></a>
+<div style="text-align: center;
+vertical-align: middle;
+line-height: 90px; "><h5>What is Trend CT?</h5></div>
+</div>
+
+
+</div>
+		</aside><aside id="text-4" class="widget widget-4 even default widget_text clearfix"><h3 class="widgettitle">Databases</h3>			<div class="textwidget"><link rel="StyleSheet" href="./tutorial_files/style(1).css" type="text/css">
+    <div class="resources">
+       <!-- <div class="resourceHeader"> <img class="rimage toolboxImage" src="http://projects.ctmirror.org/images/resources/tools.png" />Citizen's toolbox</div> 
+        <div class="resourceSub">These resources, databases and guides are designed to help you understand and navigate the issues and decisions behind the news — and what they mean for you.</div>-->
+<div class="resourceItem" style="margin: 30px 0 30px 20px">
+           <a href="http://projects.ctmirror.org/yourschool/index.php"> <img class="rimage" src="./tutorial_files/yourschool.png"></a>
+            <a class="resourceWord" href="http://projects.ctmirror.org/yourschool/index.php">Your School Comparison</a>
+            <div class="resourceSmall">Explore data on your school</div>
+        </div>
+
+<div class="resourceItem" style="margin: 30px 0 30px 20px">
+           <a href="http://trendct.org/2016/02/09/new-database-campaign-contributions/"> <img class="rimage" src="./tutorial_files/magnifying-glass_318-62143.png"></a>
+            <a class="resourceWord" href="http://trendct.org/2016/02/09/new-database-campaign-contributions/">Campaign contributions</a>
+            <div class="resourceSmall">Pres. candidate donations</div>
+        </div>
+
+<div class="resourceItem" style="margin: 30px 0 30px 20px">
+           <a href="http://trendct.org/2016/02/16/what-subjects-dominate-legislation/"> <img class="rimage" src="./tutorial_files/Screen-Shot-2016-02-16-at-9.07.40-AM.png"></a>
+            <a class="resourceWord" href="http://trendct.org/2016/02/16/what-subjects-dominate-legislation/">Tracking legislation</a>
+            <div class="resourceSmall">Search bills by subject</div>
+        </div>
+        
+    </div></div>
+		</aside><aside id="largo-recent-posts-widget-6" class="widget widget-5 odd default largo-recent-posts clearfix"><h3 class="widgettitle"><a href="http://trendct.org/category/walkthrough/">Tutorials</a></h3><ul><li><h5>
+	<a href="http://trendct.org/2016/07/14/pokemon-go-guide-for-advanced-players/">Advanced Pokémon GO guide: How to find pokéstops and gyms		</a>
+</h5>
+
+</li><li><h5>
+	<a href="http://trendct.org/2016/04/01/a-trend-ct-tool-to-help-work-with-connecticut-data/">A Trend CT tool to help work with Connecticut data		</a>
+</h5>
+
+</li><li><h5>
+	<a href="http://trendct.org/2016/03/18/tutorial-web-scraping-and-mapping-breweries-with-import-io-and-r/">Tutorial: Web scraping and mapping breweries with import.io and R		</a>
+</h5>
+
+</li><li><h5>
+	<a href="http://trendct.org/2016/01/22/how-to-choose-a-label-color-to-contrast-with-background/">How to automatically choose a label color to contrast with background		</a>
+</h5>
+
+</li><li><h5>
+	<a href="http://trendct.org/2016/01/08/how-to-scrape-airbnb-data-without-programming-using-import-io/">How to scrape website data without programming using Import.io		</a>
+</h5>
+
+</li></ul></aside><aside id="rss-2" class="widget widget-6 even no-bg widget_rss clearfix"><h3 class="widgettitle"><a class="rsswidget" href="http://ctmirror.org/feed/"><img class="rss-widget-icon" style="border:0" width="14" height="14" src="./tutorial_files/rss.png" alt="RSS"></a> <a class="rsswidget" href="http://ctmirror.org/">The CT Mirror</a></h3><ul><li><a class="rsswidget" href="http://ctmirror.org/2016/07/21/union-ad-features-disabled-womans-appeal-to-reverse-state-layoffs/">Union ad features disabled woman’s appeal to reverse state layoffs</a></li><li><a class="rsswidget" href="http://ctmirror.org/2016/07/21/cts-unemployment-rate-rose-in-june-despite-job-growth/">CT’s unemployment rate rose in June despite job growth</a></li><li><a class="rsswidget" href="http://ctmirror.org/2016/07/21/cruz-follows-trump-snub-with-fundraising-appeal-to-gop/">Cruz follows Drumpf snub with fundraising appeal to GOP</a></li></ul></aside><aside id="rss-3" class="widget widget-7 odd default widget_rss clearfix"><h3 class="widgettitle"><a class="rsswidget" href="http://ctviewpoints.org/feed/"><img class="rss-widget-icon" style="border:0" width="14" height="14" src="./tutorial_files/rss.png" alt="RSS"></a> <a class="rsswidget" href="http://ctviewpoints.org/">CT Viewpoints</a></h3><ul><li><a class="rsswidget" href="http://ctviewpoints.org/2016/07/21/a-very-public-look-into-connecticut-health-insurance-premiums/">A very public look into Connecticut health insurance premiums</a></li><li><a class="rsswidget" href="http://ctviewpoints.org/2016/07/20/frivolous-spending-or-best-training-for-hartford-teachers/">Frivolous spending or best training for Hartford educators?</a></li><li><a class="rsswidget" href="http://ctviewpoints.org/2016/07/20/advice-for-cscu-students-manage-your-time-earn-better-grades/">Advice for CSCU students: manage your time, earn better grades</a></li></ul></aside><aside id="categories-2" class="widget widget-8 even default widget_categories clearfix"><h3 class="widgettitle">Topics</h3>		<ul>
+	<li class="cat-item cat-item-127"><a href="http://trendct.org/category/animals/">Animals</a>
+</li>
+	<li class="cat-item cat-item-180"><a href="http://trendct.org/category/announcement/">Announcement</a>
+</li>
+	<li class="cat-item cat-item-65"><a href="http://trendct.org/category/budget/">Budget</a>
+</li>
+	<li class="cat-item cat-item-235"><a href="http://trendct.org/category/business/">Business</a>
+</li>
+	<li class="cat-item cat-item-126"><a href="http://trendct.org/category/crime/">Crime</a>
+</li>
+	<li class="cat-item cat-item-35"><a href="http://trendct.org/category/data/">Data</a>
+</li>
+	<li class="cat-item cat-item-144"><a href="http://trendct.org/category/data-problem/">Data problem</a>
+</li>
+	<li class="cat-item cat-item-71"><a href="http://trendct.org/category/demographics/">Demographics</a>
+</li>
+	<li class="cat-item cat-item-368"><a href="http://trendct.org/category/drugs/">Drugs</a>
+</li>
+	<li class="cat-item cat-item-60"><a href="http://trendct.org/category/education/">Education</a>
+</li>
+	<li class="cat-item cat-item-247"><a href="http://trendct.org/category/election/">Election</a>
+</li>
+	<li class="cat-item cat-item-196"><a href="http://trendct.org/category/energy/">Energy</a>
+</li>
+	<li class="cat-item cat-item-48"><a href="http://trendct.org/category/environment/">Environment</a>
+</li>
+	<li class="cat-item cat-item-116"><a href="http://trendct.org/category/featured/">Featured</a>
+</li>
+	<li class="cat-item cat-item-134"><a href="http://trendct.org/category/food/">Food</a>
+</li>
+	<li class="cat-item cat-item-222"><a href="http://trendct.org/category/game/">Game</a>
+</li>
+	<li class="cat-item cat-item-361"><a href="http://trendct.org/category/guns/">guns</a>
+</li>
+	<li class="cat-item cat-item-480"><a href="http://trendct.org/category/health/">Health</a>
+</li>
+	<li class="cat-item cat-item-68"><a href="http://trendct.org/category/health-care/">Health Care</a>
+</li>
+	<li class="cat-item cat-item-107"><a href="http://trendct.org/category/housing/">Housing</a>
+</li>
+	<li class="cat-item cat-item-158"><a href="http://trendct.org/category/income/">Income</a>
+</li>
+	<li class="cat-item cat-item-189"><a href="http://trendct.org/category/jobs/">Jobs</a>
+</li>
+	<li class="cat-item cat-item-120"><a href="http://trendct.org/category/lists/">Lists</a>
+</li>
+	<li class="cat-item cat-item-405"><a href="http://trendct.org/category/lottery/">lottery</a>
+</li>
+	<li class="cat-item cat-item-97"><a href="http://trendct.org/category/meta/">Meta</a>
+</li>
+	<li class="cat-item cat-item-91"><a href="http://trendct.org/category/open-data/">Open Data</a>
+</li>
+	<li class="cat-item cat-item-50"><a href="http://trendct.org/category/politics/">Politics</a>
+</li>
+	<li class="cat-item cat-item-244"><a href="http://trendct.org/category/poverty/">Poverty</a>
+</li>
+	<li class="cat-item cat-item-204"><a href="http://trendct.org/category/religion/">Religion</a>
+</li>
+	<li class="cat-item cat-item-260"><a href="http://trendct.org/category/traffic/">Traffic</a>
+</li>
+	<li class="cat-item cat-item-74"><a href="http://trendct.org/category/transportation/">Transportation</a>
+</li>
+	<li class="cat-item cat-item-110"><a href="http://trendct.org/category/walkthrough/">Walkthrough</a>
+</li>
+	<li class="cat-item cat-item-236"><a href="http://trendct.org/category/weather/">Weather</a>
+</li>
+		</ul>
+</aside>	</div>
+	</aside>
+
+	</div> <!-- #main -->
+
+</div><!-- #page -->
+
+
+<div class="footer-bg clearfix nocontent">
+	<footer id="site-footer">
+
+		<div id="supplementary" class="ctmirror-footer row-fluid">
+	
+	<!-- Footer column 1 -->
+	<div id="footer-column-1" class="span2 widget-area footer-col-1" role="complementary">
+		<aside id="nav_menu-2" class="widget widget-1 odd default hidden-phone widget_nav_menu clearfix"><div class="menu-footer-navigation-container"><ul id="menu-footer-navigation" class="menu"><li class="menu-label"></li><li id="menu-item-37" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-37"><a href="http://trendct.org/">Home</a></li>
+<li id="menu-item-36" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-36"><a href="http://trendct.org/about/">About</a></li>
+<li id="menu-item-35" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-35"><a href="http://trendct.org/contact/">Contact</a></li>
+</ul></div></aside>	</div>
+
+	<!-- Footer column 2 -->
+	<div class="span2 widget-area footer-col-2" role="complementary">
+		<aside id="largo-recent-posts-widget-4" class="widget widget-1 odd default largo-recent-posts clearfix"><h3 class="widgettitle">Story &nbsp;Teaser</h3><ul><li>	<a href="http://trendct.org/2016/01/12/explore-ct-school-districts-achievement-gap-by-race-and-ethnicity/"><img width="140" height="140" src="./tutorial_files/Screen-Shot-2016-01-11-at-6.26.11-PM-140x140.png" class="left-align attachment-thumbnail wp-post-image" alt="Screen Shot 2016-01-11 at 6.26.11 PM" srcset="http://trendct.org/files/2016/01/Screen-Shot-2016-01-11-at-6.26.11-PM-140x140.png 140w, http://trendct.org/files/2016/01/Screen-Shot-2016-01-11-at-6.26.11-PM-60x60.png 60w, http://trendct.org/files/2016/01/Screen-Shot-2016-01-11-at-6.26.11-PM-32x32.png 32w, http://trendct.org/files/2016/01/Screen-Shot-2016-01-11-at-6.26.11-PM-64x64.png 64w, http://trendct.org/files/2016/01/Screen-Shot-2016-01-11-at-6.26.11-PM-96x96.png 96w, http://trendct.org/files/2016/01/Screen-Shot-2016-01-11-at-6.26.11-PM-128x128.png 128w" sizes="(max-width: 140px) 100vw, 140px"></a>
+<h5>
+	<a href="http://trendct.org/2016/01/12/explore-ct-school-districts-achievement-gap-by-race-and-ethnicity/">Explore CT school districts’ achievement gap by race and ethnicity		</a>
+</h5>
+
+</li></ul></aside>	</div>
+
+	<!-- Footer column 3 -->
+	<div class="span2 widget-area footer-col-3" role="complementary">
+		<aside id="largo-recent-posts-widget-5" class="widget widget-1 odd default largo-recent-posts clearfix"><h3 class="widgettitle">Story Teaser</h3><ul><li>	<a href="http://trendct.org/2015/12/16/2015-datahaven-community-wellbeing-survey-navigator/"><img width="140" height="140" src="./tutorial_files/Screen-Shot-2016-02-13-at-2.14.03-PM-140x140.png" class="left-align attachment-thumbnail wp-post-image" alt="Screen Shot 2016-02-13 at 2.14.03 PM" srcset="http://trendct.org/files/2015/12/Screen-Shot-2016-02-13-at-2.14.03-PM-140x140.png 140w, http://trendct.org/files/2015/12/Screen-Shot-2016-02-13-at-2.14.03-PM-60x60.png 60w, http://trendct.org/files/2015/12/Screen-Shot-2016-02-13-at-2.14.03-PM-32x32.png 32w, http://trendct.org/files/2015/12/Screen-Shot-2016-02-13-at-2.14.03-PM-64x64.png 64w, http://trendct.org/files/2015/12/Screen-Shot-2016-02-13-at-2.14.03-PM-96x96.png 96w, http://trendct.org/files/2015/12/Screen-Shot-2016-02-13-at-2.14.03-PM-128x128.png 128w" sizes="(max-width: 140px) 100vw, 140px"></a>
+<h5>
+	<a href="http://trendct.org/2015/12/16/2015-datahaven-community-wellbeing-survey-navigator/">2015 DataHaven Community Wellbeing Survey navigator		</a>
+</h5>
+
+</li></ul></aside>	</div>
+
+	<!-- Footer column 4 -->
+	<div class="span2 widget-area footer-col-4" role="complementary">
+		<aside id="nav_menu-4" class="widget widget-1 odd default widget_nav_menu clearfix"><h3 class="widgettitle">Our partner sites</h3><div class="menu-partner-sites-1-container"><ul id="menu-partner-sites-1" class="menu"><li id="menu-item-40" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-40"><a href="http://ctmirror.org/">The Connecticut Mirror</a></li>
+<li id="menu-item-41" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-41"><a href="http://ctviewpoints.org/">CT Viewpoints</a></li>
+</ul></div></aside>	</div>
+
+	<!-- Footer column 5 -->
+	<div class="span2 widget-area footer-col-5" role="complementary">
+		<aside id="nav_menu-3" class="widget widget-1 odd default widget_nav_menu clearfix"><h3 class="widgettitle">Sponsors</h3><div class="menu-sponsors-container"><ul id="menu-sponsors" class="menu"><li id="menu-item-38" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-38"><a href="http://www.hfpg.org/">Hartford Foundation For Public Giving</a></li>
+</ul></div></aside>	</div>
+
+	<!-- Footer column 6 -->
+	<div class="span2 widget-area footer-col-6" role="complementary">
+				<ul id="ft-social" class="social-icons">
+			<li><a href="http://trendct.org/?feed=rss2" title="Link to RSS Feed"><i class="icon-rss"></i></a></li><li><a href="https://www.facebook.com/pages/Trend-CT/384773325018041" title="Link to Facebook Profile"><i class="icon-facebook"></i></a></li><li><a href="https://twitter.com/trendct" title="Link to Twitter Page"><i class="icon-twitter"></i></a></li>		</ul>
+	</div>
+</div>
+<div id="boilerplate">
+	<div class="row-fluid clearfix">
+		<div class="span6">
+			<ul id="footer-social" class="social-icons">
+				<li><a href="http://trendct.org/?feed=rss2" title="Link to RSS Feed"><i class="icon-rss"></i></a></li><li><a href="https://www.facebook.com/pages/Trend-CT/384773325018041" title="Link to Facebook Profile"><i class="icon-facebook"></i></a></li><li><a href="https://twitter.com/trendct" title="Link to Twitter Page"><i class="icon-twitter"></i></a></li>			</ul>
+			<div class="footer-bottom clearfix">
+
+				<!-- If you enjoy this theme and use it on a production site we would appreciate it if you would leave the credit in place. Thanks :) -->
+				<p class="footer-credit">© Copyright 2016, CT Mirror</p>
+											</div>
+		</div>
+
+		<div class="span6 right">
+										<a href="http://inn.org/" id="inn-logo-container">
+				<img id="inn-logo" src="./tutorial_files/inn_logo_gray.png" alt="TrendCT is a member of the Institute for Nonprofit News">
+			</a>
+								<p class="footer-credit ">Built with the <a href="http://largoproject.org/">Largo WordPress Theme</a> from the <a href="http://inn.org/">Institute for Nonprofit News</a>.</p>
+		</div>
+	</div>
+
+	<p class="back-to-top visuallyhidden"><a href="http://trendct.org/2016/03/18/tutorial-web-scraping-and-mapping-breweries-with-import-io-and-r/#top">Back to top ↑</a></p>
+</div>
+
+	</footer>
+</div>
+
+<script type="text/template" id="tmpl-floating-social-buttons"><div class="largo-follow post-social clearfix"><span class="facebook"><a target="_blank" href="http://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Ftrendct.org%2F2016%2F03%2F18%2Ftutorial-web-scraping-and-mapping-breweries-with-import-io-and-r%2F"><i class="icon-facebook"></i><span class="hidden-phone">Like</span></a></span><span class="twitter"><a target="_blank" href="https://twitter.com/intent/tweet?text=Tutorial%3A%20Web%20scraping%20and%20mapping%20breweries%20with%20import.io%20and%20R&url=http%3A%2F%2Ftrendct.org%2F2016%2F03%2F18%2Ftutorial-web-scraping-and-mapping-breweries-with-import-io-and-r%2F&via=trendct"><i class="icon-twitter"></i><span class="hidden-phone">Tweet</span></a></span><span data-service="email" class="email custom-share-button share-button"><a><i class="icon-mail"></i> <span class="hidden-phone">Email</span></a></span><span class="print"><a href="#" onclick="window.print()" title="Print this article" rel="nofollow"><i class="icon-print"></i><span class="hidden-phone">Print</span></a></span><span class="more-social-links">
+	<a class="popover-toggle" href="#"><i class="icon-plus"></i><span class="hidden-phone">More</span></a>
+	<span class="popover">
+	<ul>
+		<li><a href="http://trendct.org/tag/beer/"><i class="icon-link"></i> <span>More on beer</span></a></li>
+<li><a href="http://trendct.org/tag/beer/feed/"><i class="icon-rss"></i> <span>Subscribe to beer</span></a></li>
+	</ul>
+	</span>
+</span></div></script>			<script type="text/javascript" id="floating-social-buttons-width-json">
+				window.floating_social_buttons_width = {"min":"1400","max":"9999"}			</script>
+						<script type="text/javascript" src="./tutorial_files/floating-social-buttons.min.js" async=""></script>
+						<!--Facebook-->
+			<div id="fb-root" class=" fb_reset"><div style="position: absolute; top: -10000px; height: 0px; width: 0px;"><div><iframe name="fb_xdm_frame_http" frameborder="0" allowtransparency="true" allowfullscreen="true" scrolling="no" id="fb_xdm_frame_http" aria-hidden="true" title="Facebook Cross Domain Communication Frame" tabindex="-1" src="./tutorial_files/bz-D0tzmBsw.html" style="border: none;"></iframe><iframe name="fb_xdm_frame_https" frameborder="0" allowtransparency="true" allowfullscreen="true" scrolling="no" id="fb_xdm_frame_https" aria-hidden="true" title="Facebook Cross Domain Communication Frame" tabindex="-1" src="./tutorial_files/bz-D0tzmBsw(1).html" style="border: none;"></iframe></div></div><div style="position: absolute; top: -10000px; height: 0px; width: 0px;"><div></div></div></div>
+			<script>(function(d, s, id) {
+			  var js, fjs = d.getElementsByTagName(s)[0];
+			  if (d.getElementById(id)) return;
+			  js = d.createElement(s); js.id = id;
+			  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+			  fjs.parentNode.insertBefore(js, fjs);
+			}(document, 'script', 'facebook-jssdk'));</script>
+					<!--Twitter-->
+			<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+		<script type="text/javascript" src="./tutorial_files/comment-reply.min.js"></script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var Largo = {"is_home":"","is_single":"1","sticky_nav_options":{"sticky_nav_display_article":true,"main_nav_hide_article":false,"nav_overflow_label":"More"}};
+/* ]]> */
+</script>
+<script type="text/javascript" src="./tutorial_files/largoCore.min.js"></script>
+<script type="text/javascript" src="./tutorial_files/navigation.min.js"></script>
+<script type="text/javascript" src="./tutorial_files/largoPlugins.js"></script>
+<script type="text/javascript" src="./tutorial_files/jquery.idTabs.js"></script>
+<script type="text/javascript" src="./tutorial_files/ctmirror.js"></script>
+<script type="text/javascript" src="./tutorial_files/wp-embed.min.js"></script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var embedVars = {"disqusConfig":{"platform":"wordpress@4.5.3","language":""},"disqusIdentifier":"10611 http:\/\/trendct.org\/?p=10611","disqusShortname":"trendct","disqusTitle":"Tutorial: Web scraping and mapping breweries with import.io and R","disqusUrl":"http:\/\/trendct.org\/2016\/03\/18\/tutorial-web-scraping-and-mapping-breweries-with-import-io-and-r\/","options":{"manualSync":false},"postId":"10611"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="./tutorial_files/disqus.js"></script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var countVars = {"disqusShortname":"trendct"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="./tutorial_files/count(1).js"></script>
+
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"40195a0833","applicationID":"8501734","transactionName":"b1NRMRdTChAEBRFaDlYZcgYRWwsNShUMXQZUUw==","queueTime":0,"applicationTime":551,"atts":"QxRSR19JGR4=","errorBeacon":"bam.nr-data.net","agent":""}</script>
+
+<script type="text/javascript">(function (){return window.SIG_EXT={}})()</script><span style="border-radius: 2px; text-indent: 20px; width: auto; padding: 0px 4px 0px 0px; text-align: center; font-style: normal; font-variant: normal; font-weight: bold; font-stretch: normal; font-size: 11px; line-height: 20px; font-family: &quot;Helvetica Neue&quot;, Helvetica, sans-serif; color: rgb(255, 255, 255); position: absolute; opacity: 1; z-index: 8675309; display: none; cursor: pointer; border: none; -webkit-font-smoothing: antialiased; background: url(&quot;data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGhlaWdodD0iMzBweCIgd2lkdGg9IjMwcHgiIHZpZXdCb3g9Ii0xIC0xIDMxIDMxIj48Zz48cGF0aCBkPSJNMjkuNDQ5LDE0LjY2MiBDMjkuNDQ5LDIyLjcyMiAyMi44NjgsMjkuMjU2IDE0Ljc1LDI5LjI1NiBDNi42MzIsMjkuMjU2IDAuMDUxLDIyLjcyMiAwLjA1MSwxNC42NjIgQzAuMDUxLDYuNjAxIDYuNjMyLDAuMDY3IDE0Ljc1LDAuMDY3IEMyMi44NjgsMC4wNjcgMjkuNDQ5LDYuNjAxIDI5LjQ0OSwxNC42NjIiIGZpbGw9IiNmZmYiIHN0cm9rZT0iI2ZmZiIgc3Ryb2tlLXdpZHRoPSIxIj48L3BhdGg+PHBhdGggZD0iTTE0LjczMywxLjY4NiBDNy41MTYsMS42ODYgMS42NjUsNy40OTUgMS42NjUsMTQuNjYyIEMxLjY2NSwyMC4xNTkgNS4xMDksMjQuODU0IDkuOTcsMjYuNzQ0IEM5Ljg1NiwyNS43MTggOS43NTMsMjQuMTQzIDEwLjAxNiwyMy4wMjIgQzEwLjI1MywyMi4wMSAxMS41NDgsMTYuNTcyIDExLjU0OCwxNi41NzIgQzExLjU0OCwxNi41NzIgMTEuMTU3LDE1Ljc5NSAxMS4xNTcsMTQuNjQ2IEMxMS4xNTcsMTIuODQyIDEyLjIxMSwxMS40OTUgMTMuNTIyLDExLjQ5NSBDMTQuNjM3LDExLjQ5NSAxNS4xNzUsMTIuMzI2IDE1LjE3NSwxMy4zMjMgQzE1LjE3NSwxNC40MzYgMTQuNDYyLDE2LjEgMTQuMDkzLDE3LjY0MyBDMTMuNzg1LDE4LjkzNSAxNC43NDUsMTkuOTg4IDE2LjAyOCwxOS45ODggQzE4LjM1MSwxOS45ODggMjAuMTM2LDE3LjU1NiAyMC4xMzYsMTQuMDQ2IEMyMC4xMzYsMTAuOTM5IDE3Ljg4OCw4Ljc2NyAxNC42NzgsOC43NjcgQzEwLjk1OSw4Ljc2NyA4Ljc3NywxMS41MzYgOC43NzcsMTQuMzk4IEM4Ljc3NywxNS41MTMgOS4yMSwxNi43MDkgOS43NDksMTcuMzU5IEM5Ljg1NiwxNy40ODggOS44NzIsMTcuNiA5Ljg0LDE3LjczMSBDOS43NDEsMTguMTQxIDkuNTIsMTkuMDIzIDkuNDc3LDE5LjIwMyBDOS40MiwxOS40NCA5LjI4OCwxOS40OTEgOS4wNCwxOS4zNzYgQzcuNDA4LDE4LjYyMiA2LjM4NywxNi4yNTIgNi4zODcsMTQuMzQ5IEM2LjM4NywxMC4yNTYgOS4zODMsNi40OTcgMTUuMDIyLDYuNDk3IEMxOS41NTUsNi40OTcgMjMuMDc4LDkuNzA1IDIzLjA3OCwxMy45OTEgQzIzLjA3OCwxOC40NjMgMjAuMjM5LDIyLjA2MiAxNi4yOTcsMjIuMDYyIEMxNC45NzMsMjIuMDYyIDEzLjcyOCwyMS4zNzkgMTMuMzAyLDIwLjU3MiBDMTMuMzAyLDIwLjU3MiAxMi42NDcsMjMuMDUgMTIuNDg4LDIzLjY1NyBDMTIuMTkzLDI0Ljc4NCAxMS4zOTYsMjYuMTk2IDEwLjg2MywyNy4wNTggQzEyLjA4NiwyNy40MzQgMTMuMzg2LDI3LjYzNyAxNC43MzMsMjcuNjM3IEMyMS45NSwyNy42MzcgMjcuODAxLDIxLjgyOCAyNy44MDEsMTQuNjYyIEMyNy44MDEsNy40OTUgMjEuOTUsMS42ODYgMTQuNzMzLDEuNjg2IiBmaWxsPSIjYmQwODFjIj48L3BhdGg+PC9nPjwvc3ZnPg==&quot;) 3px 50% / 14px 14px no-repeat rgb(189, 8, 28);">Save</span><iframe id="rufous-sandbox" scrolling="no" frameborder="0" allowtransparency="true" allowfullscreen="true" style="position: absolute; visibility: hidden; display: none; width: 0px; height: 0px; padding: 0px; border: none;" src="./tutorial_files/saved_resource(1).html"></iframe></body></html>

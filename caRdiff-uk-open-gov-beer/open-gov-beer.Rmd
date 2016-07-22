@@ -16,37 +16,79 @@ duration: 5
     - Insurance *Data Scientist* and *useR* living in Connecticut, USA
 - Slides and Materials available at: [jasdumas/talks/caRdiff-uk-open-gov-beer](https://github.com/jasdumas/talks/tree/master/caRdiff-uk-open-gov-beer)
 
-<img src="https://pbs.twimg.com/profile_images/748588667053084673/7eiLikey.jpg" style="position: absolute; right: 0; top: 0"></img>
+<img src="img/me.jpg" style="position: absolute; right: 0; top: 0"></img>
 
 
 ## The search for datasets
 
-- finding *interesting* and *available* datasets is a concern for all those involved in data science.
+- Finding *interesting* and *available* datasets is a concern for all those involved in data science.
 - Where to look?
     - google
     - github
     - kaggle
     - open government data portals
-    - ?
+    - machine learning repositories at Universities
 
-
-<img src="http://i.giphy.com/26tnnpcYVRNJGlHy0.gif" style="position: absolute; right: 0; left: 2; top: 1"></img>
+<img src="img/saul.gif" style="position: absolute; right: 0; top: 0"></img>
 
     
+## The search continues for analysis-ready datasets
 
-## The search for analysis-ready datasets
-
-- if cleaning data is 70% of the data science process than the desire for analysis-ready data (even at the basic csv format) is priority #1 after addressing the business questions.
+- If cleaning data is 70% of the data science process than the desire for analysis-ready data (even at the basic csv format) is priority #1 after addressing the business questions.
 - analysis-ready data also needs to include *some* type of documentation
 
-## The US open government data portal
+<img src="img/scott-pilgrim.gif" style="position: center; right: 0; top: 2"></img>
 
-- examples of PDF reports
-- examples of the bad and the good
 
-## The reality and struggle
 
-- ... are real
+## The U.S. Government open data portal
+
+The "clearinghouse" for open U.S. government data is located at [data.gov](https://www.data.gov/). It also contains tools, and resources to conduct research, develop web and mobile applications, design data visualizations.
+
+<img src="img/data-gov.gif" style="position: center; right: 0; left: 0; top: 1"></img>
+
+
+## Good examples of datasets
+
+- "Good" datasets are "Good" if they can be read in to R with functions like: `read.csv`, `read.table` or even webscraped efficiently
+- "Great" datasets take minimal cleaning aside from manipulation
+
+```{r, echo=FALSE}
+print(head(iris))
+```
+
+
+## Bad examples of datasts 
+
+- "Bad" datasets are "bad" if they are in inconsistent formats, have mixed columns
+- "Bad" difficult for analysis
+
+<img src="img/TTB-Reports.png" style="position: center; right: 0; left: 0; top: 1"></img>
+
+
+## The landscape of beer datasets
+
+- There are limited amounts of datasets for beer analytics and the API's that are availabe have restrictions on usage or require a user account
+    - **datasets**: [http://www.craftbeeranalytics.com/beer-data.html](http://www.craftbeeranalytics.com/beer-data.html), [SNAP-RateBeer*](https://snap.stanford.edu/data/web-RateBeer.html) - *which is provided to academic researchers only*
+    - **api's**: [RateBeer](http://www.ratebeer.com/json/ratebeer-api-agreement.asp), [Untapped](https://untappd.com/api/docs), [The Beer Mapping Project](http://beermapping.com/api/), [BreweryDB](http://www.brewerydb.com/apps)
+    - **data analysis projects of beer**: [yhat BeerAdvocate Recommender](http://blog.yhat.com/posts/recommender-system-in-r.html)
+
+<iframe src="http://beers.yhathq.com/" style="position: center;"></iframe>
+
+## The reality and struggle of limited beer datasets
+
+- ... are real and lead to:
+    - frustration
+    - losing interest and passion for the domain
+    - choosing another dataset
+    - abandoning the data analysis project
+    - breaking Terms of Service (ToS) with web-scraping 
+
+## The sparcity of beer data actaully inspired me become better at finding datasets and webscraping!
+
+- Here is a [tutorial](http://trendct.org/2016/03/18/tutorial-web-scraping-and-mapping-breweries-with-import-io-and-r/) I wrote to get meta data from Beer Advocate using [Import.io](https://www.import.io/)
+
+<img src="img/tuttorial.png" style="position: center; right: 0; left: 0; top: 1"></img>
 
 ## `ttbbeer`
 
@@ -56,6 +98,13 @@ duration: 5
     - The dream: increase awareness of beer analytics and promote analysis-ready datasets from [data.gov](https://www.data.gov/)
     
 - available on [CRAN](https://cran.r-project.org/web/packages/ttbbeer/index.html) and [Github](https://github.com/jasdumas/ttbbeer)
+
+
+```{r}
+library(ttbbeer)
+data("beermaterials")
+print(head(beermaterials))
+```
 
 ## Questions & Cheers!
 

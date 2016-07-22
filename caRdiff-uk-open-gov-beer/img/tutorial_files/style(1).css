@@ -1,0 +1,44 @@
+.resources {
+    font-family: "Lato", Arial, sans-serif;
+    margin-bottom: -33px;
+}
+
+.resourceHeader {
+    font-size: 24px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.resourceSub {
+    font-size: 14px;
+    color: #888;
+}
+
+.resourceItem {
+    margin: 15px 0 25px;
+}
+
+.resourceItem a.resourceWord {
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #cc4545;
+}
+
+.resourceItem .resourceSmall {
+    margin-top: 2px;
+    color: #777;
+    font-size: 14px;
+}
+
+.rimage {
+    float: left;
+    margin-right: 6px;
+    width: 45px;
+    height: 45px;
+}
+
+.toolboxImage {
+    width: 25px;
+    height: 25px;
+}

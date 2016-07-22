@@ -1,0 +1,133 @@
+.navis-slideshow {
+    background-color: #efefef;
+    font-family: Arial;
+    font-size: 11px;
+    color: #666;
+    position: relative;
+    border: 1px solid #ddd;
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: none;
+    padding: 36px 0 5px 0;
+}
+
+.ie6 .navis-slideshow {
+    display: block;
+}
+
+.navis-slideshow p {
+    margin: 10px 0;
+    line-height: 1.5;
+    padding: 10px;
+    font-size: 12px;
+}
+
+.navis-slideshow h6 {
+    margin: 6px;
+    font-weight: normal;
+    font-size: 11px;
+    font-style: italic;
+    color: #666;
+}
+
+.navis-slideshow h6.credit {
+    text-align: right;
+    float: right;
+}
+
+.navis-slideshow h6.permalink {
+    float: left;
+    text-align: left;
+}
+
+.slide-permalink {
+    font-weight: normal;
+    font-style: normal;
+    outline: none;
+}
+
+.navis-slideshow .wp-caption-text {
+    clear: both;
+}
+
+.slide-permalink:hover {
+    text-decoration: none;
+    color: #666;
+}
+
+.navis-slideshow .slick-dots {
+    margin: 0 !important;
+    width: 95%;
+    padding: 0;
+    position: absolute;
+    top: 10px;
+    left: 10px
+}
+
+.navis-slideshow .slick-dots li {
+    float: left;
+    margin: 0 1px !important;
+    list-style: none;
+    background: none !important;
+    padding: 0 !important;
+}
+
+.navis-slideshow .slick-dots li button {
+    border: none;
+    display: block;
+    width: 12px;
+    height: 12px;
+    background-color: transparent;
+    background-image: url(../img/pagination.png);
+    background-position: 0 0;
+    float: left;
+    overflow: hidden;
+    text-indent: -99999px;
+}
+
+.navis-slideshow .slick-dots li.slick-active button {
+    background-position: 0 -12px
+}
+
+.navis-slideshow a.slick-navigation {
+    background: url(../img/slide-nav.png) no-repeat top left;
+    text-indent: -10000px;
+    display: block;
+    text-decoration: none;
+    outline: none;
+}
+
+.navis-slideshow a.slick-previous {
+    position: absolute;
+    top: 5px;
+    right: 32px;
+    background-position: 0 -213px;
+    width: 21px;
+    height: 21px;
+    z-index: 10;
+    outline: none;
+}
+
+.navis-slideshow a.slick-previous:hover {
+    background-position: 0 -142px;
+    width: 21px;
+    height: 21px;
+}
+
+.navis-slideshow a.slick-next {
+    position: absolute;
+    top: 5px;
+    right: 7px;
+    background-position: 0 -71px;
+    width: 21px;
+    height: 21px;
+    z-index: 10;
+    outline: none;
+}
+
+.navis-slideshow a.slick-next:hover {
+    background-position: 0 0;
+    width: 21px;
+    height: 21px
+}
