@@ -7,38 +7,49 @@ output:
   beamer_presentation: default
 footer: "Copyright (c) 2016, JD"
 keep_md: true
-duration: 5
+duration: 10
 ---
 
 ## Hi Cardiff!
 
 - I'm Jasmine Dumas
-    - Insurance *Data Scientist* and *useR* living in Connecticut, USA
+    - Insurance **Data Scientist** and **useR** living in Connecticut, USA
+    - M.S. Candidate in **Predictive Analytics** at DePaul University
+    - Homebrewer!
 - Slides and Materials available at: [jasdumas/talks/caRdiff-uk-open-gov-beer](https://github.com/jasdumas/talks/tree/master/caRdiff-uk-open-gov-beer)
 
 <img src="img/me.jpg" style="position: absolute; right: 0; top: 0"></img>
 
 
+## What this presentation is about (and not about)
+
+- I'm going to talk about the state of **open government data** in relation to **beer**
+    - dificulties in finding and exploring analysis-ready data in a never ending *sea* of data
+- This is **not** about **"drunk politics"** 
+
+<img src="img/open-data-graphic.jpg" style="position: center; right: 0; top: 2"></img>  **not** <img src="img/drunk-francis.jpg" style="position: center; right: 0; top: 2"></img>
+
+
 ## The search for datasets
 
-- Finding *interesting* and *available* datasets is a concern for all those involved in data science.
+- Finding **interesting** and **available** datasets is a concern for all those involved in data analysis
 - Where to look?
-    - google
-    - github
-    - kaggle
-    - open government data portals
-    - machine learning repositories at Universities
+    - [Google public data explorer](https://www.google.com/publicdata/directory)
+    - [Github](https://github.com/jasdumas/awesome-public-datasets)
+    - [kaggle data repository](https://www.kaggle.com/datasets)
+    - open government data portals: [UK](https://data.gov.uk/), [Connecticut](https://data.ct.gov/), [SF](https://data.sfgov.org/), 
+    - machine learning repositories at Universities: [UCI](http://archive.ics.uci.edu/ml/)
 
 <img src="img/saul.gif" style="position: absolute; right: 0; top: 0"></img>
 
     
 ## The search continues for analysis-ready datasets
 
-- If cleaning data is 70% of the data science process than the desire for analysis-ready data (even at the basic csv format) is priority #1 after addressing the business questions.
+- [Data wrangling is ~70% of the data science process](http://www.nytimes.com/2014/08/18/technology/for-big-data-scientists-hurdle-to-insights-is-janitor-work.html?_r=0)
+    - the desire for analysis-ready data is **priority #1** after addressing the business questions.
 - analysis-ready data also needs to include *some* type of documentation
 
 <img src="img/scott-pilgrim.gif" style="position: center; right: 0; top: 2"></img>
-
 
 
 ## The U.S. Government open data portal
@@ -48,19 +59,28 @@ The "clearinghouse" for open U.S. government data is located at [data.gov](https
 <img src="img/data-gov.gif" style="position: center; right: 0; left: 0; top: 1"></img>
 
 
+## Applications of the U.S. Government open data portal
+
+- [datausa.io](http://datausa.io/): an online application developed by a team of data scientists at MIT Media Lab and Datawheel, backed by Deloitte is helping Americans visualize demographic and economic data using an open source platform
+
+<img src="img/data-usa.png" style="position: center; right: 0; left: 0; top: 1"></img>
+
+
+## Just becasue it's open does not mean it's accessible!
+
+
 ## Good examples of datasets
 
-- "Good" datasets are "Good" if they can be read in to R with functions like: `read.csv`, `read.table` or even webscraped efficiently
-- "Great" datasets take minimal cleaning aside from manipulation
+- "Good" datasets are "Good" if they can be read in to R with functions like: 
+    - `read.csv`,   `read_csv`    or    `read.table` 
+- "Great" datasets take minimal cleaning aside from manipulation and have interpretable data fields
 
-```{r, echo=FALSE}
-print(head(iris))
-```
+<img src="img/good-data2.jpg" style="position: center; right: 1; left: 1; top: 1"></img>
 
 
-## Bad examples of datasts 
+## Bad examples of datasets 
 
-- "Bad" datasets are "bad" if they are in inconsistent formats, have mixed columns
+- "Bad" datasets are "bad" if they are in inconsistent formats, have mixed columns, and cryptic data fields
 - "Bad" difficult for analysis
 
 <img src="img/TTB-Reports.png" style="position: center; right: 0; left: 0; top: 1"></img>
@@ -68,12 +88,13 @@ print(head(iris))
 
 ## The landscape of beer datasets
 
-- There are limited amounts of datasets for beer analytics and the API's that are availabe have restrictions on usage or require a user account
-    - **datasets**: [http://www.craftbeeranalytics.com/beer-data.html](http://www.craftbeeranalytics.com/beer-data.html), [SNAP-RateBeer*](https://snap.stanford.edu/data/web-RateBeer.html) - *which is provided to academic researchers only*
-    - **api's**: [RateBeer](http://www.ratebeer.com/json/ratebeer-api-agreement.asp), [Untapped](https://untappd.com/api/docs), [The Beer Mapping Project](http://beermapping.com/api/), [BreweryDB](http://www.brewerydb.com/apps)
-    - **data analysis projects of beer**: [yhat BeerAdvocate Recommender](http://blog.yhat.com/posts/recommender-system-in-r.html)
+- There are limited amounts of datasets for beer analytics. Here are some examples:
+    - **datasets**: [Craft Beer Sample Data](http://www.craftbeeranalytics.com/beer-data.html), [SNAP-RateBeer*](https://snap.stanford.edu/data/web-RateBeer.html) - *which is provided to academic researchers only*
+    - **api's**: [RateBeer](http://www.ratebeer.com/json/ratebeer-api-agreement.asp), [Untapped](https://untappd.com/api/docs), [The Beer Mapping Project](http://beermapping.com/api/), [BreweryDB](http://www.brewerydb.com/apps) | API's that are available have restrictions on usage or require a user account
+    - **data analysis projects of beer**: [yhat Beer Advocate Recommender](http://blog.yhat.com/posts/recommender-system-in-r.html)
 
 <iframe src="http://beers.yhathq.com/" style="position: center;"></iframe>
+
 
 ## The reality and struggle of limited beer datasets
 
@@ -83,12 +104,17 @@ print(head(iris))
     - choosing another dataset
     - abandoning the data analysis project
     - breaking Terms of Service (ToS) with web-scraping 
+    
+<img src="img/fred-beer.gif" style="position: center; right: 0; left: 0; top: 1"></img>
+    
 
-## The sparcity of beer data actaully inspired me become better at finding datasets and webscraping!
+## Necessity breeds innovation
 
-- Here is a [tutorial](http://trendct.org/2016/03/18/tutorial-web-scraping-and-mapping-breweries-with-import-io-and-r/) I wrote to get meta data from Beer Advocate using [Import.io](https://www.import.io/)
+- I was inspired me become better at finding datasets and webscraping!
+- Here is a [tutorial](http://trendct.org/2016/03/18/tutorial-web-scraping-and-mapping-breweries-with-import-io-and-r/) I wrote to get meta data on brewery ratings in Connecticut from Beer Advocate using [Import.io](https://www.import.io/)
 
-<img src="img/tuttorial.png" style="position: center; right: 0; left: 0; top: 1"></img>
+<img src="img/tutorial.png" style="position: center; right: 0; left: 0; top: 1"></img>
+
 
 ## `ttbbeer`
 
@@ -104,6 +130,8 @@ print(head(iris))
 library(ttbbeer)
 data("beermaterials")
 print(head(beermaterials))
+
+## maybe do a ggplot
 ```
 
 ## Questions & Cheers!
