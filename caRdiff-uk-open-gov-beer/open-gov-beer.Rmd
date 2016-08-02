@@ -92,7 +92,7 @@ The "clearinghouse" for open U.S. government data is located at [data.gov](https
 - There are limited amounts of datasets for beer analytics. Here are some examples:
     - **Datasets**: [Craft Beer Sample Data](http://www.craftbeeranalytics.com/beer-data.html), [SNAP-RateBeer*](https://snap.stanford.edu/data/web-RateBeer.html) - *which is provided to academic researchers only*
     - **API's**: [RateBeer](http://www.ratebeer.com/json/ratebeer-api-agreement.asp), [Untapped](https://untappd.com/api/docs), [The Beer Mapping Project](http://beermapping.com/api/), [BreweryDB](http://www.brewerydb.com/apps) | API's that are available have restrictions on usage or require a user account
-    - **Data analysis projects of beer**: [yhat Beer Advocate Recommender](http://blog.yhat.com/posts/recommender-system-in-r.html), [Crowd-sourced Beer Distrobution Map](http://www.seekabrew.com/distro/index.html)
+    - **Data analysis projects of beer**: [yhat Beer Advocate Recommender](http://blog.yhat.com/posts/recommender-system-in-r.html), [Crowd-sourced Beer Distribution Map](http://www.seekabrew.com/distro/index.html)
 
 <iframe src="http://beers.yhathq.com/" style="position: center;"></iframe>
 
