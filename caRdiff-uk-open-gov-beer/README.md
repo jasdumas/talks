@@ -2,7 +2,7 @@
 
 A lightening talk remotely presented to **CaRdiff - the Cardiff, UK R User Group** on August 2nd, 2016 
 
-![](http://ichef-1.bbci.co.uk/news/660/media/images/77546000/jpg/_77546254_478086609.jpg)
+![](https://github.com/jasdumas/talks/raw/master/caRdiff-uk-open-gov-beer/img/cardiff.jpg)
 
 _____
 
