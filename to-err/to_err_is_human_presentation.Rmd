@@ -1,0 +1,116 @@
+---
+title: '<p>To Err is Human:</p> <p>Understanding Error Messages in R</p> <p> 😨 +  💻 </p>'
+author: "Jasmine Dumas | <a href='https://twitter.com/jasdumas'>@jasdumas</a> | <a href='http://jasdumas.github.io/'>jasdumas.github.io</a>"
+date: "November 6, 2016"
+output:
+  slidy_presentation: default
+  beamer_presentation: default
+fig_width: 7
+fig_height: 6
+fig_caption: true
+highlight: haddock
+footer: "Copyright (c) 2016, JD"
+keep_md: true
+duration: 10
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo=TRUE, 
+                      error=TRUE, 
+                      message=TRUE)
+```
+
+# Relevant Quotes
+> "to err is human; to forgive, divine" - Alexander Pope, "Essay on Criticism"
+
+> "to err is human; to really screw up, you need a computer" - Internet
+
+> "Programs must be written for people to read, and only incidentally for machines to execute." ― Harold Abelson, Structure and Interpretation of Computer Programs
+
+# Presentation overview
+- Overview and intended audience
+- Introduction
+    - Humanizing mistakes
+    - Feelings exercise
+    - The **B.R.I.E** Method 🧀
+- Common sources of error messages
+    - Data types & structures
+    - Data wrangling
+- Additional Learning Resources
+- Questions & Discussion
+
+# Intended audience
+- This presentation is intended for beginners to the R language and environment
+- Those who want to overcome fears of decoding messages 
+- Those who want to build portable skills to asses their code and minimize downtime due to R's *sometimes* confusing & cryptic errors.
+
+# 
+<h1 align="center" style="color:#FA8072;"> Introduction </h1>
+
+# Everyone makes mistakes
+- Errors (and their messages) happen to everyone, even experienced programmers.
+- Learning how to solve and interpret errors will help us to write efficient and elegant code. 
+- Developing skills to cope with the frustration of error message will make for a more enjoyable time crafting programs.
+
+# All the feels! | Describe your feelings about this picture
+<img src="http://i.stack.imgur.com/auxCj.png" />
+
+# B.R.I.E Method 🧀
+- First steps in confidently approaching error messages is by following the B.R.I.E Method
+    - <font color = "green">**B**</font>reathe and relax your mind
+    - <font color = "green">**R**</font>e-read the error message and focus on key wording
+    - <font color = "green">**I**</font>solate the <font color = "green">**E**</font>rror within your code to reduce complexity
+- Hopefully this method can act as a guide to approaching and solving errors in your R code (and other programming languages as well!)
+
+# 
+<h1 align="center" style="color:#FA8072;"> Common Sources of Error Messages </h1>
+
+# Data types & structures
+- Many error messages start from applying the wrong method or function with a data structures.
+- R base has **5** common data structures: 
+    - Atomic Vector: *logical, integer, double (often called numeric), and character.*
+    - Matrix
+    - Array
+    - List
+    - Data Frame
+    
+# Error #1: non-numeric argument to binary operator
+```{r}
+name_string = "Jasmine"
+name_string * 2
+```
+- To decode this error the key statement is <font color = "red">'binary operator'</font>. Multiplication requires *two* numeric values around the * symbol.
+- This error informs the user that one of the values supplied to the multiplication recipe is not a number!
+- Note: A unary operator is a `+` (positive) or `-` (negative) in-front of a number.
+
+# Error #2: invalid 'type' (character) of argument
+```{r}
+vec <- c(1, 2, 3, 4, 5, "hello world")
+sum(vec)
+```
+- This error states that the character <font color = "red">'type'</font> cannot be included in the aggregate function `sum()`. Only numeric or integer values can be summed.
+- Once again this is a improper mixing of data types numeric and characters.
+
+# Data wrangling 
+- Data wrangling and cleaning can take the majority of time in the data science workflow.
+- Many type of errors can arise when subsetting and manipulating multi-dimensional data objects.
+- With different types of packages it can be common to get flustered by confusing errors that can be function specific such as requiring an input argument to be a list instead of a data frame
+
+# Error #3: all arguments must have the same length
+```{r}
+df <- data.frame("age" = c(32, 31, 34), 
+                 "pet" = c(F, T, T), 
+                 "name" = c("Adam", "Blake", "Anders"))
+table(df$age, df$pets)
+```
+- The error describes that the two supplied arguments to `table()` are not the same length which is required for cross tabulation. The spelling mistake (*pet versus pets*) actually has a length of **0** which is a mismatch from df$age which has a length **3** but the error message does not indicate that the column name was **misspelled.**
+
+# Additional Learning Resources
+
+- Advanced R by Hadley Wickham <http://adv-r.had.co.nz/>
+- R-bloggers post on weird R errors <http://www.r-bloggers.com/translating-weird-r-errors/>
+
+# Questions & Discussion!
+
+![](img/thats-all-folks.gif)
+
