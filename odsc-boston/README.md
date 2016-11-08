@@ -6,5 +6,5 @@ https://www.odsc.com/boston
 
 ## to-do list
 
-:ballot_box_with_check: Apply to speak!
+:ballot_box_with_check: Apply to speak! November 8, 2016
 
