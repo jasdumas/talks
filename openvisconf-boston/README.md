@@ -1,4 +1,4 @@
-# Open Vis Conf 2017
+# OpenVis Conf 2017
 
 OPENVIS CONF is a two-day, single track conference centered around the practice of visualizing data on the web.
 
