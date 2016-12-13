@@ -1,4 +1,4 @@
-# caRdiff-uk-open-gov-beer
+# caRdiff-uk-R-user-group
 
 A lightening talk remotely presented to **CaRdiff - the Cardiff, UK R User Group** on August 2nd, 2016 
 
