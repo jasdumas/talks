@@ -11,7 +11,9 @@ _____
 ## Links
 
 * **meetup event link**: https://www.meetup.com/portland-r-user-group/events/236182887/
-    * **twiter link**: https://twitter.com/pdxrlang
-    * **meetup group link**: https://www.meetup.com/portland-r-user-group/
 
-* **Slides**: [HTML format](https://htmlpreview.github.io/?), [rpubs format](), [other format]()
+* **twitter link**: https://twitter.com/pdxrlang
+
+* **meetup group link**: https://www.meetup.com/portland-r-user-group/
+
+* **slides**: [HTML format](https://htmlpreview.github.io/?), [rpubs format](), [other format]()
