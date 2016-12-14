@@ -1,0 +1,36 @@
+---
+title: "<p>Extending Shiny by enhancing user experience with shinyLP</p> <p> 😀 +  💻 </p>"
+author: "Jasmine Dumas | <a href='https://twitter.com/jasdumas'>@jasdumas</a> | <a href='http://jasdumas.github.io/'>jasdumas.github.io</a>"
+date: "12/14/2016"
+output: slidy_presentation
+footer: "Copyright (c) 2017, JD"
+keep_md: true
+duration: 20
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+## Hi Portland!
+- I'm Jasmine Dumas
+    - **Data Scientist** and **useR** living in Connecticut
+    - Work at **Simple Finance** based in PDX
+- Slides and Materials available at: 
+    - [jasdumas/talks/PDX-R-user-group](https://github.com/jasdumas/talks/tree/master/PDX-R-user-group)
+
+<img src="img/me.jpg" style="position: absolute; right: 0; top: 0"></img>
+
+
+## Why should you care about this work
+
+## How is this work cool
+
+## Who could benefit from this work
+
+
+## The End
+
+- Questions & Discussion!
+
+![](img/thats-all-folks.gif)
