@@ -1,6 +1,6 @@
 # PDX-R-user-group
 
-A lightening talk presented to the **[Portland R User Group](http://pdxrlang.com/)** on January 12th, 2017 
+A talk presented to the **[Portland R User Group](http://pdxrlang.com/)** on January 12th, 2017 
 
 
 ![Source: Jasmine Dumas](img/portlandia.jpg)
