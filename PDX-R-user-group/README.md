@@ -16,4 +16,4 @@ _____
 
 * **meetup group link**: https://www.meetup.com/portland-r-user-group/
 
-* **slides**: [HTML format](https://htmlpreview.github.io/?), [rpubs format](), [other format]()
+* **slides**: [HTML format](https://htmlpreview.github.io/?), [rpubs format](http://rpubs.com/jasdumas/pdx-shinylp), [other format]()
