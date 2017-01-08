@@ -1,7 +1,7 @@
 ---
-title: "<p style='color:#ffffff; background-color:#009fe1;'>Extending Shiny by enhancing user experience with `shinyLP`</p> <p> 😀 +  💻 </p>"
+title: "<p style='color:#ffffff; background-color:#009fe1;'>Extending Shiny By Enhancing User Experience With `shinyLP`</p> <p> 😀 +  💻 </p>"
 author: "Jasmine Dumas | <a href='https://twitter.com/jasdumas'>@jasdumas</a> | <a href='http://jasdumas.github.io/'>jasdumas.github.io</a>"
-date: "January 12, 2017"
+date: "Thursday, January 12, 2017"
 output: 
   slidy_presentation:
   keep_md: true
@@ -13,11 +13,21 @@ duration: 20
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
+## A quick refresher of `shiny` before we get started! 
+- Transforms static R code into interactive reports and dashboards
+- No need to learn web development languages 
+    - CSS, HTML, JavaScript, JQuery
+- free or low cost hosting options for [shinyapps.io](https://www.rstudio.com/products/shinyapps/) & [shiny server](https://www.rstudio.com/products/shiny-server-pro/)
+- Shiny is extendable and modular
+
+<img src="img/shiny-sticker.png" style="position: center; right: 3"></img>
+
+
 ## Hi Portland!
 - I'm Jasmine Dumas
     - **Data Scientist** and **useR** living in Connecticut
-    - Work at **Simple Finance** based in PDX
-    - Author of `ttbbeer` and `shinyLP`
+    - Work at **Simple Finance** based in Portland, OR
+    - Author of **`ttbbeer`** and **`shinyLP`**
 - Slides and Materials available on GitHub: 
     - [jasdumas/talks/PDX-R-user-group](https://github.com/jasdumas/talks/tree/master/PDX-R-user-group)
 
@@ -25,49 +35,35 @@ knitr::opts_chunk$set(echo = TRUE)
 
 ## I began buildng `shiny` apps in 2014
 
-- Identification of cancer bio-markers based on gene expression data
-    - Development of a pipeline that would automate the analysis of gene expression datasets from the [Gene Expression Omnibus](http://www.ncbi.nlm.nih.gov/geo/)
-- Focused on creating a user friendly tool
-    - Understand how non-R users would utilize the application, interpret visualizations, and derive statistical inference
+- Focused on creating a [user friendly tool](http://gdancik.github.io/shinyGEO/) for biologists to analyze gene expression data
+    - Worked towards understanding how non-R users would utilize the app
 
-<img src="img/shinyGEO.jpg" alt="shinyGEO" style="position: center; right: 3; width: 600px;"/>
-
+<img src="img/shinyGEO.jpg" alt="shinyGEO" style="position: center; right: 3; width: 900px;"/>
 
 ## Why should you care about this?
 
-- Shiny is a popular tool and is gaining popularity
-- Advanced features have been added to shiny which have led to more robust apps
-- With the creation of robust and advanced apps we run the risk of *not including* essential user-centric design features
-- Those features help direct users **how** to use the app as intended
-    - Especially if the apps are developed for non-technical users
+- `shiny` apps are becoming more advanced and if we don't incorporate user experience (UX) features, users may have difficulty using the app as intended
+    - Especially non-technical users
     
-<img src="img/spongebob-tech.gif" style="position: center; left: 3; top: 1; width: 300px;"></img>   
+<img src="img/spongebob-tech.gif" style="position: absolute; right: 1; width: 500px;"></img>   
 
-## What could go wrong when we don't include good user experience features?
+## What could go wrong when we don't include user experience features?
 
-<img src="img/user-experience-vs-design.jpeg" style="position: center; width: 600px;"/>
+<img src="img/user-experience-vs-design.jpeg" style="position: center; right: 0; width: 600px;"/>
 
-## The `shiny` web framework package makes it easier to create R-powered web apps
-
-- Transforms static R code into interactive reports and dashboards
-- No need to learn web development languages 
-    - CSS, HTML, JavaScript, JQuery
-- free or low cost hosting options for [shinyapps.io](https://www.rstudio.com/products/shinyapps/) & [shiny server](https://www.rstudio.com/products/shiny-server-pro/)
-- Shiny is extendable and modular
-<img src="img/shiny-sticker.png" style="position: absolute; right: 0; top: 3"></img>    
 
 ## Additional `shiny` add-on packages that increase usability
 
-- [`shinyjs`](https://github.com/daattali/shinyjs): lets you perform common useful JavaScript operations in Shiny apps that will greatly improve your apps without having to know any JavaScript.
-- [`shinydashboard`](https://rstudio.github.io/shinydashboard/): provides a theme on top of Shiny, making it easy to create attractive dashboards.  
-- [`shinythemes`](https://rstudio.github.io/shinythemes/): easily alter the overall appearance of your Shiny application.
+- [`shinyjs`](https://github.com/daattali/shinyjs): Adds JavaScript operations
+- [`shinydashboard`](https://rstudio.github.io/shinydashboard/): Create dashboards  
+- [`shinythemes`](https://rstudio.github.io/shinythemes/): Alter the color and font
 - [`shinyBS`](https://ebailey78.github.io/shinyBS/): Adds additional Twitter Bootstrap components to Shiny.
     - **Bootstrap** is the most popular HTML, CSS, and JS framework for developing responsive, mobile first projects on the web.
 <img src="img/theme-selector.gif" style="position: center; right: 3; width: 800px;"/>
 
 ## {.bigger}
 
-<h1 position="center" align="absolute" style="color:#ffffff; background-color:#009fe1;"> Cool <code>shiny</code> examples from the internet! </h1>
+<h1 position="center" align="absolute" style="color:#ffffff; background-color:#009fe1;"> Up Next ... Cool <code>shiny</code> examples from the internet! </h1>
 
 ## [New Zealand Tourism website](https://mbienz.shinyapps.io/tourism_dashboard_prod/) 
 <img src="img/new-zealand-shinyapp.jpg" alt="New Zealand App" style="position: center; width: 1000px;"/>
@@ -90,24 +86,23 @@ knitr::opts_chunk$set(echo = TRUE)
 
 ## A quote from an influential R Programmer...
 
-![](img/spiderman-quote.jpg)
+<img src="img/spiderman-quote.jpg" alt="spiderman" style="position: center; width: 700px"/>
+
 
 ## Here is the point... {.bigger}
 
-<h1 position="center" align="absolute" style="color:#ffffff; background-color:#009fe1;"> We, as shiny developers need to <b>prioritize user experience</b> now that apps are getting more advanced and the user base is expanding! </h1>
+<h1 position="center" align="absolute" style="color:#ffffff; background-color:#009fe1;"> Even though we aren’t web developers, we should still strive to create user friendly tools!</h1>
 
-## There are ways to do that with [landing](https://en.wikipedia.org/wiki/Landing_page) home pages!
+## Landing pages can enhance user experience
 
-- Adapt examples from existing websites & applications and provide **informative** landing pages which explain the web app's usage in a clear and concise manner
-- These are vital pieces to ensure that users are set up for success
-- User success can be defined if they:
-    - Can use the application as intended, contact developers for assistance, see examples, or sign up for a service or account
+- Landing pages explain the app's usage in a clear and concise manner - **Sets up users for success**!
+- User success can be measured if the user can:
+    - Use the application as intended, contact app maintainers for assistance, see examples, or sign up for a service or account
 
-<img src="img/borat.gif" style="position: center; left: 3; top: 1; width: 300px;"></img> 
+<img src="img/borat.gif" style="position: center; top: 1; width: 600px;"></img> 
 
-## Example landing home page
+## An example of a landing home page
 <img src="img/Meetup.com-homepage-screenshot.jpg" alt="wiki dash" style="position: center; width: 1000px;"/>
-
 
 ## I developed an R package that helps make landing home pages called `shinyLP`
 
@@ -138,16 +133,19 @@ jumbotron <- function(header , content, button = TRUE,  ...){
 ```
 
 ## Orange you glad I'm showing examples of `shinyLP`...
-<img src="img/example1.jpg" alt="shinyGEO" style="position: center; width: 900px;"/>
+<img src="img/example1.jpg" alt="example 1" style="position: center; width: 1000px;"/>
 
 ## This `shinyLP` example is a-peeling...
-<img src="img/example3.jpg" alt="shinyGEO" style="position: center; width: 900px;"/>
+<img src="img/example3.jpg" alt="example 2" style="position: center; width: 1000px;"/>
 
 ## Naval oranges prevent scurvy...
-<img src="img/example2.jpg" alt="shinyGEO" style="position: center; width: 900px;"/>
+<img src="img/example2.jpg" alt="example 3" style="position: center; width: 1000px;"/>
 
 ## The End {.bigger}
 
 - Questions & Discussion!
 
-![](img/thats-all-folks.gif)
+<img src="img/thats-all-folks.gif" alt="ending slide" style="position: center; width: 700px;"/>
+
+
+

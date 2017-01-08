@@ -2,7 +2,7 @@ name: Publish Document
 title:
 account: rpubs
 server: rpubs.com
-appId: https://api.rpubs.com/api/v1/document/237400/96bb0964f1ee45629144c492c6c9a2f7
-bundleId: https://api.rpubs.com/api/v1/document/237400/96bb0964f1ee45629144c492c6c9a2f7
-url: http://rpubs.com/jasdumas/237400
-when: 1483561032.41759
+appId: https://api.rpubs.com/api/v1/document/240513/25d6c44d3e0c48d18c457b048cd89610
+bundleId: https://api.rpubs.com/api/v1/document/240513/25d6c44d3e0c48d18c457b048cd89610
+url: http://rpubs.com/publish/claim/240513/1183b790b8e34b8fa1613c36a038b36b
+when: 1483917199.4743
