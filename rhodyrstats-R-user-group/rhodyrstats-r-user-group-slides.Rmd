@@ -1,0 +1,42 @@
+---
+title: "<p style='color:#ffffff; background-color:#009fe1;'>Adventures in Crafting a Data Science Career</p> <p> 🔮 + 💻 = 📊</p>"
+author: "Jasmine Dumas | <a href='https://twitter.com/jasdumas'>@jasdumas</a> | <a href='http://jasdumas.github.io/'>jasdumas.github.io</a>"
+date: "TBD"
+output: 
+    slidy_presentation:
+    keep_md: true
+footer: "Copyright (c) 2017, JD"
+duration: 20
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+## Hi Narragansett!
+- I'm Jasmine Dumas
+    - **Data Scientist** and **useR** living in Connecticut
+    - Work at **Simple Finance** based in Portland, OR
+    - Author of **`ttbbeer`** and **`shinyLP`**
+- Slides and Materials available on GitHub: 
+    - [jasdumas/talks/rhodyrstats-R-user-group](https://github.com/jasdumas/talks/tree/master/rhodyrstats-R-user-group)
+
+<img src="img/me.jpg" style="position: absolute; right: 0; top: 0"></img>
+
+<img src="img/simple-logo.png" alt="simple-logo" style="position: center; right: 3; width: 300px;"/>
+
+
+## Slide topics
+
+1. where i'm at now
+    1. *`ttbbeer`
+    2. `shinyLP`
+2. how i got there
+3. volunteering to collaborate on oss research
+4. google summer of code
+5. making a connection with the rstats community
+6. documenting my path with technical writing
+7. starting from the bottom (PT internships > FT Jr. DS position > Early career DS)
+8. continously volunteering for mentorship and leadership roles in the rstats community
+
+
