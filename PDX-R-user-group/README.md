@@ -1,6 +1,6 @@
 # PDX-R-user-group
 
-A talk presented to the **[Portland R User Group](http://pdxrlang.com/)** on January 12th, 2017 
+A talk presented to the **[Portland R User Group](http://pdxrlang.com/)** on January 12th, 2017 (*Postponed till April*)
 
 
 ![Source: Jasmine Dumas](img/portlandia.jpg)
