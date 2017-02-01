@@ -12,3 +12,5 @@ https://openvisconf.com/
 ## to-do list
 
 :ballot_box_with_check: Apply to speak November 11, 2016 | https://openvisconf.com/#call-for-speakers
+
+*Not Accepted* 1/18/2017
