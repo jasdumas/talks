@@ -1,7 +1,7 @@
 ---
-title: "<p style='color:#ffffff; background-color:#009fe1;'>Adventures in Crafting a Data Science Career</p> <p> 🔮 + 💻 = 📊</p>"
+title: "<p style='color:#ffffff; background-color:#009fe1;'>AdventuRes in Crafting a Data Science Career</p> <p> 🔮 + 💻 = 📊</p>"
 author: "Jasmine Dumas | <a href='https://twitter.com/jasdumas'>@jasdumas</a> | <a href='http://jasdumas.github.io/'>jasdumas.github.io</a>"
-date: "TBD"
+date: "Thursday, March 30th, 2017"
 output: 
     slidy_presentation:
     keep_md: true
