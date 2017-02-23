@@ -10,8 +10,8 @@ _____
 
 ## Links
 
-* **meetup event link**: https://github.com/rhodyrstats/rhodyrstats.github.io/issues
+* **meetup event link**: https://www.eventbrite.com/e/seminar-with-jasmine-dumas-adventures-in-crafting-a-data-science-career-tickets-32269411679
 
-* **twitter link**:
+* **twitter link**: 
 
 * **slides**: [HTML format](https://htmlpreview.github.io/?), [rpubs format](), [other format]()
