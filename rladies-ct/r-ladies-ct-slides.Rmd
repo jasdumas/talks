@@ -1,0 +1,37 @@
+---
+title: "R-Ladies Connecticut Kickoff!"
+author: "Jasmine Dumas"
+date: "Friday, 2/24/2017"
+output: slidy_presentation
+footer: "R-Ladies"
+duration: 20
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+## Intro to R-Ladies
+
+- The mission of R-Ladies groups is to increase representation of women in the global R community through establishing local communities providing mentorship, collaborative learning & support. 
+- Anyone with an interest in R programming is encouraged to participate. It doesn't matter if you never used R or if you are an R expert.
+
+## Sponsors
+
+- Thanks to the R Consortium for funding us as a R user group and to the global R-Ladies organization for guidance and mentorship.
+
+![](img/RConsortium_Horizontal_Pantone.png)
+
+## Stats from the survey 
+
+- https://docs.google.com/forms/d/1JW5rWy84Pp1eplzehsyBG5rWZx_jBDv1lHc5eOKRlJQ/edit#responses
+
+## Call for volunteer organizers 
+
+- Do you love getting involved and organizing events?
+
+## Open discussion for future Meetup ideas! 
+
+- Frequency
+- Location
+- Type
