@@ -8,4 +8,6 @@ The mission of R-Ladies groups is to increase representation of women in the glo
 
 - meetup event link: https://www.meetup.com/rladies-connecticut/events/237554824/
 
+- slides: [rpubs](http://rpubs.com/jasdumas/rladies-ct-kickoff), [html](http://htmlpreview.github.io/?)
+
 

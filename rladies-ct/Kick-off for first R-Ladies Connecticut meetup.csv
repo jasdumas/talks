@@ -1,0 +1,13 @@
+What is your affiliation?,Have you ever used R before?,What is your preferred location for meetings? ,What is your preferred type of meeting? ,What types of topics are you interested in?
+Academic,Yes,Hartford,Programming Workshop (beginners);Programming Workshop (experienced users);Social Gatherings;Guest Speakers,Data Visualization;Predictive Modeling;Scientific Computing;Data Science
+Academic,Yes,Hartford;Rotating Locations,Programming Workshop (beginners);Product Demos;Social Gatherings;Guest Speakers;Lightening Talks,Data Visualization;Dashboards;Predictive Modeling;Machine Learning;Statistics;Data Science
+Academic,Yes,Hartford,Programming Workshop (experienced users);Social Gatherings;Guest Speakers;Lightening Talks,Data Visualization;Predictive Modeling;Machine Learning;Statistics;Data Science
+Academic,Yes,New Haven,Programming Workshop (experienced users);Product Demos;Social Gatherings;Guest Speakers;Lightening Talks,Data Visualization;Dashboards;Predictive Modeling;Scientific Computing;Statistics;Data Science
+Academic,No,New Haven,Programming Workshop (beginners),Data Visualization;Predictive Modeling;Statistics
+Academic,Yes,Hartford,Programming Workshop (beginners);Programming Workshop (experienced users);Social Gatherings,Data Visualization;Predictive Modeling;Machine Learning;Scientific Computing;Statistics;Data Science
+Academic,Yes,New Haven,Programming Workshop (beginners),Data Visualization;Statistics;Data Science
+Academic,Yes,Hartford,Programming Workshop (beginners);Product Demos,Data Visualization;Machine Learning;Scientific Computing;Software Development;Statistics
+Academic,Yes,New London,Programming Workshop (beginners);Programming Workshop (experienced users);Social Gatherings;Guest Speakers,Data Visualization;Scientific Computing;Statistics;Data Science
+Industry (private),Yes,Hartford,Programming Workshop (experienced users);Social Gatherings;Lightening Talks,Data Visualization;Predictive Modeling;Machine Learning;Scientific Computing;Statistics;Data Science
+Academic,Yes,Hartford;New Haven;Rotating Locations;Middletown,Programming Workshop (beginners);Programming Workshop (experienced users);Social Gatherings;Guest Speakers;Lightening Talks,Data Visualization;Predictive Modeling;Machine Learning;Scientific Computing;Statistics;Data Science
+Non-profit,Yes,Hartford,Programming Workshop (beginners);Product Demos;Guest Speakers;Lightening Talks,Data Visualization;Dashboards;Predictive Modeling;Software Development;Statistics;Data Science
