@@ -86,7 +86,7 @@ mtg_type %>% group_by(type) %>%
 ```{r, echo=FALSE}
 topic_type <- data.frame(type = unlist(strsplit(survey$`What types of topics are you interested in?`, ";")))
 
-mtg_type %>% group_by(type) %>% 
+topic_type %>% group_by(type) %>% 
            summarise(n = n()) %>% 
            mutate(percentage = (n / sum(n)) * 100) %>% 
            ggplot(., aes(x = type, y = percentage)) +
