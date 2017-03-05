@@ -1,6 +1,6 @@
 # rhodyrstats-R-user-group
 
-A talk presented to the **[RhodyRstats R User Group](http://rhodyrstats.org/)**, A Data Science and R Study Group for Rhode Island on *TBD Spring 2017* 
+A talk presented to the **University of Rhode Island (URI) Coastal Institute and [RhodyRstats R User Group](http://rhodyrstats.org/)**, A Data Science and R Study Group for Rhode Island on **Thursday, March 30th, 2017** 
 
 
 ![Source: Jasmine Dumas](img/ri-dells.jpg)
@@ -10,8 +10,10 @@ _____
 
 ## Links
 
-* **meetup event link**: https://www.eventbrite.com/e/seminar-with-jasmine-dumas-adventures-in-crafting-a-data-science-career-tickets-32269411679
+* **event link**: https://ci.uri.edu/2017/02/15/adventures-in-crafting-a-data-science-career/
 
-* **twitter link**: 
+* **event sign-up link**: https://www.eventbrite.com/e/seminar-with-jasmine-dumas-adventures-in-crafting-a-data-science-career-tickets-32269411679
+
+* **facebook event link**: https://www.facebook.com/events/1350033715054165/
 
 * **slides**: [HTML format](https://htmlpreview.github.io/?), [rpubs format](), [other format]()
