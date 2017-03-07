@@ -1,7 +1,7 @@
 ---
 title: "<p style='color:#ffffff; background-color:#009fe1;'>Extending Shiny By Enhancing User Experience With `shinyLP`</p> <p> 😀 +  💻 </p>"
 author: "Jasmine Dumas | <a href='https://twitter.com/jasdumas'>@jasdumas</a> | <a href='http://jasdumas.github.io/'>jasdumas.github.io</a>"
-date: "Thursday, January 12, 2017"
+date: "Thursday, April 6, 2017"
 output: 
   slidy_presentation:
   keep_md: true
@@ -13,16 +13,6 @@ duration: 20
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-## A quick refresher of `shiny` before we get started! 
-- Transforms static R code into interactive reports and dashboards
-- No need to learn web development languages 
-    - CSS, HTML, JavaScript, JQuery
-- free or low cost hosting options for [shinyapps.io](https://www.rstudio.com/products/shinyapps/) & [shiny server](https://www.rstudio.com/products/shiny-server-pro/)
-- Shiny is extendable and modular
-
-<img src="img/shiny-sticker.png" style="position: center; right: 3"></img>
-
-
 ## Hi Portland!
 - I'm Jasmine Dumas
     - **Data Scientist** and **useR** living in Connecticut
@@ -32,6 +22,18 @@ knitr::opts_chunk$set(echo = TRUE)
     - [jasdumas/talks/PDX-R-user-group](https://github.com/jasdumas/talks/tree/master/PDX-R-user-group)
 
 <img src="img/me.jpg" style="position: absolute; right: 0; top: 0"></img>
+
+<img src="img/simple-logo.png" alt="simple-logo" style="position: center; right: 3; width: 300px;"/>
+
+## A quick refresher of `shiny` before we get started! 
+- Transforms static R code into interactive reports and dashboards
+- No need to learn web development languages 
+    - CSS, HTML, JavaScript, JQuery
+- free or low cost hosting options for [shinyapps.io](https://www.rstudio.com/products/shinyapps/) & [shiny server](https://www.rstudio.com/products/shiny-server-pro/)
+- Shiny is extendable and modular
+
+<img src="img/shiny-sticker.png" style="position: center; right: 3"></img>
+
 
 ## I began buildng `shiny` apps in 2014
 
