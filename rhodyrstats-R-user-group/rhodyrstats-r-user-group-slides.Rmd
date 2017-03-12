@@ -5,8 +5,9 @@ date: "Thursday, March 30th, 2017"
 output: 
     slidy_presentation:
     keep_md: true
+    self_contained: false
 footer: "Copyright (c) 2017, JD"
-duration: 20
+duration: 30
 ---
 
 ```{r setup, include=FALSE}
@@ -23,7 +24,7 @@ knitr::opts_chunk$set(echo = FALSE)
 
 <img src="img/me.jpg" style="position: absolute; right: 0; top: 0"></img>
 
-<img src="img/simple-logo.png" alt="simple-logo" style="position: center; right: 3; width: 300px;"/>
+<img src="img/simple-logo.png" alt="simple-logo" style="position: center; right: 3; width: 300px;"></img>
 
 ## I learned about data science from the internet
 
@@ -65,7 +66,116 @@ knitr::opts_chunk$set(echo = FALSE)
     - diverse programming approaches
     - applied projects for a portfolio
     
-<img src="img/moocs.jpg" style="position: absolute; right: 0; bottom: 0; width: 300px"></img>
+<img src="img/moocs.jpg" style="position: center; right: 0; width: 300px"></img>
+
+## Cold emailing does work!
+
+- Have you ever wanted advice but didn't know who to contact?
+- Email someone in the field that you are interested in and ask about the path they took and what research they are engaged in!
+- Tip on getting a response back: **Make it personal!**
+    - I specifically emailed about advice on applying the graduate school and collaborating on a open source research project.
+    
+    ![](img/youve-got-mail.jpg)
+
+    
+## The response... 
+
+```{r, echo=FALSE, message=FALSE, warning=FALSE}
+library(lubridate)
+first_email <- mdy("7/10/14")
+pres_date = mdy("3/30/17")
+pres_date - first_email
+```
+
+![](img/first-email.jpg)
+
+## My first exposure to R programming was through Shiny
+
+- Shiny is a web application framework for R and is quite different from R syntactically
+    - In 2014, shiny also did not have all of the features it has today
+- Some of the usual R programming headaches came up like `stringsAsFactors = FALSE` 
+- It was a mixture of learning about Bioinformatics, gene expression data, bioconductor, and *designing a data product for a non-technical user*.
+    - tl;dr: Gene expression data is not like the `iris` dataset
+    
+## Sometimes unpaid volunteer work does pays off...
+
+- [Google Summer of Code](https://summerofcode.withgoogle.com/) is a global program for undergraduates and graduate students to get funding from **Google** to work on an open source project for the Summer!
+- What it provides:
+    - $5500.00
+    - Opportunity to gain more programming skills
+    - Interface with the R programming community
+    - [Archival hosting](https://www.google-melange.com/archive/gsoc/2015/orgs/rproject/projects/jasdumas.html) of your abstract and code
+    - Nobody talks about this heavily, but it does get you a *lifetime referral* for positions at Google!
+
+
+## The result...
+
+- A publication in [*Bioinformatics*](https://academic.oup.com/bioinformatics/article-abstract/32/23/3679/2525634/shinyGEO-a-web-based-application-for-analyzing)!
+
+![](img/shinyGEO2.jpg)
+
+## How to make a connection to the R community
+
+- ✅ Develop or contribute to packages (`ttbbeer`, `shinyGEO`)
+- ✅ Answer (or ask for help) pleas for help on Twitter, through the [#rstats](https://twitter.com/hashtag/rstats?src=hash)
+- ✅ Complete interesting analysis projects ([Web scraping and mapping breweries with import.io and R](https://trendct.org/2016/03/18/tutorial-web-scraping-and-mapping-breweries-with-import-io-and-r/))
+- ✅ Start a podcast ([RTalk](https://itunes.apple.com/us/podcast/r-talk/id1030819337?mt=2))
+- ✅ Start a blog ([jasdumas.github.io](https://jasdumas.github.io/))
+- ✅ Put your code on GitHub ([github.com/jasdumas](https://github.com/jasdumas))
+- ✅ Attend conferences ([useR!](https://user2017.brussels/))
+- ✅ Volunteer to review code/papers ([Mapping useRs](http://forwards.github.io/blog/2017/01/13/mapping-users/))
+- ✅ Volunteer in community initiatives  ([R-Ladies](http://rladies.org/), [Forwards](http://forwards.github.io/), [RWeekly](https://rweekly.org/))
+
+## Applying for jobs that utilize R
+
+- When searching for a Data Science Role, I look for: 
+    - Language agnostic (R, Python or SQL focus)
+    - Job description (detailed and inclusive langauge)
+    - Opportunities for advancement (transparency and organization)
+    - Professional development (provide funding for conferences)
+    - Diverse teams (experiences and backgrounds)
+    
+- It's also a humbling experience to ask for help via twitter:
+
+<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Does anyone want to hire me to spice up their data with science using <a href="https://twitter.com/hashtag/rstats?src=hash">#rstats</a>? <br><br>I&#39;m looking for a job! 😬</p>&mdash; Jasmine Dumas (@jasdumas) <a href="https://twitter.com/jasdumas/status/713118293515759616">March 24, 2016</a></blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+## My path laid out
+
+- a diagram of my jobs and experiences
+- 
+
+## Accessing beer statistics with `ttbbeer`
+
+- An R data package of beer statistics from U.S. Department of the Treasury, Alcohol and Tobacco Tax and Trade Bureau (TTB)
+    - available on [CRAN](https://cran.r-project.org/web/packages/ttbbeer/index.html) and [Github](https://github.com/jasdumas/ttbbeer)
+
+```{r, echo=FALSE, message=FALSE, warning=FALSE}
+library(ggplot2)
+library(ttbbeer)
+library(tidyr)
+data("beermaterials")
+
+beermaterials$Month<- factor( beermaterials$Month, levels = unique(beermaterials$Month) )
+
+beermaterials %>% 
+  gather(key = materials, value = pounds, -c(Month, Year)) %>% 
+ggplot(., aes(x=Year, y=pounds, color=materials)) +
+     geom_line() +
+     geom_point() +
+     theme_bw() +
+     theme(axis.ticks = element_blank(), axis.text.x = element_blank()) +
+     facet_wrap(~ Month, nrow = 2)
+
+```
+
+
+## Make landing pages for `shiny` apps with `shinyLP`
+
+- Adds **even more Bootstrap** components to make landing home pages for Shiny 
+    - available on [CRAN](https://cran.r-project.org/web/packages/shinyLP/index.html) and [Github](https://github.com/jasdumas/shinyLP)
+
+![](img/example1.jpg)
 
 ## Slide topics
 
