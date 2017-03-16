@@ -12,6 +12,7 @@ duration: 30
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE)
+library(dplyr)
 ```
 
 ## Hi Narragansett!
@@ -24,11 +25,32 @@ knitr::opts_chunk$set(echo = FALSE)
 
 <img src="img/me.jpg" style="position: absolute; right: 0; top: 0"></img>
 
-<img src="img/simple-logo.png" alt="simple-logo" style="position: center; right: 3; width: 300px;"></img>
+<img src="img/simple-logo.png" alt="simple-logo" style="position: center; right: 3; width: 400px;"></img>
+
+## More about my background in Biomedical Engineering
+
+- Bachelor of Science in Biomedical Engineering from the University of Hartford
+    - Lot's of Calculus but no Statistics courses!
+- I participated in a few of research projects (one was published in the [CT Medical Journal](https://www.ncbi.nlm.nih.gov/pubmed/24156174))
+- I was particularly found of computational approaches to solving engineering problems with regards to medical devices
+    - Robotics
+    - Aerospace
+    - Computer-Aided Design
+  
+- **My Engineering Path**: Manufacturing Engineer ➡️ R&D Intern ➡️️ R&D Engineering Technician ➡️(...)➡️️️Data Scientist
 
 ## I learned about data science from the internet
 
 <img src="img/hbr-ds-article.jpg" style="position: center; right: 5; width: 600px"></img>
+
+## The classic data science diagram from Drew Conway:
+
+![](img/Data_Science_VD.png)
+
+## A updated (albeit oppinated) data science diagram from Mikhail Popov:
+
+<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">I&#39;m so tired of all the hilariously wrong data science venn diagrams so I made what I think will be definitive one. <a href="https://t.co/ELcPZi6atJ">pic.twitter.com/ELcPZi6atJ</a></p>&mdash; Mikhail Popov (@bearloga) <a href="https://twitter.com/bearloga/status/837756738690437121">March 3, 2017</a></blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 ## ["A rose by any other name would smell as sweet"](https://en.wikipedia.org/wiki/A_rose_by_any_other_name_would_smell_as_sweet)
 
@@ -42,6 +64,7 @@ knitr::opts_chunk$set(echo = FALSE)
     - Machine Learning
     - Informatics
     - Applied Statistics 
+    - Quantitative Analyst
     - more? ...
 
 ## Discovering resources can be a challenge
@@ -91,9 +114,9 @@ pres_date - first_email
 
 ## My first exposure to R programming was through Shiny
 
-- Shiny is a web application framework for R and is quite different from R syntactically
+- Shiny is a web application framework for R and is quite different from R, syntactically
     - In 2014, shiny also did not have all of the features it has today
-- Some of the usual R programming headaches came up like `stringsAsFactors = FALSE` 
+- Some of the usual R programming headaches did come up such as `stringsAsFactors = FALSE` 
 - It was a mixture of learning about Bioinformatics, gene expression data, bioconductor, and *designing a data product for a non-technical user*.
     - tl;dr: Gene expression data is not like the `iris` dataset
     
@@ -103,15 +126,15 @@ pres_date - first_email
 - What it provides:
     - $5500.00
     - Opportunity to gain more programming skills
-    - Interface with the R programming community
+    - Interface with the open source community
     - [Archival hosting](https://www.google-melange.com/archive/gsoc/2015/orgs/rproject/projects/jasdumas.html) of your abstract and code
     - Nobody talks about this heavily, but it does get you a *lifetime referral* for positions at Google!
 
+## Some of the results from participating in the Google Summer of Code:
 
-## The result...
+- A first author publication in the [*Bioinformatics Journal*](https://academic.oup.com/bioinformatics/article-abstract/32/23/3679/2525634/shinyGEO-a-web-based-application-for-analyzing)!
 
-- A publication in [*Bioinformatics*](https://academic.oup.com/bioinformatics/article-abstract/32/23/3679/2525634/shinyGEO-a-web-based-application-for-analyzing)!
-
+- An web application (currently being refactor to submit to [**rOpenSci**](https://ropensci.org/))
 ![](img/shinyGEO2.jpg)
 
 ## How to make a connection to the R community
@@ -130,9 +153,9 @@ pres_date - first_email
 
 - When searching for a Data Science Role, I look for: 
     - Language agnostic (R, Python or SQL focus)
-    - Job description (detailed and inclusive langauge)
+    - Job description (detailed and inclusive language)
     - Opportunities for advancement (transparency and organization)
-    - Professional development (provide funding for conferences)
+    - Professional development (provide funding for conferences or courses)
     - Diverse teams (experiences and backgrounds)
     
 - It's also a humbling experience to ask for help via twitter:
@@ -140,10 +163,32 @@ pres_date - first_email
 <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Does anyone want to hire me to spice up their data with science using <a href="https://twitter.com/hashtag/rstats?src=hash">#rstats</a>? <br><br>I&#39;m looking for a job! 😬</p>&mdash; Jasmine Dumas (@jasdumas) <a href="https://twitter.com/jasdumas/status/713118293515759616">March 24, 2016</a></blockquote>
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-## My path laid out
+## Every path is unique...
 
-- a diagram of my jobs and experiences
-- 
+**tl;dr: I love learning in a structured setting but I can learn best from doing applied data science in the workplace.**
+
+- 🎓 Began a intro grad school course in programming at DePaul University
+- 🌞 Google Summer of Code 2015 Program
+- ⏳Part-time Intern in a Bioinformatics Laboratory at UCONN & Data Science Group for The Hartford Insurance Company
+- 💻Full-time Associate Data Scientist in a Data Science Group for The Hartford Insurance Company
+- 🎓 Began intro grad school courses in Computer Science at Johns Hopkins EP and then left
+- 💻**Full-time Data Scientist 2 at Simple!**
+
+
+## Starting from the bottom is ok!
+
+- I started with basic tutorials and then moved on to more advanced projects where I was webscraping my own data, conceiving hypotheses, and developing dashboards & reports.
+
+
+![](https://media.giphy.com/media/KRNwaoZdOEoWk/giphy.gif)
+
+## Advice that I wish I heard 2.5 years ago:
+
+<h2 style='color:#ffffff; background-color:#009fe1;'>Ultimately, technical skills, passion, and curiosity are key attributes of a productive data scientist and essential to collaborating with others!</h2>
+
+## Alright, on to the fun stuff ... R:
+
+<h2 style='color:#ffffff; background-color:#009fe1;'>R packages are a great way to combine code & documentation to share with others</h2>
 
 ## Accessing beer statistics with `ttbbeer`
 
@@ -176,6 +221,14 @@ ggplot(., aes(x=Year, y=pounds, color=materials)) +
     - available on [CRAN](https://cran.r-project.org/web/packages/shinyLP/index.html) and [Github](https://github.com/jasdumas/shinyLP)
 
 ![](img/example1.jpg)
+
+
+## The End {.bigger}
+
+- Questions & Discussion!
+
+<img src="img/thats-all-folks.gif" alt="ending slide" style="position: center; width: 700px;"/>
+
 
 ## Slide topics
 
