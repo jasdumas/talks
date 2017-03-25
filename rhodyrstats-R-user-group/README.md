@@ -16,4 +16,4 @@ _____
 
 * **facebook event link**: https://www.facebook.com/events/1350033715054165/
 
-* **slides**: [HTML format](https://htmlpreview.github.io/?), [rpubs format](), [other format]()
+* **slides**: [HTML format](https://htmlpreview.github.io/?https://github.com/jasdumas/talks/blob/master/rhodyrstats-R-user-group/rhodyrstats-r-user-group-slides.html), [rpubs format](http://rpubs.com/jasdumas/uri-talk), [other format]()
