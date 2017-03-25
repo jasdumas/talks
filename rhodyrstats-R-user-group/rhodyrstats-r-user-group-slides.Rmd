@@ -134,7 +134,7 @@ pres_date - first_email
 
 - A first author publication in the [*Bioinformatics Journal*](https://academic.oup.com/bioinformatics/article-abstract/32/23/3679/2525634/shinyGEO-a-web-based-application-for-analyzing)!
 
-- An web application (currently being refactor to submit to [**rOpenSci**](https://ropensci.org/))
+- An web application (currently being refactored to submit to [**rOpenSci**](https://ropensci.org/))
 ![](img/shinyGEO2.jpg)
 
 ## How to make a connection to the R community
@@ -190,12 +190,36 @@ pres_date - first_email
 
 <h2 style='color:#ffffff; background-color:#009fe1;'>R packages are a great way to combine code & documentation to share with others</h2>
 
-## Accessing beer statistics with `ttbbeer`
+## What even is, beer analytics?
+
+- The use of quantitative methods to: 
+    - improve the production & quality of beer
+    - measure customer preferences and predict seasonality
+    - gather insights on industry performance
+
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/William_Sealy_Gosset.jpg/240px-William_Sealy_Gosset.jpg" style="position: center; right: 0; left: 0; top: 1"></img>
+
+## Finding beer datasets can be difficult
+
+- **Datasets**: [Craft Beer Sample Data](http://www.craftbeeranalytics.com/beer-data.html), [SNAP-RateBeer*](https://snap.stanford.edu/data/web-RateBeer.html) - *which is provided to academic researchers only*
+- **API's**: [RateBeer](http://www.ratebeer.com/json/ratebeer-api-agreement.asp), [Untapped](https://untappd.com/api/docs), [The Beer Mapping Project](http://beermapping.com/api/), [BreweryDB](http://www.brewerydb.com/apps) | API's that are available have restrictions on usage or require a user account
+- **Data analysis projects of beer**: [yhat Beer Advocate Recommender](http://blog.yhat.com/posts/recommender-system-in-r.html), [Crowd-sourced Beer Distribution Map](http://www.seekabrew.com/distro/index.html)
+
+<img src="img/fred-beer.gif" style="position: center; right: 0; left: 0; top: 1"></img>
+
+## Necessity breeds innovation
+
+- I was inspired to become better at **finding datasets** and **web scraping** from the road-blocks of finding analysis-ready datasets for beer-centric projects!
+- Here is a [tutorial](http://trendct.org/2016/03/18/tutorial-web-scraping-and-mapping-breweries-with-import-io-and-r/) I wrote to get meta data on brewery ratings in Connecticut from Beer Advocate using [Import.io](https://www.import.io/)
+
+<img src="img/tutorial.png" style="position: center; right: 0; left: 0; top: 1"></img>
+
+## Accessing beer statistics with the `ttbbeer` package
 
 - An R data package of beer statistics from U.S. Department of the Treasury, Alcohol and Tobacco Tax and Trade Bureau (TTB)
     - available on [CRAN](https://cran.r-project.org/web/packages/ttbbeer/index.html) and [Github](https://github.com/jasdumas/ttbbeer)
 
-```{r, echo=FALSE, message=FALSE, warning=FALSE}
+```{r, echo=FALSE, fig.height=5, fig.width=7, message=FALSE, warning=FALSE}
 library(ggplot2)
 library(ttbbeer)
 library(tidyr)
