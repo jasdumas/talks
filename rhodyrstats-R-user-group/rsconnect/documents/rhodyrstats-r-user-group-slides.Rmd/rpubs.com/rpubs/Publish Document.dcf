@@ -1,0 +1,8 @@
+name: Publish Document
+title:
+account: rpubs
+server: rpubs.com
+appId: https://api.rpubs.com/api/v1/document/261769/e540bba43ee14314bdc61b8291e04f92
+bundleId: https://api.rpubs.com/api/v1/document/261769/e540bba43ee14314bdc61b8291e04f92
+url: http://rpubs.com/jasdumas/261769
+when: 1490710951.27888

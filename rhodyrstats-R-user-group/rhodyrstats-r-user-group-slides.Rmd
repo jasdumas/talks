@@ -4,6 +4,7 @@ author: "Jasmine Dumas | <a href='https://twitter.com/jasdumas'>@jasdumas</a> | 
 date: "Thursday, March 30th, 2017"
 output: 
     slidy_presentation:
+    font_adjustment: +1
     keep_md: true
     self_contained: false
 footer: "Copyright (c) 2017, JD"
@@ -13,6 +14,10 @@ duration: 30
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE)
 library(dplyr)
+library(gganimate)
+library(ggplot2)
+library(ttbbeer)
+library(tidyr)
 ```
 
 ## Hi Narragansett!
@@ -30,16 +35,17 @@ library(dplyr)
 ## More about my background in Biomedical Engineering
 
 - Bachelor of Science in Biomedical Engineering from the University of Hartford
-    - Lot's of Calculus but no Statistics courses!
+    - Lots of Calculus but no Statistics courses!
 - I participated in a few of research projects (one was published in the [CT Medical Journal](https://www.ncbi.nlm.nih.gov/pubmed/24156174))
 - I was particularly found of computational approaches to solving engineering problems with regards to medical devices
     - Robotics
     - Aerospace
     - Computer-Aided Design
   
-- **My Engineering Path**: Manufacturing Engineer ➡️ R&D Intern ➡️️ R&D Engineering Technician ➡️(...)➡️️️Data Scientist
+- **My Engineering Path**: 
+    - Manufacturing Engineer ➡️ R&D Intern ➡️️ R&D Engineering Technician ➡️ (...) ➡️️ ️Data Scientist
 
-## I learned about data science from the internet
+## I learned about data science from the internet 
 
 <img src="img/hbr-ds-article.jpg" style="position: center; right: 5; width: 600px"></img>
 
@@ -64,7 +70,7 @@ library(dplyr)
     - Machine Learning
     - Informatics
     - Applied Statistics 
-    - Quantitative Analyst
+    - Quantitative Analysis
     - more? ...
 
 ## Discovering resources can be a challenge
@@ -100,59 +106,47 @@ library(dplyr)
     
     ![](img/youve-got-mail.jpg)
 
-    
-## The response... 
-
-```{r, echo=FALSE, message=FALSE, warning=FALSE}
-library(lubridate)
-first_email <- mdy("7/10/14")
-pres_date = mdy("3/30/17")
-pres_date - first_email
-```
-
-![](img/first-email.jpg)
-
 ## My first exposure to R programming was through Shiny
 
 - Shiny is a web application framework for R and is quite different from R, syntactically
     - In 2014, shiny also did not have all of the features it has today
 - Some of the usual R programming headaches did come up such as `stringsAsFactors = FALSE` 
-- It was a mixture of learning about Bioinformatics, gene expression data, bioconductor, and *designing a data product for a non-technical user*.
-    - tl;dr: Gene expression data is not like the `iris` dataset
+- It was a mixture of learning about Bioinformatics, gene expression data, bioconductor, and *designing a data product for a non-technical user*
+    - Gene expression data is not like the `iris` dataset
     
 ## Sometimes unpaid volunteer work does pays off...
 
 - [Google Summer of Code](https://summerofcode.withgoogle.com/) is a global program for undergraduates and graduate students to get funding from **Google** to work on an open source project for the Summer!
 - What it provides:
-    - $5500.00
     - Opportunity to gain more programming skills
     - Interface with the open source community
     - [Archival hosting](https://www.google-melange.com/archive/gsoc/2015/orgs/rproject/projects/jasdumas.html) of your abstract and code
     - Nobody talks about this heavily, but it does get you a *lifetime referral* for positions at Google!
 
-## Some of the results from participating in the Google Summer of Code:
+## Some of the results from participating in the Google Summer of Code
 
 - A first author publication in the [*Bioinformatics Journal*](https://academic.oup.com/bioinformatics/article-abstract/32/23/3679/2525634/shinyGEO-a-web-based-application-for-analyzing)!
 
 - An web application (currently being refactored to submit to [**rOpenSci**](https://ropensci.org/))
-![](img/shinyGEO2.jpg)
+
+<img src="img/shinyGEO2.jpg" alt="ending slide" style="position: center; width: 700px;"/>
 
 ## How to make a connection to the R community
 
-- ✅ Develop or contribute to packages (`ttbbeer`, `shinyGEO`)
-- ✅ Answer (or ask for help) pleas for help on Twitter, through the [#rstats](https://twitter.com/hashtag/rstats?src=hash)
-- ✅ Complete interesting analysis projects ([Web scraping and mapping breweries with import.io and R](https://trendct.org/2016/03/18/tutorial-web-scraping-and-mapping-breweries-with-import-io-and-r/))
-- ✅ Start a podcast ([RTalk](https://itunes.apple.com/us/podcast/r-talk/id1030819337?mt=2))
-- ✅ Start a blog ([jasdumas.github.io](https://jasdumas.github.io/))
-- ✅ Put your code on GitHub ([github.com/jasdumas](https://github.com/jasdumas))
-- ✅ Attend conferences ([useR!](https://user2017.brussels/))
-- ✅ Volunteer to review code/papers ([Mapping useRs](http://forwards.github.io/blog/2017/01/13/mapping-users/))
-- ✅ Volunteer in community initiatives  ([R-Ladies](http://rladies.org/), [Forwards](http://forwards.github.io/), [RWeekly](https://rweekly.org/))
+> - ✅ Develop or contribute to packages (`ttbbeer`, `shinyGEO`, `shinyLP`) 
+> - ✅ Answer (or ask) for help on Twitter, through the [#rstats](https://twitter.com/hashtag/rstats?src=hash)
+> - ✅ Complete interesting analysis projects ([Web scraping and mapping breweries with import.io and R](https://trendct.org/2016/03/18/tutorial-web-scraping-and-mapping-breweries-with-import-io-and-r/))
+> - ✅ Start a podcast ([RTalk](https://itunes.apple.com/us/podcast/r-talk/id1030819337?mt=2))
+> - ✅ Start a blog ([jasdumas.github.io](https://jasdumas.github.io/))
+> - ✅ Put your code on GitHub ([github.com/jasdumas](https://github.com/jasdumas))
+> - ✅ Attend conferences ([useR!](https://user2017.brussels/))
+> - ✅ Volunteer to review code/papers ([Mapping useRs](http://forwards.github.io/blog/2017/01/13/mapping-users/))
+> - ✅ Volunteer in community initiatives  ([R-Ladies](http://rladies.org/), [Forwards](http://forwards.github.io/), [RWeekly](https://rweekly.org/))
 
 ## Applying for jobs that utilize R
 
 - When searching for a Data Science Role, I look for: 
-    - Language agnostic (R, Python or SQL focus)
+    - Language agnostic (**R**, **Python** or **SQL** focus)
     - Job description (detailed and inclusive language)
     - Opportunities for advancement (transparency and organization)
     - Professional development (provide funding for conferences or courses)
@@ -163,7 +157,7 @@ pres_date - first_email
 <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Does anyone want to hire me to spice up their data with science using <a href="https://twitter.com/hashtag/rstats?src=hash">#rstats</a>? <br><br>I&#39;m looking for a job! 😬</p>&mdash; Jasmine Dumas (@jasdumas) <a href="https://twitter.com/jasdumas/status/713118293515759616">March 24, 2016</a></blockquote>
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-## Every path is unique...
+## Every data science path is unique...
 
 **tl;dr: I love learning in a structured setting but I can learn best from doing applied data science in the workplace.**
 
@@ -175,18 +169,18 @@ pres_date - first_email
 - 💻**Full-time Data Scientist 2 at Simple!**
 
 
-## Starting from the bottom is ok!
+## Starting from the 'bottom' is ok! 
 
-- I started with basic tutorials and then moved on to more advanced projects where I was webscraping my own data, conceiving hypotheses, and developing dashboards & reports.
+- I started with basic tutorials, books, & courses then moved on to advanced projects where I was webscraping my own data, conceiving hypotheses, and developing dashboards & reports.
 
 
 ![](https://media.giphy.com/media/KRNwaoZdOEoWk/giphy.gif)
 
-## Advice that I wish I heard 2.5 years ago:
+## Advice that I wish I heard 2.5 years ago from myself: 
 
 <h2 style='color:#ffffff; background-color:#009fe1;'>Ultimately, technical skills, passion, and curiosity are key attributes of a productive data scientist and essential to collaborating with others!</h2>
 
-## Alright, on to the fun stuff ... R:
+## Alright, on to the fun stuff ... R: 
 
 <h2 style='color:#ffffff; background-color:#009fe1;'>R packages are a great way to combine code & documentation to share with others</h2>
 
@@ -219,12 +213,12 @@ pres_date - first_email
 - An R data package of beer statistics from U.S. Department of the Treasury, Alcohol and Tobacco Tax and Trade Bureau (TTB)
     - available on [CRAN](https://cran.r-project.org/web/packages/ttbbeer/index.html) and [Github](https://github.com/jasdumas/ttbbeer)
 
-```{r, echo=FALSE, fig.height=5, fig.width=7, message=FALSE, warning=FALSE}
-library(ggplot2)
-library(ttbbeer)
-library(tidyr)
+```{r, echo=FALSE, message=FALSE, warning=FALSE}
+
 data("beermaterials")
 
+#beermaterials$month_year <- paste0(beermaterials$Month, " ", beermaterials$Year)
+#beermaterials$month_year <- mdy(beermaterials$month_year)
 beermaterials$Month<- factor( beermaterials$Month, levels = unique(beermaterials$Month) )
 
 beermaterials %>% 
@@ -234,40 +228,34 @@ ggplot(., aes(x=Year, y=pounds, color=materials)) +
      geom_point() +
      theme_bw() +
      theme(axis.ticks = element_blank(), axis.text.x = element_blank()) +
-     facet_wrap(~ Month, nrow = 2)
+     facet_wrap(~ Month, nrow = 1)
 
 ```
 
+## What even is, a landing page?
+
+- Landing pages explain the web app's usage in a clear and concise manner - **Sets up users for success**!
+- User success can be measured if the user can:
+    - Use the application as intended, contact app maintainers for assistance, see examples, or sign up for a service or account
+
+<img src="img/borat.gif" style="position: center; top: 1; width: 600px;"></img>
+
+## An example of a landing home page
+<img src="img/Meetup.com-homepage-screenshot.jpg" alt="wiki dash" style="position: center; width: 1000px;"/>
 
 ## Make landing pages for `shiny` apps with `shinyLP`
 
 - Adds **even more Bootstrap** components to make landing home pages for Shiny 
     - available on [CRAN](https://cran.r-project.org/web/packages/shinyLP/index.html) and [Github](https://github.com/jasdumas/shinyLP)
 
-![](img/example1.jpg)
 
+<img src="img/example1.jpg" alt="ending slide" style="position: center; width: 700px;"/>
 
-## The End {.bigger}
+## The End 
 
 - Questions & Discussion!
 
 <img src="img/thats-all-folks.gif" alt="ending slide" style="position: center; width: 700px;"/>
-
-
-## Slide topics
-
-1. intro to data science and how I discovered it
-1. where i'm at now
-    1. *`ttbbeer`
-    2. `shinyLP`
-2. how i got there
-3. volunteering to collaborate on oss research
-4. google summer of code
-5. making a connection with the rstats community
-6. documenting my path with technical writing
-7. starting from the bottom (PT internships > FT Jr. DS position > Early career DS)
-8. continuously volunteering for mentor ship and leadership roles in the rstats community
-
 
 
 
