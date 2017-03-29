@@ -37,7 +37,7 @@ library(tidyr)
 - Bachelor of Science in Biomedical Engineering from the University of Hartford
     - Lots of Calculus but no Statistics courses!
 - I participated in a few of research projects (one was published in the [CT Medical Journal](https://www.ncbi.nlm.nih.gov/pubmed/24156174))
-- I was particularly found of computational approaches to solving engineering problems with regards to medical devices
+- I was particularly fond of computational approaches to solving engineering problems with regards to medical devices
     - Robotics
     - Aerospace
     - Computer-Aided Design
@@ -127,7 +127,7 @@ library(tidyr)
 
 - A first author publication in the [*Bioinformatics Journal*](https://academic.oup.com/bioinformatics/article-abstract/32/23/3679/2525634/shinyGEO-a-web-based-application-for-analyzing)!
 
-- An web application (currently being refactored to submit to [**rOpenSci**](https://ropensci.org/))
+- A web application (currently being refactored to submit to [**rOpenSci**](https://ropensci.org/))
 
 <img src="img/shinyGEO2.jpg" alt="ending slide" style="position: center; width: 700px;"/>
 
