@@ -37,7 +37,7 @@ library(tidyr)
 - Bachelor of Science in Biomedical Engineering from the University of Hartford
     - Lots of Calculus but no Statistics courses!
 - I participated in a few of research projects (one was published in the [CT Medical Journal](https://www.ncbi.nlm.nih.gov/pubmed/24156174))
-- I was interested in computational approaches to solving engineering problems with regards to medical devices
+- I was particularly fond of computational approaches to solving engineering problems with regards to medical devices
     - Robotics
     - Aerospace
     - Computer-Aided Design
