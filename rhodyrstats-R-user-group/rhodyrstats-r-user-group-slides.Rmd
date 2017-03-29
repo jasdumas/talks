@@ -43,7 +43,7 @@ library(tidyr)
     - Computer-Aided Design
   
 - **My Engineering Path**: 
-    - Manufacturing Engineer ➡️ R&D Intern ➡️️ R&D Engineering Technician ➡️ (...) ➡️️ ️Data Scientist
+    - Manufacturing Engineer ➡️ R&D Intern ➡️️ R&D Engineering Technician ➡️ (...) ➡️️ Data Scientist
 
 ## I learned about data science from the internet 
 
@@ -97,7 +97,7 @@ library(tidyr)
     
 <img src="img/moocs.jpg" style="position: center; right: 0; width: 300px"></img>
 
-## Cold emailing does work!
+## Asking strangers for help through cold emailing?!
 
 - Have you ever wanted advice but didn't know who to contact?
 - Email someone in the field that you are interested in and ask about the path they took and what research they are engaged in!
@@ -106,30 +106,33 @@ library(tidyr)
     
     ![](img/youve-got-mail.jpg)
 
-## My first exposure to R programming was through Shiny
+## My first exposure to R programming was through `shiny` in 2014
 
-- Shiny is a web application framework for R and is quite different from R, syntactically
-    - In 2014, shiny also did not have all of the features it has today
-- Some of the usual R programming headaches did come up such as `stringsAsFactors = FALSE` 
-- It was a mixture of learning about Bioinformatics, gene expression data, bioconductor, and *designing a data product for a non-technical user*
+- It was a mixture of learning about Bioinformatics, gene expression data, bioconductor, and *designing a data product for a non-technical user* with *Shiny*.
+- Shiny is a web application framework for R
+    - Some of the usual R programming headaches came up such as `stringsAsFactors = FALSE` 
     - Gene expression data is not like the `iris` dataset
     
+<img src="img/shiny-sticker.png" style="position: center; right: 3"></img>
+
 ## Sometimes unpaid volunteer work does pays off...
 
-- [Google Summer of Code](https://summerofcode.withgoogle.com/) is a global program for undergraduates and graduate students to get funding from **Google** to work on an open source project for the Summer!
+- [Google Summer of Code (GSoC)](https://summerofcode.withgoogle.com/) is a global program for undergraduates and graduate students to get funding from **Google** to work on an open source project for the Summer!
 - What it provides:
     - Opportunity to gain more programming skills
     - Interface with the open source community
     - [Archival hosting](https://www.google-melange.com/archive/gsoc/2015/orgs/rproject/projects/jasdumas.html) of your abstract and code
     - Nobody talks about this heavily, but it does get you a *lifetime referral* for positions at Google!
 
+    ![](img/oss-monkey-computing.gif)
+
 ## Some of the results from participating in the Google Summer of Code
 
 - A first author publication in the [*Bioinformatics Journal*](https://academic.oup.com/bioinformatics/article-abstract/32/23/3679/2525634/shinyGEO-a-web-based-application-for-analyzing)!
 
-- An web application (currently being refactored to submit to [**rOpenSci**](https://ropensci.org/))
+- A web application (currently being refactored to submit to [**rOpenSci**](https://ropensci.org/))
 
-<img src="img/shinyGEO2.jpg" alt="ending slide" style="position: center; width: 700px;"/>
+<img src="img/shinyGEO2.jpg" style="position: center; width: 800px;"/>
 
 ## How to make a connection to the R community
 
@@ -157,7 +160,7 @@ library(tidyr)
 <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Does anyone want to hire me to spice up their data with science using <a href="https://twitter.com/hashtag/rstats?src=hash">#rstats</a>? <br><br>I&#39;m looking for a job! 😬</p>&mdash; Jasmine Dumas (@jasdumas) <a href="https://twitter.com/jasdumas/status/713118293515759616">March 24, 2016</a></blockquote>
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-## Every data science path is unique...
+## Every data science path is unique!
 
 **tl;dr: I love learning in a structured setting but I can learn best from doing applied data science in the workplace.**
 
@@ -178,11 +181,11 @@ library(tidyr)
 
 ## Advice that I wish I heard 2.5 years ago from myself: 
 
-<h2 style='color:#ffffff; background-color:#009fe1;'>Ultimately, technical skills, passion, and curiosity are key attributes of a productive data scientist and essential to collaborating with others!</h2>
+<h1 style='color:#ffffff; background-color:#009fe1;'>Ultimately, technical skills (including statistical thinking), passion, and curiosity are key attributes of a productive data scientist and essential to collaborating with others!</h1>
 
 ## Alright, on to the fun stuff ... R: 
 
-<h2 style='color:#ffffff; background-color:#009fe1;'>R packages are a great way to combine code & documentation to share with others</h2>
+<h1 style='color:#ffffff; background-color:#009fe1;'>R packages are a great way to combine code & documentation to share with others</h1>
 
 ## What even is, beer analytics?
 
@@ -229,7 +232,6 @@ ggplot(., aes(x=Year, y=pounds, color=materials)) +
      theme_bw() +
      theme(axis.ticks = element_blank(), axis.text.x = element_blank()) +
      facet_wrap(~ Month, nrow = 1)
-
 ```
 
 ## What even is, a landing page?
@@ -241,6 +243,7 @@ ggplot(., aes(x=Year, y=pounds, color=materials)) +
 <img src="img/borat.gif" style="position: center; top: 1; width: 600px;"></img>
 
 ## An example of a landing home page
+
 <img src="img/Meetup.com-homepage-screenshot.jpg" alt="wiki dash" style="position: center; width: 1000px;"/>
 
 ## Make landing pages for `shiny` apps with `shinyLP`
@@ -248,8 +251,7 @@ ggplot(., aes(x=Year, y=pounds, color=materials)) +
 - Adds **even more Bootstrap** components to make landing home pages for Shiny 
     - available on [CRAN](https://cran.r-project.org/web/packages/shinyLP/index.html) and [Github](https://github.com/jasdumas/shinyLP)
 
-
-<img src="img/example1.jpg" alt="ending slide" style="position: center; width: 700px;"/>
+<img src="img/example1.jpg" style="position: center; width: 1000px;"/>
 
 ## The End 
 
