@@ -1,14 +1,16 @@
 ---
-title: "<p style='color:#ffffff; background-color:#009fe1;'>AdventuRes in Crafting a Data Science Career</p> <p> 🔮 + 💻 = 📊</p>"
-author: "Jasmine Dumas | <a href='https://twitter.com/jasdumas'>@jasdumas</a> | <a href='http://jasdumas.github.io/'>jasdumas.github.io</a>"
+title: "<p style='color:#ffffff; background-color:#009fe1;'>AdventuRes in Crafting
+  a Data Science Career</p> <p> \U0001F52E + \U0001F4BB = \U0001F4CA</p>"
+author: "Jasmine Dumas | <a href='https://twitter.com/jasdumas'>@jasdumas</a> | <a"
+  href='http://jasdumas.github.io/'>jasdumas.github.io</a>
 date: "Thursday, March 30th, 2017"
-output: 
-    slidy_presentation:
-    font_adjustment: +1
-    keep_md: true
-    self_contained: false
-footer: "Copyright (c) 2017, JD"
-duration: 30
+output:
+  ioslides_presentation: default
+  font_adjustment: 1
+  keep_md: yes
+  self_contained: no
+  slidy_presentation: null
+footer: Copyright (c) 2017, JDion: 30
 ---
 
 ```{r setup, include=FALSE}
