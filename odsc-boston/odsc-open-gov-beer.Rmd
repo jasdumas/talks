@@ -1,11 +1,11 @@
 ---
 title: "<p style='color:#ffffff; background-color:#009fe1;'>Open Government Data and Beer Analytics</p> <p>🏛 + 🍺</p> <p>Open Data Science Conference | East</p>"
 author: "Jasmine Dumas | <a href='https://twitter.com/jasdumas'>@jasdumas</a> | <a href='http://jasdumas.github.io/'>jasdumas.github.io</a>"
-date: "Friday, May 5th, 2017"
+date: "Fridad, May 5th, 2017"
 output:
   slidy_presentation: default
   beamer_presentation: default
-  font_adjustment: 1
+  font_adjustment: +2
 footer: "Copyright (c) 2017, JD"
 keep_md: true
 duration: 25
@@ -18,6 +18,7 @@ library(gganimate)
 library(ggplot2)
 library(ttbbeer)
 library(tidyr)
+library(plotly)
 ```
 
 ## Hi Boston!
@@ -110,9 +111,9 @@ The "clearinghouse" for open U.S. government data is located at [data.gov](https
 
 ## I developed a R package for beer statistics, called `ttbbeer`
 
-This R data package provides **one dataset** for materials used at U.S. breweries as listed in the Beer Monthly Statistical Releases, and **eight datasets** for historical tax rates of distilled spirits, wine, beer, champagne, and tobacco from the U.S. Department of the Treasury, Alcohol and Tobacco Tax and Trade Bureau (TTB)
+- This R data package provides **one dataset** for materials used at U.S. breweries as listed in the Beer Monthly Statistical Releases, and **eight datasets** for historical tax rates of distilled spirits, wine, beer, champagne, and tobacco from the U.S. Department of the Treasury, Alcohol and Tobacco Tax and Trade Bureau (TTB)
 
-Available on [CRAN](https://cran.r-project.org/web/packages/ttbbeer/index.html) and [Github](https://github.com/jasdumas/ttbbeer)
+- Available on [CRAN](https://cran.r-project.org/web/packages/ttbbeer/index.html) and [Github](https://github.com/jasdumas/ttbbeer)
 
 ![](img/gatsby-drink.gif)
 
@@ -125,7 +126,7 @@ Available on [CRAN](https://cran.r-project.org/web/packages/ttbbeer/index.html) 
 
 ## Insights from this data
 
-```{r, echo=FALSE, message=FALSE, warning=FALSE}
+```{r, echo=FALSE, fig.height=6, fig.width=8, message=FALSE, warning=FALSE}
 
 data("beermaterials")
 
@@ -138,7 +139,9 @@ ggplot(., aes(x=Year, y=pounds, color=materials)) +
      geom_point() +
      theme_bw() +
      theme(axis.ticks = element_blank(), axis.text.x = element_blank()) +
-     facet_wrap(~ Month, nrow = 1)
+     facet_wrap(~ Month, nrow = 2)
+
+#ggplotly()
 ```
 
 
