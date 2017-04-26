@@ -1,7 +1,7 @@
 ---
 title: "<p style='color:#ffffff; background-color:#009fe1;'>Open Government Data and Beer Analytics</p> <p>🏛 + 🍺</p> <p>Open Data Science Conference | East</p>"
 author: "Jasmine Dumas | <a href='https://twitter.com/jasdumas'>@jasdumas</a> | <a href='http://jasdumas.github.io/'>jasdumas.github.io</a>"
-date: "Fridad, May 5th, 2017"
+date: "Friday, May 5th, 2017"
 output:
   slidy_presentation: default
   beamer_presentation: default
@@ -19,6 +19,7 @@ library(ggplot2)
 library(ttbbeer)
 library(tidyr)
 library(plotly)
+library(emo)
 ```
 
 ## Hi Boston!
@@ -56,17 +57,25 @@ library(plotly)
     - measure customer preferences and predict seasonality
     - gather insights on industry performance
 
-<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/William_Sealy_Gosset.jpg/240px-William_Sealy_Gosset.jpg" style="position: center; right: 0; left: 0; top: 1"></img>
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/William_Sealy_Gosset.jpg/1200px-William_Sealy_Gosset.jpg" style="position: absolute; right: 0; top: 0; width: 450px"></img>
+
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Student_t_pdf.svg/300px-Student_t_pdf.svg.png" style="position: center; right: 3"></img>
 
 ## Discovering analysis-ready beer datasets can be difficult
 
-- **Datasets**: [Craft Beer Sample Data](http://www.craftbeeranalytics.com/beer-data.html), [SNAP-RateBeer*](https://snap.stanford.edu/data/web-RateBeer.html) | **Accessible to academic researchers only**
-- **API's**: [RateBeer](http://www.ratebeer.com/json/ratebeer-api-agreement.asp), [Untapped](https://untappd.com/api/docs), [The Beer Mapping Project](http://beermapping.com/api/), [BreweryDB](http://www.brewerydb.com/apps) | **Restrictions on usage or require a user account**
-- **Projects about beer**: [yhat Beer Advocate Recommender](http://blog.yhat.com/posts/recommender-system-in-r.html) and [Crowd-sourced Beer Distribution Map](http://www.seekabrew.com/distro/index.html)
+- **Datasets**: 
+    - [Craft Beer Data](https://www.kaggle.com/nickhould/craft-cans) `r emo::ji("free")`   
+    - [SNAP-RateBeer](https://snap.stanford.edu/data/web-RateBeer.html) `r emo::ji("arrow_forward")` **Accessible to academic researchers only**
+    
+- **API's**: 
+    - [RateBeer](http://www.ratebeer.com/json/ratebeer-api-agreement.asp)   
+    - [Untapped](https://untappd.com/api/docs) `r emo::ji("arrow_forward")` **Restrictions on usage or require a user account**
+    - [The Beer Mapping Project](http://beermapping.com/api/)
+    - [BreweryDB](http://www.brewerydb.com/apps) 
 
-<img src="img/fred-beer.gif" style="position: center; right: 0; left: 0; top: 1"></img>
+![](img/fred-beer.gif)
 
-## How to search for analysis-ready datasets in general
+## How to generally search for analysis-ready datasets
 
 - [Google public data explorer](https://www.google.com/publicdata/directory)
 - [Github](https://github.com/jasdumas/awesome-public-datasets)
@@ -93,7 +102,7 @@ The "clearinghouse" for open U.S. government data is located at [data.gov](https
 
 ## Examples of datasets that are not analysis-ready
 
-- Datasets that have inconsistent formats, mixed column types, and cryptic data fields make it difficult for analysis
+- Datasets that have **inconsistent formats, mixed column types, and cryptic data fields** make it difficult for analysis
 
 <img src="img/TTB-Reports.png" style="position: center; right: 0; left: 0; top: 1"></img>
 
@@ -111,22 +120,25 @@ The "clearinghouse" for open U.S. government data is located at [data.gov](https
 
 ## I developed a R package for beer statistics, called `ttbbeer`
 
-- This R data package provides **one dataset** for materials used at U.S. breweries as listed in the Beer Monthly Statistical Releases, and **eight datasets** for historical tax rates of distilled spirits, wine, beer, champagne, and tobacco from the U.S. Department of the Treasury, Alcohol and Tobacco Tax and Trade Bureau (TTB)
-
-- Available on [CRAN](https://cran.r-project.org/web/packages/ttbbeer/index.html) and [Github](https://github.com/jasdumas/ttbbeer)
+- This R data package provides data from the **U.S. Department of the Treasury, Alcohol and Tobacco Tax and Trade Bureau (TTB)**:
+    - **one dataset** for materials used at U.S. breweries as listed in the Beer Monthly Statistical Releases
+    - **eight datasets** for historical tax rates of distilled spirits, wine, beer, champagne, and tobacco 
+- Available on [CRAN](https://cran.r-project.org/web/packages/ttbbeer/index.html) [![](http://cranlogs.r-pkg.org/badges/grand-total/ttbbeer)](http://cran.rstudio.com/web/packages/ttbbeer/index.html) and [Github](https://github.com/jasdumas/ttbbeer)
 
 ![](img/gatsby-drink.gif)
 
 ## How I developed the `ttbbeer` package
 
-- Hand transcribing from PDF documents to an excel workbook 😭
-- Web-scraping using the R package [`rvest`](https://github.com/hadley/rvest) 😀
+- Hand transcribing from PDF documents to an excel workbook `r emo::ji("cry")`
+- Web-scraping using the R package [`rvest`](https://github.com/hadley/rvest) `r emo::ji("smile")`
+    - Data cleaning with `stringr`
+    - Date Fixes `# originally "101/01/1951"`
 
 ![](img/jlaw-beer.gif)
 
 ## Insights from this data
 
-```{r, echo=FALSE, fig.height=6, fig.width=8, message=FALSE, warning=FALSE}
+```{r, echo=FALSE, fig.height=6.5, fig.width=10, message=FALSE, warning=FALSE}
 
 data("beermaterials")
 
