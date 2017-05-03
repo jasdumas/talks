@@ -26,6 +26,7 @@ library(emo)
 
 ## Hi Boston!
 
+<div class="column-left">
 - I'm Jasmine Dumas
     - **Data Scientist** and **useR** living in Connecticut
     - Work at **Simple Finance** based in Portland, OR
@@ -33,9 +34,13 @@ library(emo)
 - Slides and Materials available on GitHub: 
     - [jasdumas/talks/odsc-boston](https://github.com/jasdumas/talks/tree/master/odsc-boston)
 
+![](img/odsc.png)
+</div>
+
+<div class="column-right">
 <img src="img/me.jpg" style="position: absolute; right: 0; top: 0"></img>
 
-<img src="img/odsc.png" style="position: center; right: 3; width: 400px;"></img>
+</div>
 
 ## Why should you care open government data?
 
@@ -81,6 +86,10 @@ library(emo)
     - [Untapped](https://untappd.com/api/docs) `r emo::ji("caution")` **Restrictions on usage or require a user account**
     - [The Beer Mapping Project](http://beermapping.com/api/) `r emo::ji("free")` 
     - [BreweryDB](http://www.brewerydb.com/apps) `r emo::ji("dollar")` 
+- **Beer projects**: 
+    - [yhat Beer Advocate Recommender](http://blog.yhat.com/posts/recommender-system-in-r.html) 
+    - [Crowd-sourced Beer Distribution Map](http://www.seekabrew.com/distro/index.html)
+
 </div>
 
 <div class="column-right">
@@ -100,7 +109,6 @@ library(emo)
 <div class="column-right">
 
 ![](img/jack-and-scotch.gif)
-
 </div>
 
 ## The U.S. Government Open Data Portal
@@ -149,40 +157,38 @@ The "clearinghouse" for open U.S. government data is located at [data.gov](https
 ![](img/gatsby-drink.gif)
 </div>
 
-## How I developed the `ttbbeer` v1.0.0 package
+## How I developed the `ttbbeer` package
 
-- Hand transcribing from PDF documents to an excel workbook `r emo::ji("cry")`
+<div class="column-left">
+- Hand transcribing from PDF documents to an *excel* workbook `r emo::ji("cry")`
+    - Limited PDF parsing packages in R
+- Web scraping using the *R* package [`rvest`](https://github.com/hadley/rvest) `r emo::ji("smile")`
+</div>
 
-```{r}
-data.frame(head(beermaterials, n = 3))
-```
-
-## How I developed the `ttbbeer` v1.1.0 package
-
-- Web-scraping using the *R* package [`rvest`](https://github.com/hadley/rvest) `r emo::ji("smile")`
-- Data cleaning & parsing date mistakes with `stringr`: `"101/01/1951"`
-
+<div class="column-right">
 ![](img/jlaw-beer.gif)
+</div>
 
-## Insights from this data
+## Simple web scraping in R for historical tax rates
 
-```{r, echo=FALSE, fig.height=6.5, fig.width=10, message=FALSE, warning=FALSE}
+<div class="column-left">
+- Specify a [html](https://www.ttb.gov/tax_audit/94a01_4.shtml) document 
 
-data("beermaterials")
+- Select parts of a document using css selectors using the **inspect** feature on Chrome or [**SelectorGadget: point and click CSS selectors**](http://selectorgadget.com/)
 
-beermaterials$Month<- factor( beermaterials$Month, levels = unique(beermaterials$Month) )
+- Extract the parts out to a object
+</div>
 
-beermaterials %>% 
-  gather(key = materials, value = pounds, -c(Month, Year)) %>% 
-ggplot(., aes(x=Year, y=pounds, color=materials)) +
-     geom_line() +
-     geom_point() +
-     theme_bw() +
-     theme(axis.ticks = element_blank(), axis.text.x = element_blank()) +
-     facet_wrap(~ Month, nrow = 2)
+<div class="column-right">
 
-```
+<img src="img/tax-rates.jpg" style="width: 500px"></img>
 
+</div>
+
+
+## Insights from the data in the wild
+
+![](img/tweet.jpg)
 
 ## Advocating for open data
 
@@ -192,13 +198,14 @@ ggplot(., aes(x=Year, y=pounds, color=materials)) +
 
 <div class="column-left">
 - Analysis-ready beer data is difficult to find and rarely cost effective
-- Open Government Data portals, such as [data.gov](data.gov) offer a platform to share data
+- Open Government Data portals, such as [data.gov](data.gov) offer a good platform to share data for those looking for projects
 - Data quality needs to be championed to ensure government agencies are providing accessible data
 </div>
 
 <div class="column-right">
 ![](img/cersei-got.gif)
 </div>
+
 
 ## Questions & Discussion!
 
