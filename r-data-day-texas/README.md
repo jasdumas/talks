@@ -18,6 +18,11 @@ Abstract: Good does not mean great, but good is better than bad. When we try to 
 
 * **Conference link**: http://datadaytexas.com/2018-r-user-day/news
 
-* **Conference Notes**: [notes](notes.md)
+* **Conference Notes**: [notes (TBD)](notes.md)
 
-* **Slides**: [PDF](), [HTML format](https://htmlpreview.github.io/?), [rpubs](), [other](https://github.com/jasdumas/talks/blob/master/r-data-day-texas/r-user-ddtx-jasmine-dumas.key)
+## Slides
+
+- [pdf](https://github.com/jasdumas/talks/blob/master/r-data-day-texas/r-user-ddtx-jasmine-dumas.pdf)
+- [html](https://github.com/jasdumas/talks/blob/master/r-data-day-texas/r-user-ddtx-jasmine-dumas/index.html)
+- [powerpoint](https://github.com/jasdumas/talks/blob/master/r-data-day-texas/r-user-ddtx-jasmine-dumas.pptx)
+- [keynote](https://github.com/jasdumas/talks/blob/master/r-data-day-texas/r-user-ddtx-jasmine-dumas.key)
