@@ -6,5 +6,5 @@ Jasmine Dumas is a Senior Data Scientist at Fastly where she is focused on infra
 
 - Linkedin: https://www.linkedin.com/in/jasminedumas/
 - Twitter: https://twitter.com/jasdumas
-- Blog: https://jasdumas.github.io/
+- Blog: [jasdumas.com](jasdumas.com)
 - GitHub: https://github.com/jasdumas
