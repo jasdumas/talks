@@ -6,5 +6,5 @@ Jasmine Daly is the founder and principal at Daly Analytics, LLC. She earned a B
 
 - Linkedin: https://www.linkedin.com/in/jasminemdaly/
 - Twitter: https://twitter.com/jasdumas
-- Blog: jasminedaly.com
+- Blog: https://jasminedaly.com/
 - GitHub: https://github.com/jasdumas
